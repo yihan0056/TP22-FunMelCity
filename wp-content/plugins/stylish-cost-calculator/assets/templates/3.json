@@ -1,0 +1,116 @@
+{
+    "name": "Car Rental Template",
+    "content": [
+        {
+            "name": "Vehicle type",
+            "desc": "Please select your vehicle type. ",
+            "section": 0,
+            "value": [
+                {
+                    "subsection": 0,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "Dropdown Menu",
+                            "title": "Vehicle",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "Hyundai i10",
+                                    "price": "27",
+                                    "description": " "
+                                },
+                                {
+                                    "No": 1,
+                                    "name": "Hyundai Accent",
+                                    "price": "29",
+                                    "value2": " Compact car"
+                                },
+                                {
+                                    "No": 2,
+                                    "name": "Hyundai Azera ",
+                                    "price": "36",
+                                    "description": " "
+                                }
+                            ]
+                        },
+                        {
+                            "element": 1,
+                            "type": "Dropdown Menu",
+                            "title": "Insurance level",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "PDW (Partial Damage Waiver)",
+                                    "price": "2",
+                                    "description": " $2 per day"
+                                },
+                                {
+                                    "No": 1,
+                                    "name": "LDW (Loss Damage Waiver)",
+                                    "price": "3",
+                                    "description": "  $3 per day"
+                                }
+                            ]
+                        },
+                        {
+                            "element": 2,
+                            "type": "slider",
+                            "title": "Days rented",
+                            "value1": "bulk",
+                            "value2": "1",
+                            "value3": "1",
+                            "value": [
+                                {
+                                    "No":"0",
+                                    "value1":"0",
+                                    "value2":"30",
+                                    "value3":"0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Extras",
+            "desc": " You must select at least one option",
+            "section": 1,
+            "value": [
+                {
+                    "subsection": 0,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "checkbox",
+                            "value1":"3",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "Baby seat",
+                                    "price": "20"
+                                },
+                                {
+                                    "No": 1,
+                                    "name": "Extra driver",
+                                    "price": "15"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "fontType": "0",
+        "colorPicker": "#000",
+        "servicepricefontsize": "16px",
+        "objectColorPicker": "#000",
+        "objectServicepricefontsize": "50px",
+        "titleFontType": "0",
+        "titleColorPicker": "#000",
+        "titleServicepricefontsize": "30px"
+    }
+}

@@ -1,0 +1,385 @@
+{
+    "name": "Cleaning Company Template restored",
+    "content": [
+        {
+            "name": "Cleaning",
+            "desc": " ",
+            "section": "0",
+            "value": [
+                {
+                    "subsection": "0",
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "slider",
+                            "title": "Total area to be cleaned in square feet:",
+                            "value1": "bulk",
+                            "value2": "10",
+                            "value3": "1200",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "value1": "1",
+                                    "value2": "2000",
+                                    "value3": "1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "subsection": 1,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "slider",
+                            "title": "Number of bedrooms:",
+                            "value1": "bulk",
+                            "value2": "1",
+                            "value3": "4",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "value1": "0",
+                                    "value2": "8",
+                                    "value3": "1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "subsection": 2,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "slider",
+                            "title": "Number of bathrooms:",
+                            "value1": "bulk",
+                            "value2": "2",
+                            "value3": "2",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "value1": "0",
+                                    "value2": "5",
+                                    "value3": "1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "subsection": 3,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "slider",
+                            "title": "Number of living rooms:",
+                            "value1": "bulk",
+                            "value2": "1",
+                            "value3": "100",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "value1": "0",
+                                    "value2": "3",
+                                    "value3": "100"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "subsection": 4,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "Dropdown Menu",
+                            "title": "Size of your kitchen:",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "Small (0 - 150 ft2)",
+                                    "price": "1"
+                                },
+                                {
+                                    "No": 1,
+                                    "name": "Medium (151 - 250 ft2)",
+                                    "price": "1"
+                                },
+                                {
+                                    "No": 2,
+                                    "name": "Large (>250 ft2)",
+                                    "price": "1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "subsection": 5,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "Dropdown Menu",
+                            "title": "Master bathroom includes:",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "Shower only",
+                                    "price": "1"
+                                },
+                                {
+                                    "No": 1,
+                                    "name": "Tub only",
+                                    "price": "1"
+                                },
+                                {
+                                    "No": 2,
+                                    "name": "Separate shower and tub",
+                                    "price": "1"
+                                },
+                                {
+                                    "No": 3,
+                                    "name": "No appliances",
+                                    "price": "1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "subsection": 6,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "checkbox",
+                            "value1": "3",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "Do you have pets?",
+                                    "price": "100"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Select your service & extras",
+            "desc": " ",
+            "section": 1,
+            "value": [
+                {
+                    "subsection": 0,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "Dropdown Menu",
+                            "title": "Choose your cleaning supplies:",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "Green cleaning",
+                                    "price": "1"
+                                },
+                                {
+                                    "No": 1,
+                                    "name": "Company's supplies",
+                                    "price": "1"
+                                },
+                                {
+                                    "No": 2,
+                                    "name": "Client's supplies",
+                                    "price": "1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "subsection": 1,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "Dropdown Menu",
+                            "title": "Cleaning frequency:",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "Weekly Service",
+                                    "price": "1"
+                                },
+                                {
+                                    "No": 1,
+                                    "name": "Bi-Weekly Service",
+                                    "price": "2"
+                                },
+                                {
+                                    "No": 2,
+                                    "name": "Tri-Weekly Service",
+                                    "price": "3"
+                                },
+                                {
+                                    "No": 3,
+                                    "name": "Quarter Weekly Service",
+                                    "price": "4"
+                                },
+                                {
+                                    "No": 4,
+                                    "title": "Cleaning frequency:",
+                                    "name": "Monthly Service",
+                                    "price": "0.1"
+                                },
+                                {
+                                    "No": 5,
+                                    "title": "Cleaning frequency:",
+                                    "name": "One Time Service",
+                                    "price": "0.01"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "subsection": 2,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "checkbox",
+                            "value1": "6",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "Dining room",
+                                    "price": "100"
+                                },
+                                {
+                                    "No": 1,
+                                    "name": "Play room",
+                                    "price": "200"
+                                },
+                                {
+                                    "No": 2,
+                                    "name": "Laundry",
+                                    "price": "300"
+                                },
+                                {
+                                    "No": 3,
+                                    "name": "Gym",
+                                    "price": "400"
+                                },
+                                {
+                                    "No": 4,
+                                    "name": "Garage",
+                                    "price": "500"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "subsection": 3,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "checkbox",
+                            "value1": "3",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "Clean inside the refrigerator?",
+                                    "price": "500"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": ".",
+            "desc": " Enter your contact details. We will give you a call to finish up.<br /><br /><br />",
+            "section": 2,
+            "value": [
+                {
+                    "subsection": 0,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "comment box",
+                            "title": "YOUR NAME",
+                            "value2": "1",
+                            "value3": "",
+                            "value": []
+                        },
+                        {
+                            "element": 1,
+                            "type": "comment box",
+                            "title": "YOUR EMAIL",
+                            "value2": "1",
+                            "value3": "",
+                            "value": []
+                        },
+                        {
+                            "element": 2,
+                            "type": "comment box",
+                            "title": "YOUR PHONE",
+                            "value2": "1",
+                            "value3": "",
+                            "value": []
+                        }
+                    ]
+                },
+                {
+                    "subsection": 1,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "comment box",
+                            "title": "QUESTIONS OR COMMENTS",
+                            "value2": "5",
+                            "value3": "",
+                            "value": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "fontType": "500",
+        "colorPicker": "#303030",
+        "servicepricefontsize": "14px",
+        "objectColorPicker": "#56b665",
+        "objectServicepricefontsize": "50px",
+        "titleFontType": "322",
+        "titleColorPicker": "#000",
+        "titleServicepricefontsize": "24px",
+        "toggle_boxshadow_style2": "",
+        "objectsendquote": "",
+        "objectdetailedlist": "",
+        "objectsaveicon": "",
+        "objectscctax": "",
+        "objectscccoupon": "",
+        "objecttaxrate": "",
+        "objectscccurrencylabel": "",
+        "objectscctitlelabel": "",
+        "objectscctotalprice": "",
+        "objecttotalpricestyle": "scc_tp_style3",
+        "objecttotalword": "",
+        "objectdetailedlistword": "",
+        "objectsendquoteword": "",
+        "objectscctotalpricefloat": "",
+        "form_field_style": "style_1",
+        "currency_style": "0",
+        "paypal_checked": "false",
+        "paypal_email": "",
+        "paypal_shopping_cart_name": "",
+        "paypal_currency": "",
+        "woocommerce_checked": "false"
+    }
+}

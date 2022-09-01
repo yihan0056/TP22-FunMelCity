@@ -1,0 +1,128 @@
+{
+    "name": "T-shirt Printing Template",
+    "content": [
+        {
+            "name": "Custom T-Shirt Printing",
+            "desc": "Please fill out the form below to get an accurate price for custom screen printing. ",
+            "section": 0,
+            "value": [
+                {
+                    "subsection": 0,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "Dropdown Menu",
+                            "title": "Shirt type",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "Tee",
+                                    "price": "0",
+                                    "description": "No extra cost for tees "
+                                },
+                                {
+                                    "No": 1,
+                                    "name": "Soft tee",
+                                    "price": "1",
+                                    "description": "An extra dollar per shirt for soft tees "
+                                },
+                                {
+                                    "No": 2,
+                                    "name": "Racerback",
+                                    "price": "1",
+                                    "description": " An extra dollar per shirt for racerbacks"
+                                }
+                            ]
+                        },
+                        {
+                            "element": 1,
+                            "type": "Dropdown Menu",
+                            "title": "Logo location",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "1 Logo on White Material",
+                                    "price": "0",
+                                    "description": "Included in price "
+                                }
+                            ]
+                        },
+                        {
+                            "element":2,
+                            "type":"slider",
+                            "title":"Shirt quantity",
+                            "value1": "bulk",
+                            "value2":"1",
+                            "value3":"1",
+                            "value":[
+                                {
+                                    "No": 0,
+                                    "value1": "0",
+                                    "value2": "1",
+                                    "value3": "28"
+                                },
+                                {
+                                    "No": 1,
+                                    "value1": "2",
+                                    "value2": "3",
+                                    "value3": "25"
+                                },
+                                {
+                                    "No": 2,
+                                    "value1": "4",
+                                    "value2": "5",
+                                    "value3": "21"
+                                },
+                                {
+                                    "No": 3,
+                                    "value1": "6",
+                                    "value2": "7",
+                                    "value3": "19"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Graphic Design",
+            "desc": " Do you need any graphics created for this shirt printing project?",
+            "section": 1,
+            "value": [
+                {
+                    "subsection": 0,
+                    "Nooptions": [
+                        {
+                            "element": 0,
+                            "type": "checkbox",
+                            "value1":"1",
+                            "value": [
+                                {
+                                    "No": 0,
+                                    "name": "Front only design",
+                                    "price": "100"
+                                },
+                                {
+                                    "No": 1,
+                                    "name": "Front and back design",
+                                    "price": "175"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "fontType": "447",
+        "colorPicker": "#565656",
+        "servicepricefontsize": "16px",
+        "objectColorPicker": "#3695c4",
+        "objectServicepricefontsize": "50px",
+        "titleFontType": "390",
+        "titleColorPicker": "#3695c4",
+        "titleServicepricefontsize": "30px"
+    }
+}

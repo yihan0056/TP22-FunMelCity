@@ -177,7 +177,7 @@ require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-filters.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-hooks.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-functions.php';
 
-function peek_table_shortcode_func($attr, $content){
+function rental_table_shortcode_func($attr, $content){
 	global $wpdb;
 	global $str;
     global $json;
@@ -195,22 +195,23 @@ function peek_table_shortcode_func($attr, $content){
 	
 	$str .= "</div>";
 
-	$result = $wpdb->get_results("SELECT * FROM mel_rental_price");
+	$melrental = $wpdb->get_results("SELECT * FROM mel_rental_price");
 	
 	$str .= "<table border='1' class='table__wrapper'>";
 	$str .= "<tr>
 				<th>Districrt</th>
 				<th>Surburb</th>
-				<th>Room_type</th>
+				<th>Room</th>
 				<th>Percentile_25</th>
 				<th>Median</th>
 				<th>Percentile_75</th>
+		
 			</tr>";
 	$str .= "</table>";
 	
 	$json .="[";
-	foreach($result as $record){
-		$json .= json_encode($record).',';
+	foreach($melrental as $rentalrecord){
+		$json .= json_encode($rentalrecord).',';
 	};
     $json .= "]";
 
@@ -221,4 +222,4 @@ function peek_table_shortcode_func($attr, $content){
 	return $str;
 }
 
-add_shortcode('peektable', 'peek_table_shortcode_func');
+add_shortcode('rentaltable', 'rental_table_shortcode_func');

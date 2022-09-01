@@ -1,0 +1,117 @@
+@media print /*--This is for Print--*/
+
+{
+
+    .btn
+
+    {
+
+        display: none;
+
+    }
+
+    .hover_bkgr_fricctableprice
+
+    {
+
+        background-color: #CD853F;
+
+        border:1px solid green;
+
+        -webkit-print-color-adjust: exact !important;
+
+
+
+/*above line of codes will set the table background-color and change the border color when we give the print and preview (print preview only when we see on print preview via browser) command*/
+
+    }
+    .performance-facts {
+      border: 1px solid black;
+      margin: 10px;
+      float: left;
+      width: 600px;
+      padding: 0.5rem;
+      table {
+        border-collapse: collapse;
+      }
+    }
+    .performance-facts__title {
+      text-align: left;
+      font-weight: bold;
+      font-size: 2rem;
+      margin: 0;
+    }
+    .performance-facts__summary {
+      text-align: left;
+      font-weight: bold;
+      font-size: 0.7rem;
+      /* margin: 0 0 0.25rem 0; */
+      color: black;
+      margin: 0;
+    }
+    .Desc-Quantity-Price-Title-SCC {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.3rem;
+      /* margin: 0 0 0.25rem 0; */
+      color: white;
+      margin: 0;
+      line-height: 2;
+    }
+    .performance-facts__summary2 {
+      text-align: center;
+      font-size: 1.2rem;
+      /* margin: 0 0 0.25rem 0; */
+      color: white;
+      width: 100%;
+      margin: 0;
+      height: 100%;
+      /* line-height: 3; */
+    }
+
+    .users-price-summary-scc {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      /* margin: 0 0 0.25rem 0; */
+      color: black;
+      margin: 0;
+      /* line-height: 3; */
+    }
+
+    .performance-facts__summary4 {
+      font-size: 1rem;
+      /* margin: 0 0 0.25rem 0; */
+      color: #666;
+      margin: 0;
+      /* line-height: 3; */
+      height: 100%;
+    }
+
+    .performance-facts__header {
+      border-bottom: 10px solid black;
+      padding: 0 0 0.25rem 0;
+      margin: 0 0 0.5rem 0;
+      p {
+        margin: 0;
+      }
+    }
+
+    .sscfull-height{
+      height: 100%;
+    }
+    .sscfull-width{
+      width: 100%;
+    }
+    .sscfill-parent{
+      width: 100%;
+      height: 100%;
+    }
+    .position-relative{
+      position: relative;
+    }
+    .table__fricctableprice {
+        background: #aa0;
+      }
+
+}

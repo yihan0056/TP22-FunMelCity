@@ -1,0 +1,45 @@
+name: beta pusher
+
+on:
+  push:
+    tags:
+      - "b*.*.*"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v2
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    - name: Install dependencies
+      run: composer install --no-progress
+    - name: Run PHPCS
+      run: ./vendor/bin/phpcs -q --standard=./phpcs.xml .
+    
+    - name: zip and print directory
+      run: |
+        rm -rf vendor
+        cd ..
+        7z a -xr'!.*' scc-free-2021.zip ./stylish-cost-calculator
+        ls -alh
+
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ../scc-free-2021.zip
+        
+    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
+    # Docs: https://getcomposer.org/doc/articles/scripts.md
+
+    # - name: Run test suite
+    #   run: composer run-script test
