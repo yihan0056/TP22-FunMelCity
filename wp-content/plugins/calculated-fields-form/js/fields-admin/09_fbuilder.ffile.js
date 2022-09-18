@@ -33,8 +33,8 @@
 							{s:"#sUpload_size",e:"change keyup", l:"upload_size", x:1},
 							{s:"#sThumbWidth",e:"change keyup", l:"thumb_width", x:1},
 							{s:"#sThumbHeight",e:"change keyup", l:"thumb_height", x:1},
-							{s:"#sMultiple",e:"click", l:"multiple",f:function(el){return el.is(":checked");}, x:1},
-							{s:"#sPreview",e:"click", l:"preview",f:function(el){return el.is(":checked");}, x:1}
+							{s:"#sMultiple",e:"click", l:"multiple",f:function(el){return el.is(":checked");}},
+							{s:"#sPreview",e:"click", l:"preview",f:function(el){return el.is(":checked");}}
 						];
 					$.fbuilder.controls[ 'ffields' ].prototype.editItemEvents.call(this,evt);
 				},

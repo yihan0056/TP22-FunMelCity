@@ -1,5 +1,36 @@
 == Changelog ==
 
+= 1.1.113 =
+
+* Modifies the setChoices method in radio buttons, checkbox, and dropdown fields.
+* Modifies the GOTOPAGE operation.
+
+= 1.1.112 =
+
+* Removes unnecessary characters.
+
+= 1.1.111 =
+
+* Improves the plugin code.
+* Includes additional forms to the forms library.
+
+= 1.1.110 =
+
+* Fixes a minor issue with Upload File and Summary fields settigns.
+
+= 1.1.109 =
+
+* Increase the number of template forms.
+* Modifies the library popup.
+* Modifies the forms generator.
+* Fixes a minor issue in the button control.
+* Makes the form name a required attribute.
+* Modifies the currentdate and submissiondate tags in the notification emails and thank you pages to accept a separator symbol between date components (Professional, Developer, and Platinum versions).
+
+= 1.1.108 =
+
+* Implements the create form from the templates library module.
+
 = 1.1.107 =
 
 * Allows the associate audio tutorials to the form fields.

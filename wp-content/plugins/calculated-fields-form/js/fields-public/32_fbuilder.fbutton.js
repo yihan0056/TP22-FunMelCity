@@ -47,12 +47,12 @@
 									if(me.sLoading)
 									{
 										f.find('.cff-processing-form').remove();
-										$('<div class="cff-processing-form"></div>').appendTo(f);
+										$('<div class="cff-processing-form"></div>').appendTo(e.closest('#fbuilder'));
 									}
 									$(document).on('equationsQueueEmpty', function(evt, id){
 										if(id == fid)
 										{
-											if(me.sLoading) e.closest('#fbuilder').find('.cff-processing-form').remove();
+											if(me.sLoading) f.find('.cff-processing-form').remove();
 											$(document).off('equationsQueueEmpty');
 											for(var i = 0, h = items.length; i < h; i++)
 											{

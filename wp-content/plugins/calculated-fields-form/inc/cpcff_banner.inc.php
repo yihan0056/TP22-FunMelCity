@@ -1,56 +1,55 @@
 <?php
 global $codepeople_promote_banner_plugins; // Global variable shared by multiple plugins.
-if(empty($codepeople_promote_banner_plugins)) $codepeople_promote_banner_plugins = array();
-$codepeople_promote_banner_plugins[ 'codepeople-calculated-fields-form' ] = array(
+if ( empty( $codepeople_promote_banner_plugins ) ) {
+	$codepeople_promote_banner_plugins = array();
+}
+$codepeople_promote_banner_plugins['codepeople-calculated-fields-form'] = array(
 	'plugin_name' => 'Calculated Fields Form',
-	'plugin_url'  => 'https://wordpress.org/support/plugin/calculated-fields-form/reviews/#new-post'
+	'plugin_url'  => 'https://wordpress.org/support/plugin/calculated-fields-form/reviews/#new-post',
 );
 
-if(!function_exists( 'codepeople_add_promote_banner' ))
-{
-	function codepeople_add_promote_banner($wp_admin_bar)
-	{
+if ( ! function_exists( 'codepeople_add_promote_banner' ) ) {
+	function codepeople_add_promote_banner( $wp_admin_bar ) {
 		global $codepeople_promote_banner_plugins;
-		if(
-			empty($codepeople_promote_banner_plugins) ||
-			!is_admin() ||
-			!current_user_can( 'manage_options' )
-		) return;
+		if (
+			empty( $codepeople_promote_banner_plugins ) ||
+			! is_admin() ||
+			! current_user_can( 'manage_options' )
+		) {
+			return;
+		}
 
 		$screen = get_current_screen();
-		if ( $screen->post_type == 'post' || $screen->post_type == 'page' ) return;
+		if ( 'post' == $screen->post_type || 'page' == $screen->post_type ) {
+			return;
+		}
 
 		// Take action over the banner
-		if(
-			!empty($_POST['codepeople_promote_banner_plugin']) &&
-			!empty($codepeople_promote_banner_plugins[$_POST['codepeople_promote_banner_plugin']])
-		)
-		{
-			set_transient( 'codepeople_promote_banner_'.$_POST['codepeople_promote_banner_plugin'], -1, 0);
-			if(
-				!empty($_POST['codepeople_promote_banner_action']) &&
-				$_POST['codepeople_promote_banner_action'] == 'set-review' &&
-				!empty($codepeople_promote_banner_plugins[$_POST['codepeople_promote_banner_plugin']]['plugin_url'])
-			)
-			{
-				print '<script>document.location.href="'.str_replace('&amp;','&',esc_js($codepeople_promote_banner_plugins[$_POST['codepeople_promote_banner_plugin']]['plugin_url'])).'";</script>';
+		if ( ! empty( $_POST['codepeople_promote_banner_plugin'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification
+			$_codepeople_promote_banner_plugin = sanitize_text_field( wp_unslash( $_POST['codepeople_promote_banner_plugin'] ) ); // phpcs:ignore WordPress.Security.NonceVerification
+			if ( ! empty( $codepeople_promote_banner_plugins[ $_codepeople_promote_banner_plugin ] ) ) {
+				set_transient( 'codepeople_promote_banner_' . $_codepeople_promote_banner_plugin, -1, 0 );
+				if (
+					! empty( $_POST['codepeople_promote_banner_action'] ) && // phpcs:ignore WordPress.Security.NonceVerification
+					'set-review' == $_POST['codepeople_promote_banner_action'] && // phpcs:ignore WordPress.Security.NonceVerification
+					! empty( $codepeople_promote_banner_plugins[ $_codepeople_promote_banner_plugin ]['plugin_url'] )
+				) {
+					print '<script>document.location.href="' . esc_url( $codepeople_promote_banner_plugins[ $_codepeople_promote_banner_plugin ]['plugin_url'] ) . '";</script>';
+				}
 			}
 		}
 
-		$minimum_days = 86400*7;
-		$now = time();
+		$minimum_days = 86400 * 7;
+		$now          = time();
 
-		foreach($codepeople_promote_banner_plugins as $plugin_slug => $plugin_data )
-		{
-			$value = get_transient( 'codepeople_promote_banner_'.$plugin_slug );
-			if( $value === false )
-			{
+		foreach ( $codepeople_promote_banner_plugins as $plugin_slug => $plugin_data ) {
+			$value = get_transient( 'codepeople_promote_banner_' . $plugin_slug );
+			if ( false === $value ) {
 				$value = $now;
-				set_transient( 'codepeople_promote_banner_'.$plugin_slug, $value, 0 );
+				set_transient( 'codepeople_promote_banner_' . $plugin_slug, $value, 0 );
 			}
 
-			if($minimum_days <= abs($now-$value) && 0<$value*1)
-			{
+			if ( $minimum_days <= abs( $now - $value ) && 0 < $value * 1 ) {
 				?>
 				<style>
 					#codepeople-review-banner{width:calc( 100% - 20px );width:-webkit-calc( 100% - 20px );width:-moz-calc( 100% - 20px );width:-o-calc( 100% - 20px );border:10px solid #1582AB;background:#FFF;display:table;}
@@ -78,17 +77,17 @@ if(!function_exists( 'codepeople_add_promote_banner' ))
 					</div>
 					<div class="codepeople-review-banner-content">
 						<div class="codepeople-review-banner-text">
-							<p><strong>Want to help to the development of the "<?php print $plugin_data[ 'plugin_name' ]; ?>" plugin?</strong> The main features of this plugin are provided free of charge. We need your help to continue developing it and adding new features. If you want to help with the development please <span style="color:#1582AB;font-weight:bold;">add a review to support it</span>. Thank you!</p>
+							<p><strong>Want to help to the development of the "<?php print esc_html( $plugin_data['plugin_name'] ); ?>" plugin?</strong> The main features of this plugin are provided free of charge. We need your help to continue developing it and adding new features. If you want to help with the development please <span style="color:#1582AB;font-weight:bold;">add a review to support it</span>. Thank you!</p>
 						</div>
 						<div class="codepeople-review-banner-buttons">
 							<form method="post" target="_blank">
 								<button class="main-button" onclick="jQuery(this).closest('[id=\'codepeople-review-banner\']').hide();">Publish a Review</button>
-								<input type="hidden" name="codepeople_promote_banner_plugin" value="<?php echo esc_attr($plugin_slug); ?>" />
+								<input type="hidden" name="codepeople_promote_banner_plugin" value="<?php echo esc_attr( $plugin_slug ); ?>" />
 								<input type="hidden" name="codepeople_promote_banner_action" value="set-review" />
 							</form>
 							<form method="post">
 								<button class="no-thank-button">No Thanks</button>
-								<input type="hidden" name="codepeople_promote_banner_plugin" value="<?php echo esc_attr($plugin_slug); ?>" />
+								<input type="hidden" name="codepeople_promote_banner_plugin" value="<?php echo esc_attr( $plugin_slug ); ?>" />
 								<input type="hidden" name="codepeople_promote_banner_action" value="not-thanks" />
 							</form>
 							<div style="clear:both;display:block;"></div>
@@ -104,4 +103,3 @@ if(!function_exists( 'codepeople_add_promote_banner' ))
 	}
 	add_action( 'admin_bar_menu', 'codepeople_add_promote_banner' );
 } // End codepeople_promote_banner block
-?>

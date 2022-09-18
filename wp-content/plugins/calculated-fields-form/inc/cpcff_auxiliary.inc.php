@@ -8,8 +8,7 @@
  * @since 1.0.167
  */
 
-if(!class_exists('CPCFF_AUXILIARY'))
-{
+if ( ! class_exists( 'CPCFF_AUXILIARY' ) ) {
 	/**
 	 * Metaclass with miscellaneous operations.
 	 *
@@ -17,8 +16,8 @@ if(!class_exists('CPCFF_AUXILIARY'))
 	 *
 	 * @since  1.0.167
 	 */
-	class CPCFF_AUXILIARY
-	{
+	class CPCFF_AUXILIARY {
+
 		/**
 		 * Public URL of the current blog.
 		 *
@@ -56,9 +55,10 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 *
 		 * @return int.
 		 */
-		public static function blog_id()
-		{
-			if(empty(self::$_wp_id)) self::$_wp_id = get_current_blog_id();
+		public static function blog_id() {
+			if ( empty( self::$_wp_id ) ) {
+				self::$_wp_id = get_current_blog_id();
+			}
 			return self::$_wp_id;
 		} // End blog_id
 
@@ -70,15 +70,15 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 * @since 1.0.167
 		 * @return string.
 		 */
-		public static function site_url( $no_protocol = false )
-		{
-			if(empty(self::$_site_url))
-			{
-				$blog = self::blog_id();
-				self::$_site_url = get_home_url( $blog, '', is_ssl() ? 'https' : 'http');
+		public static function site_url( $no_protocol = false ) {
+			if ( empty( self::$_site_url ) ) {
+				$blog            = self::blog_id();
+				self::$_site_url = get_home_url( $blog, '', is_ssl() ? 'https' : 'http' );
 			}
-			$_site_url = rtrim(self::$_site_url, '/');
-			if($no_protocol) $_site_url = preg_replace('/^http(s?)\:/i', '', $_site_url);
+			$_site_url = rtrim( self::$_site_url, '/' );
+			if ( $no_protocol ) {
+				$_site_url = preg_replace( '/^http(s?)\:/i', '', $_site_url );
+			}
 			return $_site_url;
 		} // End site_url
 
@@ -90,22 +90,19 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 * @since 1.0.167
 		 * @return string.
 		 */
-		public static function wp_url()
-		{
-			if(empty(self::$_wp_url))
-			{
-				$blog = self::blog_id();
+		public static function wp_url() {
+			if ( empty( self::$_wp_url ) ) {
+				$blog          = self::blog_id();
 				self::$_wp_url = get_admin_url( $blog );
 			}
-			return rtrim(self::$_wp_url, '/');
+			return rtrim( self::$_wp_url, '/' );
 		} // End wp_url
 
 		/**
 		 * Returns the form editor.
 		 */
-		public static function editor_url()
-		{
-			return self::wp_url().'/admin.php?page=cp_calculated_fields_form&_cpcff_nonce='.wp_create_nonce('cff-form-settings').'&cal=';
+		public static function editor_url() {
+			return self::wp_url() . '/admin.php?page=cp_calculated_fields_form&_cpcff_nonce=' . wp_create_nonce( 'cff-form-settings' ) . '&cal=';
 		} // End editor_url
 
 		/**
@@ -113,15 +110,18 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 *
 		 * @return string.
 		 */
-		public static function wp_current_url()
-		{
-			if(is_admin()) return self::site_url();
-            if(!empty(self::$_current_url)) return self::$_current_url;
+		public static function wp_current_url() {
+			if ( is_admin() ) {
+				return self::site_url();
+			}
+			if ( ! empty( self::$_current_url ) ) {
+				return self::$_current_url;
+			}
 
-            $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+			$protocol = ( ( ! empty( $_SERVER['HTTPS'] ) && 'off' != $_SERVER['HTTPS'] ) || ( ! empty( $_SERVER['SERVER_PORT'] ) && 443 == $_SERVER['SERVER_PORT'] ) ) ? 'https://' : 'http://';
 
-            self::$_current_url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-            return self::$_current_url;
+			self::$_current_url = $protocol . ( isset( $_SERVER['HTTP_HOST'] ) ? sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) : '' ) . ( isset( $_SERVER['REQUEST_URI'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '' );
+			return self::$_current_url;
 		} // End wp_current_url
 
 		/**
@@ -132,22 +132,28 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 * @params mixed $v.
 		 * @return sanitized value.
 		 */
-        public static function sanitize( $v )
-		{
-			$allowed_tags = wp_kses_allowed_html( 'post' );
+		public static function sanitize( $v ) {
+			 $allowed_tags = wp_kses_allowed_html( 'post' );
 
-            add_filter('safecss_filter_attr_allow_css', function($allow_css, $css_test_string){
-                if(preg_match('/rgb(a)?\(/i', $css_test_string)) return true;
-                return $allow_css;
-            }, 10, 2);
+			add_filter(
+				'safecss_filter_attr_allow_css',
+				function( $allow_css, $css_test_string ) {
+					if ( preg_match( '/rgb(a)?\(/i', $css_test_string ) ) {
+						return true;
+					}
+					return $allow_css;
+				},
+				10,
+				2
+			);
 
-            $v = wp_kses($v, $allowed_tags);
+			$v = wp_kses( $v, $allowed_tags );
 
 			// the str_replace is a patch to solve an issue with the data: part in signature fields
 			// that are removed by wp_kse.
 			return str_replace(
-				array('"image/svg+xml;base64','"image/png;base64'),
-				array('"data:image/svg+xml;base64','"data:image/png;base64'),
+				array( '"image/svg+xml;base64', '"image/png;base64' ),
+				array( '"data:image/svg+xml;base64', '"data:image/png;base64' ),
 				$v
 			);
 		} // End sanitize
@@ -160,10 +166,9 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 * @param string $str.
 		 * @return string.
 		 */
-		public static function clean_bom($str)
-		{
-			$bom = pack('H*','EFBBBF');
-			return preg_replace("/$bom/", '', $str);
+		public static function clean_bom( $str ) {
+			$bom = pack( 'H*', 'EFBBBF' );
+			return preg_replace( "/$bom/", '', $str );
 		} // End clean_bom
 
 		/**
@@ -174,11 +179,10 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 * @param string $str JSON string.
 		 * @return string.
 		 */
-		public static function clean_json($str)
-		{
+		public static function clean_json( $str ) {
 			return str_replace(
-				array("	", "\n", "\r"),
-				array(" ", '\n', ''),
+				array( '	', "\n", "\r" ),
+				array( ' ', '\n', '' ),
 				$str
 			);
 		} // End clean_json
@@ -188,11 +192,11 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 *
 		 * @since 1.0.281
 		 */
-		public static function clean_transients_hook()
-		{
-			add_action('cpcff_clean_transients', array('CPCFF_AUXILIARY', 'clean_transients'));
-			if (!wp_next_scheduled('cpcff_clean_transients'))
-				wp_schedule_event(time() + 5, 'daily', 'cpcff_clean_transients');
+		public static function clean_transients_hook() {
+			add_action( 'cpcff_clean_transients', array( 'CPCFF_AUXILIARY', 'clean_transients' ) );
+			if ( ! wp_next_scheduled( 'cpcff_clean_transients' ) ) {
+				wp_schedule_event( time() + 5, 'daily', 'cpcff_clean_transients' );
+			}
 		} // End clean_transients_hook
 
 		/**
@@ -200,9 +204,8 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 *
 		 * @since 1.0.281
 		 */
-		public static function clean_transients()
-		{
-			global $wpdb;
+		public static function clean_transients() {
+			 global $wpdb;
 			$table = $wpdb->options;
 
 			// get current PHP time, offset by a minute to avoid clashes with other tasks
@@ -216,7 +219,7 @@ if(!class_exists('CPCFF_AUXILIARY'))
 				where t1.option_name like '\_transient\_timeout\_%'
 				and t1.option_value < '$threshold'
 			";
-			$wpdb->query($sql);
+			$wpdb->query( $sql ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
 
 			// delete orphaned transient expirations
 			$sql = "
@@ -225,7 +228,7 @@ if(!class_exists('CPCFF_AUXILIARY'))
 				and option_value < '$threshold'
 			";
 
-			$wpdb->query($sql);
+			$wpdb->query( $sql ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
 		} // End clean_transients
 
 		/**
@@ -239,16 +242,16 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 * @param string $stripcslashes Optional. To apply a stripcslashes to the text before json_decode. Default 'unescape'.
 		 * @return mixed PHP Oject or False.
 		 */
-		public static function json_decode($str, $stripcslashes = 'unescape')
-		{
-			try
-			{
-				$str = CPCFF_AUXILIARY::clean_json( $str );
-				if( $stripcslashes == 'unescape')$str = stripcslashes( $str );
+		public static function json_decode( $str, $stripcslashes = 'unescape' ) {
+			try {
+				$str = self::clean_json( $str );
+				if ( 'unescape' == $stripcslashes ) {
+					$str = stripcslashes( $str );
+				}
 				$obj = json_decode( $str );
-			}
-			catch( Exception $err ){ self::write_log($err); }
-			return ( !empty( $obj ) ) ? $obj : false;
+			} catch ( Exception $err ) {
+				self::write_log( $err ); }
+			return ( ! empty( $obj ) ) ? $obj : false;
 		} // End unserialize
 
 		/**
@@ -262,28 +265,21 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 * @param array $array2
 		 * @return array
 		 */
-		public static function array_replace_recursive($array1, $array2)
-		{
+		public static function array_replace_recursive( $array1, $array2 ) {
 			// If the array_replace_recursive function exists, use it
-			if(function_exists('array_replace_recursive')) return array_replace_recursive($array1, $array2);
-			foreach( $array2 as $key1 => $val1 )
-			{
-				if( isset( $array1[ $key1 ] ) )
-				{
-					if( is_array( $val1 ) )
-					{
-						foreach( $val1 as $key2 => $val2)
-						{
+			if ( function_exists( 'array_replace_recursive' ) ) {
+				return array_replace_recursive( $array1, $array2 );
+			}
+			foreach ( $array2 as $key1 => $val1 ) {
+				if ( isset( $array1[ $key1 ] ) ) {
+					if ( is_array( $val1 ) ) {
+						foreach ( $val1 as $key2 => $val2 ) {
 							$array1[ $key1 ][ $key2 ] = $val2;
 						}
-					}
-					else
-					{
+					} else {
 						$array1[ $key1 ] = $val1;
 					}
-				}
-				else
-				{
+				} else {
 					$array1[ $key1 ] = $val1;
 				}
 			}
@@ -300,35 +296,25 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 * @param mixed $v array or single value.
 		 * @return mixed the array or value with the slashes stripped
 		 */
-		public static function stripcslashes_recursive( $v )
-		{
-			if(is_array($v))
-			{
-				foreach($v as $k => $s)
-				{
-					$v[$k] = self::stripcslashes_recursive($s);
+		public static function stripcslashes_recursive( $v ) {
+			if ( is_array( $v ) ) {
+				foreach ( $v as $k => $s ) {
+					$v[ $k ] = self::stripcslashes_recursive( $s );
 				}
 				return $v;
-			}
-			else
-			{
-				return stripcslashes($v);
+			} else {
+				return stripcslashes( $v );
 			}
 		} // End stripcslashes_recursive
 
-		public static function stripscript_recursive( $v )
-		{
-			if(is_array($v))
-			{
-				foreach($v as $k => $s)
-				{
-					$v[$k] = self::stripscript_recursive($s);
+		public static function stripscript_recursive( $v ) {
+			if ( is_array( $v ) ) {
+				foreach ( $v as $k => $s ) {
+					$v[ $k ] = self::stripscript_recursive( $s );
 				}
 				return $v;
-			}
-			else
-			{
-                return preg_replace(['/<\s*script\b.*\bscript\s*>/i', '/<\s*script[^>]*>/i'], '', $v);
+			} else {
+				return preg_replace( array( '/<\s*script\b.*\bscript\s*>/i', '/<\s*script[^>]*>/i' ), '', $v );
 			}
 		} // End stripscript_recursive
 
@@ -342,10 +328,9 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 *
 		 * @return bool.
 		 */
-		public static function is_crawler()
-		{
-			return (isset( $_SERVER['HTTP_USER_AGENT'] ) &&
-					preg_match( '/bot|crawl|slurp|spider/i', $_SERVER[ 'HTTP_USER_AGENT' ] ) &&
+		public static function is_crawler() {
+			return ( isset( $_SERVER['HTTP_USER_AGENT'] ) &&
+					preg_match( '/bot|crawl|slurp|spider/i', sanitize_text_field( wp_unslash( $_SERVER['HTTP_USER_AGENT'] ) ) ) &&
 					get_option( 'CP_CALCULATEDFIELDSF_EXCLUDE_CRAWLERS', false )
 				);
 		} // End is_crawler
@@ -360,13 +345,11 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 * @param string $tag the link tag.
 		 * @return string.
 		 */
-		public static function complete_link_tag( $tag )
-		{
-			if(
-				preg_match('/stylesheet/i', $tag) &&
-				!preg_match('/property\s*=/i', $tag)
-			)
-			{
+		public static function complete_link_tag( $tag ) {
+			if (
+				preg_match( '/stylesheet/i', $tag ) &&
+				! preg_match( '/property\s*=/i', $tag )
+			) {
 				return str_replace( '/>', ' property="stylesheet" />', $tag );
 			}
 			return $tag;
@@ -380,27 +363,24 @@ if(!class_exists('CPCFF_AUXILIARY'))
 		 * @param mixed $log Log message, as text, array or plain object.
 		 * @return void.
 		 */
-		public static function write_log($log)
-		{
-			try{
-				if(
-					defined('WP_DEBUG') &&
+		public static function write_log( $log ) {
+			try {
+				if (
+					defined( 'WP_DEBUG' ) &&
 					true == WP_DEBUG
-				)
-				{
-					if(
+				) {
+					if (
 						is_array( $log ) ||
 						is_object( $log )
-					)
-					{
+					) {
 						error_log( print_r( $log, true ) );
-					}
-					else
-					{
+					} else {
 						error_log( $log );
 					}
 				}
-			}catch(Exception $err){}
+			} catch ( Exception $err ) {
+				error_log( $err->getMessage() );
+			}
 		} // End write_log
 
 	} // End CPCFF_AUXILIARY

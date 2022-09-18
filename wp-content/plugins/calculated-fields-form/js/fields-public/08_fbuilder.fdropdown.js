@@ -207,6 +207,7 @@
 						e.attr('class', c);
 						if(i) e.find('select').addClass('ignore');
 						if(ipb) e.find('select').addClass('ignorepb');
+						if(i || ipb) e.hide();
                         if(!$.isArray(bk)) bk = [bk];
                         for(var j in bk)
                         {

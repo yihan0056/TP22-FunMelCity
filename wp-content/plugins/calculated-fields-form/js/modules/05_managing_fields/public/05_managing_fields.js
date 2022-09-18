@@ -180,7 +180,7 @@
             if(o.length)
             {
                 c = o.find('.pbreak:visible').attr('page');
-                $.fbuilder.goToPage({'form':o,'from':c,'to':p});
+                $.fbuilder.goToPage({'form':o,'from':c,'to':p, 'forcing' : true});
             }
         } catch(err) { if(typeof console != 'undefined') console.log(err); }
     };

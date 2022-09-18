@@ -170,6 +170,7 @@
 						e.attr('class', c);
 						if(i) e.find('input').addClass('ignore');
 						if(ipb) e.find('input').addClass('ignorepb');
+						if(i || ipb) e.hide();
                         try{ bk = JSON.parse(bk); }catch(err){}
 						this.setVal(bk, this.choicesVal.indexOf(bk) > -1);
 					}

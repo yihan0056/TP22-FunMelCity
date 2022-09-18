@@ -1,4 +1,4 @@
-	$.fbuilder['version'] = '1.1.107';
+	$.fbuilder['version'] = '1.1.113';
 	$.fbuilder['controls'] = $.fbuilder['controls'] || {};
 	$.fbuilder['forms'] = $.fbuilder['forms'] || {};
 
@@ -143,7 +143,7 @@
 
 			while(i != _to)
 			{
-				if(direction == 1 && !formDom.valid()) break;
+				if(direction == 1 && ( ! ( 'forcing' in config ) ||  config[ 'forcing' ] == false ) && !formDom.valid() ) break;
 				i += direction;
 			}
 			formObj['currentPage'] = i;

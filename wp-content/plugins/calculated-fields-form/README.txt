@@ -4,7 +4,7 @@ Donate link: http://cff.dwbooster.com
 Tags: form,quote form,contact form,form builder,calculator,calculated,quote calculator,forms,form editor,advanced forms,payment calculator,payment,recurring payment,quote,fields,calculated field,price calculator,email,form design,paypal,equation editor,formula,equation,quote calculator,post,posts,plugin,widget,admin,sidebar,images,image,page,shortcode,products form,woocommerce,addons,layout,session,post,cookie,get,webhook,Dropbox,pdf,language
 Requires at least: 3.0.5
 Tested up to: 6.0
-Stable tag: 1.1.107
+Stable tag: 1.1.113
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -965,6 +965,37 @@ A: Please, follow the steps below:
 
 == Changelog ==
 
+= 1.1.113 =
+
+* Modifies the setChoices method in radio buttons, checkbox, and dropdown fields.
+* Modifies the GOTOPAGE operation.
+
+= 1.1.112 =
+
+* Removes unnecessary characters.
+
+= 1.1.111 =
+
+* Improves the plugin code.
+* Includes additional forms to the forms library.
+
+= 1.1.110 =
+
+* Fixes a minor issue with Upload File and Summary fields settigns.
+
+= 1.1.109 =
+
+* Increase the number of template forms.
+* Modifies the library popup.
+* Modifies the forms generator.
+* Fixes a minor issue in the button control.
+* Makes the form name a required attribute.
+* Modifies the currentdate and submissiondate tags in the notification emails and thank you pages to accept a separator symbol between date components (Professional, Developer, and Platinum versions).
+
+= 1.1.108 =
+
+* Implements the create form from the templates library module.
+
 = 1.1.107 =
 
 * Allows the associate audio tutorials to the form fields.
@@ -984,37 +1015,3 @@ A: Please, follow the steps below:
 
 * Fixes a conflict with Breeze WordPress Cache plugin.
 * Modifies the results list shortcode to allow displaying submissions of multiple forms in the same shortcode (Professional, Developer, and Platinum versions).
-
-= 1.1.103 =
-
-* Includes new modifications in the radio buttons and radio buttons ds.
-* Implements additional verifications to prevent undesired actions.
-
-= 1.1.102 =
-
-* Fixes an issue with the radio buttons when switching on/off is enabled.
-
-= 1.1.101 =
-
-* Modifies the Textarea control to preserve the changes of line accessing the raw field's value.
-* Fixes an issue in the calculated fields formatted automatically with manually entered values.
-* Removes the extra columns and rows in the generated CSV files from the Messages section (Professional, Developer, and Platinum versions).
-* Implements the new control "HTML Content DS" to display plain HTML content read from an external data source (Developer and Platinum versions).
-* Modifies the "CFF - WooCommerce" add-on to support the "WooCommerce One Page Checkout" plugin (Developer and Platinum versions).
-
-= 1.1.100 =
-
-* Removes the h2 and span tags for form title and description if they are empty.
-* Fixes an issue with the collapsible fieldsets when legends are empty.
-* Modifies the CSV Generator add-on to allow including the URL to the CSV files in the notification emails (Platinum version).
-* Implements the Private Apps integration in the HubSpot add-on (Platinum version).
-
-= 1.1.99 =
-
-* Fixes an issue with the Select2 integration to display the choices texts instead of their values.
-
-= 1.1.98 =
-
-* Improves the feedback module that alerts to errors in the database.
-* Improves the CSV data source (Developer and Platinum versions).
-* Implements support for Google Analytics 4 (Platinum version).

@@ -24,7 +24,7 @@
 				{
 					var evt = [
 							{s:"#sFields",e:"change keyup", l:"fields", x:1},
-							{s:"#sExcludeEmpty",e:"click", l:"exclude_empty", f:function(el){return el.is(':checked');}, x:1},
+							{s:"#sExcludeEmpty",e:"click", l:"exclude_empty", f:function(el){return el.is(':checked');}},
 							{s:"#sTitleClassname",e:"change keyup", l:"titleClassname", x:1},
 							{s:"#sValueClassname",e:"change keyup", l:"valueClassname", x:1},
 							{s:"#sPlusBtn",e:"click", l:"fields",f:function(){

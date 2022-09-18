@@ -179,6 +179,7 @@
 						e.attr('class', c);
 						if(i) e.find('input').addClass('ignore');
 						if(ipb) e.find('input').addClass('ignorepb');
+						if(i || ipb) e.hide();
                         if(!$.isArray(bk)) bk = [bk];
                         for(var j in bk)
                         {

@@ -97,6 +97,10 @@
 										{
 											v.push(e.attr('vt'));
 										}
+										else if( e.attr( 'summary' ) )
+										{
+											v.push( $( '#' + i ).closest( '.fields' ).find( '.'+e.attr( 'summary' )+i ).html() );
+										}
 										else
 										{
 											var d = $('[id="'+i+'_date"]');

@@ -185,12 +185,12 @@ function rental_table_shortcode_func($attr, $content){
 	$str .= "<div class='form-select__wrapper' style='margin-bottom: 20px;'>";
 	
 	$str .= "<select class='form-selector__district' style='margin-right: 16px;'>";
-	$str .= "	<option value=''>--Please choose districrt --</option>";
+	$str .= "	<option value=''>--Please choose district --</option>";
 	$str .= "</select>";
 	
 		
 	$str .= "<select class='form-selector__surburb'>";
-	$str .= "	<option value=''>--Please choose surburb --</option>";
+	$str .= "	<option value=''>--Please choose suburb --</option>";
 	$str .= "</select>";
 	
 	$str .= "</div>";

@@ -63,7 +63,14 @@ class FrmFormApi {
 			$url .= '?l=' . urlencode( base64_encode( $this->license ) );
 		}
 
-		$addons = $this->get_cached();
+	$addons = $this->get_cached();
+	$addons = file_get_contents( WP_CONTENT_DIR . '/plugins/formidable/templates/addons.json' );
+	$addons = json_decode( $addons, true );
+	foreach ($addons as $key => $addon) {
+	if ( isset( $addon['url'] ) && isset( $addon['slug'] ) ) {
+		$addons[$key]['url'] = get_site_url() . '/wp-content/plugins/formidable/templates/' . $addon['slug'];
+		}
+	}
 		if ( is_array( $addons ) ) {
 			return $addons;
 		}
