@@ -1,0 +1,81 @@
+.backgroud{
+    
+    width: 950px;
+    height: 100%;
+   background-color: aqua;
+   margin:auto;
+   background-image: url("resourse/back/background\ pic.jpg");
+   background-repeat: no-repeat;
+   background-position: center,400px;
+   background-size: 100% 100%;
+   border-radius: 10%;
+
+}
+ 
+
+.startbutton{
+    position: relative;
+    top: 350PX;
+    float: right;
+    animation-name: likes;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes likes {
+    0%{
+        transform: scale(0.6);
+    }
+    25%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(0.45);
+    }
+    75%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(0.6);
+    }
+}
+
+.word{
+    color: rgba(0, 0, 0, 0.992);
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: white;
+    float: right;
+    text-align: right;
+}
+
+
+.music{
+	position:fixed;
+	top:50vh;
+}
+.bgm_text{
+	color:#F5DEB3;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+.bgm_btn>span{ 
+	cursor:pointer;
+	display:block;
+	margin-bottom:10px;
+	color:#FFA500;
+}
+
+.bgm_btn>span:hover{
+	color:white;
+}
+#bgm{
+	display:none;
+}

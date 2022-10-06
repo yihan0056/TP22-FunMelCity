@@ -1,0 +1,359 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>弹出层</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="findjob.css">
+    <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .black_overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            width: 80%;
+            height: 60%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+        .white_content_small {
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            width: 40%;
+            height: 50%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+
+        }
+
+        .Button1 {
+            z-index: -1;
+        }
+
+        .table {
+            border: black 1px solid;
+        }
+
+        .tr {
+            border-collapse: collapse;
+            border: 1px solid;
+        }
+
+        .td {
+            border: black 1px solid;
+        }
+
+        .closebuton {
+            position: relative;
+            top: 5px;
+            right: 5px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .insideword {
+            right: 1px;
+            width: 98%;
+            color: black;
+            font-size: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 400;
+            border-width: 4px;
+            text-align: left;
+            padding-right: 2px;
+
+        }
+
+        .picture {
+            position: absolute;
+            top: 350px;
+            left: 1009px;
+            width: 300px;
+            height: 200px;
+            border-color: black;
+            box-sizing: 1px;
+
+        }
+
+        .backairport1 {
+            width: 350px;
+            height: 40px;
+            text-decoration: none;
+            position: relative;
+            top: 20px;
+            right: 110px;
+            color: black;
+            font-size: 30px;
+            font-family: Arial;
+            float: right;
+            background-color: rgb(219, 220, 220)
+        }
+    </style>
+    <script type="text/javascript">
+        //弹出隐藏层
+        function ShowDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv = document.getElementById(bg_div);
+            bgdiv.style.width = document.body.scrollWidth;  // bgdiv.style.height = $(document).height();
+
+            $("#" + bg_div).height($(document).height());
+        };
+        //关闭弹出层
+        function CloseDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        };
+    </script>
+</head>
+
+<body>
+    <div class="backgroud">
+        <button class="need">
+            Part Time Jobs
+
+
+        </button>
+
+
+        <a href="./findjob.html" class="backairport1">
+
+            Go Back to the Job Page
+
+
+        </a>
+        <a href="./airport.html" class="backs">
+            <img src="resourse\airport\l.png" class="pic" ">
+                
+        
+            </a>
+           
+            <div class=" normal">
+            <br>
+            <a href="javascript:ShowDiv('MyDiv','fade')" style="text-decoration: none;color: black;">
+                <li style="text-decoration: none;color: black;margin-bottom: 60px;">
+                    Tutor
+
+                </li>
+            </a>
+            <a href="javascript:ShowDiv('MyDiv2','fade')" style="text-decoration: none;color: black;">
+                <li style="text-decoration: none;color: black;margin-bottom: 60px;">
+                    Waiter/Waitress
+
+                </li>
+            </a>
+
+            <a href="javascript:ShowDiv('MyDiv3','fade')" style="text-decoration: none;color: black;">
+                <li style="text-decoration: none;color: black;margin-bottom: 40px;">
+                    Cashier
+                </li>
+            </a>
+            <a href="javascript:ShowDiv('MyDiv4','fade')" style="text-decoration: none;color: black;">
+                <li style="text-decoration: none;color: black;margin-bottom: 40px;">
+                    Delivery Driver
+
+                </li>
+            </a>
+            <a href="javascript:ShowDiv('MyDiv5','fade')" style="text-decoration: none;color: black;">
+                <li style="text-decoration: none;color: black;margin-bottom: 40px;">
+                    Retail Sales Assistant
+
+                </li>
+            </a>
+            <br>
+    </div>
+
+    <a class="picture">
+        <img class="taxi" src="resourse/findjob/work guide.jpg" />
+    </a>
+
+
+    </div>
+
+    <!--弹出层时背景层DIV-->
+    <div id="fade" class="black_overlay">
+    </div>
+
+    <div id="MyDiv" class="white_content">
+
+        <div style="text-align: right; cursor: default; height: 40px;">
+            <span style="font-size: 16px;" onclick="CloseDiv('MyDiv','fade')">
+                <img src="resourse\airport\close.png" class="closebuton">
+
+            </span>
+        </div>
+        <div style="font-size: 50px; position: relative; top:0px;">
+            Tutor
+
+        </div>
+        <div style="font-size: 25px; position: relative; top:0px;">
+
+            <p>
+                Perhaps you want to work part-time but don’t necessarily want to work a traditional job sitting in an
+                office
+                or standing behind a cash register. If this is the case for you, a part-time job as a tutor might be a
+                good
+                alternative.
+                <br>
+            </p>
+            <p>
+                Are you an expert in a particular subject? If so, start advertising your services and looking for
+                opportunities to work with students who are currently struggling. – $33.80 per hour
+                <br>
+            </p>
+
+        </div>
+
+
+        <br><br>
+
+
+    </div>
+    <div id="MyDiv2" class="white_content">
+        <div style="text-align: right; cursor: default; height: 40px;">
+            <span style="font-size: 16px;" onclick="CloseDiv('MyDiv2','fade')">
+                <img src="resourse\airport\close.png" class="closebuton">
+            </span>
+            <div class="insideword">
+                <p style="font-size: 50px;position: relative; top:0px;">
+                    Waiter/Waitress
+                    <br>
+                </p>
+                <div style="font-size: 25px;position: relative; top:0px;">
+                    <p>
+                        Waiters and waitresses are essential staff members at restaurants of all kinds. They take
+                        orders,
+                        deliver food and drinks to people’s tables, and make sure that customers have a good dining
+                        experience.
+                        <br>
+                    </p>
+                    <p>
+                        A job as a waiter or waitress is often quite busy and requires you to be on your feet for hours
+                        at a
+                        time. However, it’s great for those who prefer a fast-paced environment. – $29.03 per hour
+                        <br>
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="MyDiv3" class="white_content">
+        <div style="text-align: right; cursor: default; height: 40px;">
+            <span style="font-size: 16px;" onclick="CloseDiv('MyDiv3','fade')">
+                <img src="resourse\airport\close.png" class="closebuton">
+            </span>
+            <div class="insideword">
+                <p style="font-size: 50px;margin-bottom: 60px">
+                    Cashier
+                    <br>
+                </p>
+                <div style="font-size: 25px;position: relative; top:0px;">
+                    <p>
+                        Cashiers work in restaurants, retail shops, grocery stores, and a variety of other businesses.
+                        They
+                        ring up people’s purchases, answer questions, and help customers have a good experience.
+                        <br>
+                    </p>
+                    <p>
+                        A cashier spends a lot of time on their feet, so you need to have enough endurance to be able to
+                        handle this. You must have good customer service skills, too. – $24.55 per hour<br>
+                    </p>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="MyDiv4" class="white_content">
+        <div style="text-align: right; cursor: default; height: 40px;">
+            <span style="font-size: 16px;" onclick="CloseDiv('MyDiv4','fade')">
+                <img src="resourse\airport\close.png" class="closebuton">
+            </span>
+            <div class="insideword">
+                <p style="font-size: 50px;margin-bottom: 60px">
+                    Delivery Driver<br>
+                </p>
+                <div style="font-size: 25px;position: relative; top:0px;">
+                    <p>
+                        If you’re interested in a part-time job that allows you to drive and spend plenty of time alone,
+                        another option to consider is a job as a delivery driver.
+                        <br>
+                    </p>
+                    <p>
+                        Delivery drivers often work for restaurants and are responsible for bringing food orders to
+                        customers in a timely manner. Some businesses provide a vehicle for you to use, but others
+                        require you to have your own reliable vehicle. – $27.43 per hour
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="MyDiv5" class="white_content">
+        <div style="text-align: right; cursor: default; height: 40px;">
+            <span style="font-size: 16px;" onclick="CloseDiv('MyDiv5','fade')">
+                <img src="resourse\airport\close.png" class="closebuton">
+            </span>
+            <div class="insideword">
+                <p style="font-size: 50px;margin-bottom: 60px">
+                    Retail Sales Assistant<br>
+                </p>
+                <div style="font-size: 25px;position: relative; top:0px;">
+                    <p>
+                        As a retail sales assistant, you will work in a retail store (such as a clothing store) and help
+                        customers find items, make recommendations, and create a pleasant shopping environment. You will
+                        likely help with tasks like dressing mannequins or setting up sales displays, too.
+                        <br>
+                    </p>
+                    <p>
+                        This is a very active job, so it’s great for people who want to stay on their feet. It provides
+                        a lot of opportunities for you to work on your customer service skills as well. – $21.13 per
+                        hour
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

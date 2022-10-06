@@ -1,0 +1,294 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>弹出层</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="airport copy.css">
+    <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .black_overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+        .white_content2 {
+            display: none;
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            width: 80%;
+            height: 70%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+        .white_content_small {
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            width: 40%;
+            height: 50%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+
+        }
+
+        .Button1 {
+            z-index: -1;
+        }
+
+        .table {
+            border: black 1px solid;
+        }
+
+        .tr {
+            border-collapse: collapse;
+            border: 1px solid;
+        }
+
+        .td {
+            border: black 1px solid;
+        }
+
+        .closebuton {
+           
+            width: 60px;
+            height: 60px;
+        }
+
+        .insideword {
+            right: 1px;
+            width: 98%;
+            color: black;
+            font-size: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 400;
+            border-width: 4px;
+            text-align: left;
+            padding-right: 2px;
+
+        }
+    </style>
+    <script type="text/javascript">
+        //弹出隐藏层
+        function ShowDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv = document.getElementById(bg_div);
+            bgdiv.style.width = document.body.scrollWidth;  // bgdiv.style.height = $(document).height();
+
+            $("#" + bg_div).height($(document).height());
+        };
+        //关闭弹出层
+        function CloseDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        };
+    </script>
+</head>
+
+<body>
+    <div class="backgroud">
+        <button class="need">
+            Get a SIM Card
+
+        </button>
+
+
+        <a href="./airport.html" class="backairport">
+
+            Go Back to the airport
+
+
+        </a>
+        <a href="./airport.html" class="backs">
+            <img src="resourse\airport\l.png" class="pic" ">
+                
+        
+            </a>
+           
+            <div class=" normal2">
+            <div style="margin:30px ;">
+                <br>
+                <a href="javascript:ShowDiv('MyDiv','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 60px;">
+                        SIM Card Shop
+                    </li>
+                </a>
+                <a href="javascript:ShowDiv('MyDiv2','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 60px;">
+                        Buy in City or at the Airport?
+                    </li>
+                </a>
+
+                <a href="javascript:ShowDiv('MyDiv3','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 40px;">
+                        Need ID to buy a SIM card?
+                    </li>
+                </a>
+
+            </div>
+
+            <br>
+    </div>
+
+    <a class="airporttaxi">
+        <img class="taxi" src="resourse/airport/sim.png" />
+    </a>
+
+
+    </div>
+
+    <!--弹出层时背景层DIV-->
+    <div id="fade" class="black_overlay">
+    </div>
+
+    <div id="MyDiv" class="white_content">
+        <span style="font-size: 16px; float: right;" onclick="CloseDiv('MyDiv','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="margin: 0px 20px ;">
+            <div style="text-align: right; height: 40px; float: right;">
+                
+            </div>
+            <div style="margin-top: 20px;font-size: 25px">
+                At <span style="font-size: 35px;font-weight: 900;">Terminal 2, International Arrivals,</span>  there are 2 SIM card shops:
+            </div>
+
+            <img src=" resourse\airport\SIM CARD SHOP.jpg" height="350px" style="padding-left:25%;margin-top: 20px;margin-bottom: 0px;">
+            <br><br>
+            <table class="mytable" style="border-collapse: collapse;border:1px solid">
+                <tr style="border-collapse: collapse;border:1px solid;font-weight: 900;">
+                    <td style="border-collapse: collapse;border:1px solid">
+                        Shop
+                    </td>
+                    <td style="border-collapse: collapse;border:1px solid">
+                        Location
+                    </td>
+                    <td style="border-collapse: collapse;border:1px solid">
+                        SIM Cards Available
+
+                    </td>
+                </tr>
+                <tr style="border-collapse: collapse;border:1px solid">
+                    <td style="border-collapse: collapse;border:1px solid">
+                        Optus
+                        Open 6:30am to Midnight
+
+                    </td>
+                    <td style="border-collapse: collapse;border:1px solid">
+                        International Arrivals. Facing the exit from customs, slightly to the right. See map above.
+                    </td>
+                    <td style="border-collapse: collapse;border:1px solid">
+                        Optus Epic, from $10 AUD
+                    </td>
+                </tr>
+                <tr style="border-collapse: collapse;border:1px solid">
+                    <td style="border-collapse: collapse;border:1px solid">
+                        Welcome to Melbourne shop
+                    </td>
+                    <td style="border-collapse: collapse;border:1px solid">
+                        International Arrivals. To the right as you come out of customs. See map above
+                    </td>
+                    <td style="border-collapse: collapse;border:1px solid">
+                        Telstra Pre-Paid Max, from $10 AUD
+                        Vodafone, from $20
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <div id="MyDiv2" class="white_content2">
+        <span style="font-size: 16px;float: right;" onclick="CloseDiv('MyDiv2','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="text-align: right; cursor: default; height: 40px; margin: 20px;">
+           
+            <div class="insideword">
+                <p style="font-size: 50px;margin-bottom: 60px;font-weight: 900;">
+                    Buy in City or at the airport? <br>
+                </p>
+                <p>
+                    If you can afford 15 minutes in queue, you can buy the SIM card at the airport.<br>
+                </p>
+                <p>
+                    And the Optus option is a good choice.<br>
+                </p><br>
+                <p>
+                    If you are in a rush, buy a SIM card in the city at a convenience store.<br>
+                </p><br>
+                <p>
+                    There is often a long queue at Optus, however, there is a cafe nearby, you can take a coffee while
+                    you are waiting.<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="MyDiv3" class="white_content">
+        <span style="font-size: 16px;  float: right;" onclick="CloseDiv('MyDiv3','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="text-align: right; cursor: default; height: 40px; margin-left: 20px; margin-right: 20px;">
+            
+            <div class="insideword">
+                <p style="font-size: 50px;margin-bottom: 60px;font-weight: 900;">
+                    Need ID to buy a SIM card? <br>
+                </p>
+                <p style="line-height:30px">
+                    Yes, identification is required to buy a SIM card at Melbourne Airport and anywhere else in
+                    Australia.<br>
+                </p><br>
+                <p style="line-height:30px">
+                    A passport is sufficient, and the address you’re staying at will also need to be supplied. An
+                    activation process may be required for the SIM. The shop that sells the SIM card can do it, or you
+                    can do it on your phone once the SIM is inserted - different SIM cards support different activation
+                    methods, it’s easy but if you’re not sure ask when buying.<br>
+                </p><br>
+                <p style="line-height:30px">
+                    Recording identification is done either when you buy the SIM card, or when you activate. If you’re
+                    not sure about the process, buy from a shop where they can help you activate the SIM card.<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

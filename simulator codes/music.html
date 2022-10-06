@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body onclick="play()">
+  <audio src="resourse\music\background music.mp3" controls loop id="music"></audio>
+  <button onclick="play()">
+    dddddddddd
+  </button>
+  <script>
+    //封装函数让谷歌浏览器自动播放
+    function play() {
+      var music = document.getElementById("music"); 　　　　//判断如果音乐停止播放中，就让他播放。。。
+      if (music.paused) { 
+        music.paused = false;
+        music.play(); 
+      }
+    }　　　//调用函数
+    setInterval(play(), 1);
+  </script>
+</body>
+
+</html>
