@@ -1,4 +1,4 @@
-	$.fbuilder['version'] = '1.1.113';
+	$.fbuilder['version'] = '1.1.118';
 	$.fbuilder['controls'] = $.fbuilder['controls'] || {};
 	$.fbuilder['forms'] = $.fbuilder['forms'] || {};
 
@@ -813,4 +813,22 @@
 
 	$(window).on('load', function(){
 		$.fbuilder.manageHistory(true);
+	});
+
+	$(document).on('click', '#fbuilder .cff-spinner-down,#fbuilder .cff-spinner-up', function(){
+		var u = $(this).hasClass('cff-spinner-up'),
+			e = $(this)[u ? 'prev' : 'next']('input'),
+			o, s, m, v;
+
+		if(e.length) {
+			o = getField(e.attr('id'));
+			s = e.attr('step') || 1;
+			m = e.attr(u ? 'max' : 'min');
+			v = o.val();
+			if(e.hasClass('percent')){ v = PREC(v*100, 4)*1; }
+			if(u) v += s;
+			else v -= s;
+			if(m) v = u ? MIN(v,m) : MAX(v,m);
+			o.setVal(v);
+		}
 	});

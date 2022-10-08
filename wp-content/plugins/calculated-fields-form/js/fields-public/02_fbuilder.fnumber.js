@@ -10,6 +10,7 @@
 			required:false,
 			readonly:false,
             numberpad:false,
+			spinner:false,
 			size:"small",
 			thousandSeparator:"",
 			decimalSymbol:".",
@@ -92,7 +93,11 @@
                     if(this.dformat == 'digits') $(document).on('keydown', '#'+this.name, function(evt){if(/^[\-,\+,e,\.,\,]$/i.test(evt.key)){evt.preventDefault(); return false;}});
 
                     this.predefined = this._getAttr('predefined');
-					return '<div class="fields '+cff_esc_attr(this.csslayout)+' '+this.name+' cff-number-field" id="field'+this.form_identifier+'-'+this.index+'"><label for="'+this.name+'">'+this.title+''+((this.required)?"<span class='r'>*</span>":"")+'</label><div class="dfield"><input '+((this.numberpad) ? 'inputmode="decimal"' : '')+' aria-label="'+cff_esc_attr(this.title)+'" id="'+this.name+'" name="'+this.name+'" '+((!/^\s*$/.test(this.min)) ? 'min="'+cff_esc_attr($.fbuilder.parseVal(this._getAttr('min'), this.thousandSeparator, this.decimalSymbol))+'" ' : '')+((!/^\s*$/.test(this.max)) ? ' max="'+cff_esc_attr($.fbuilder.parseVal(this._getAttr('max'), this.thousandSeparator, this.decimalSymbol))+'" ' : '')+' class="field '+this.dformat+((this.dformat == 'percent') ? ' number' : '')+' '+this.size+((this.required)?" required":"")+'" type="'+_type+'" value="'+cff_esc_attr((this.formatDynamically) ? this.getFormattedValue(this.predefined) : this.predefined)+'" '+((this.readonly)?'readonly':'')+' /><span class="uh">'+this.userhelp+'</span></div><div class="clearer"></div></div>';
+					return '<div class="fields '+cff_esc_attr(this.csslayout)+' '+(this.spinner ? 'cff-spinner ' : '')+this.name+' cff-number-field" id="field'+this.form_identifier+'-'+this.index+'"><label for="'+this.name+'">'+this.title+''+((this.required)?"<span class='r'>*</span>":"")+'</label><div class="dfield">'+
+					(this.spinner ? '<div class="cff-spinner-components-container '+this.size+'"><button type="button" class="cff-spinner-down">-</button>' : '')+
+					'<input '+((this.numberpad) ? 'inputmode="decimal"' : '')+' aria-label="'+cff_esc_attr(this.title)+'" id="'+this.name+'" name="'+this.name+'" '+((!/^\s*$/.test(this.min)) ? 'min="'+cff_esc_attr($.fbuilder.parseVal(this._getAttr('min'), this.thousandSeparator, this.decimalSymbol))+'" ' : '')+((!/^\s*$/.test(this.max)) ? ' max="'+cff_esc_attr($.fbuilder.parseVal(this._getAttr('max'), this.thousandSeparator, this.decimalSymbol))+'" ' : '')+' class="field '+this.dformat+((this.dformat == 'percent') ? ' number' : '')+' '+(this.spinner ? 'large' : this.size)+((this.required)?" required":"")+'" type="'+_type+'" value="'+cff_esc_attr((this.formatDynamically) ? this.getFormattedValue(this.predefined) : this.predefined)+'" '+((this.readonly)?'readonly':'')+' />'+
+					(this.spinner ? '<button type="button" class="cff-spinner-up">+</button></div>' : '')+
+					'<span class="uh">'+this.userhelp+'</span></div><div class="clearer"></div></div>';
 				},
 			after_show:function()
 				{

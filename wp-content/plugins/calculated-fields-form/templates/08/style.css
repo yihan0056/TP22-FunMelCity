@@ -117,6 +117,8 @@
     border-color: #D9FFA9;
 }
 
+.cp_cff_dark_notebook .cff-spinner .cff-spinner-down,
+.cp_cff_dark_notebook .cff-spinner .cff-spinner-up,
 .cp_cff_dark_notebook #fbuilder .pbSubmit,
 .cp_cff_dark_notebook #fbuilder .pbreak .pbPrevious,
 .cp_cff_dark_notebook #fbuilder .pbreak .pbNext,

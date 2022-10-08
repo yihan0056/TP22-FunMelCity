@@ -140,22 +140,62 @@ fbuilderjQuery[ 'fbuilder' ][ 'modules' ][ 'default' ] = {
 		{
 			window.SUM = window.sum = function ()
 			{
-				var r = 0, t;
-				for(var i in arguments)
-				{
-					if(Array.isArray(arguments[i]))
-						r += SUM.apply(this,arguments[i]);
-					else if(jQuery.isPlainObject(arguments[i]))
-						r += SUM.apply(this,Object.values(arguments[i]));
-					else
+				var r = 0, l = arguments.length, t, callback = function(x){return x;};
+				if(l) {
+					if(typeof arguments[l-1] == 'function') {
+						callback = arguments[l-1];
+						l -= 1;
+					}
+					for(var i=0; i < l; i++)
 					{
-						t = arguments[i]*1;
-						if(!isNaN(t)) r += t;
+						if(Array.isArray(arguments[i]))
+							r += SUM.apply(this,arguments[i].concat(callback));
+						else if(jQuery.isPlainObject(arguments[i]))
+							r += SUM.apply(this,Object.values(arguments[i]).concat(callback));
+						else
+						{
+							t = arguments[i]*1;
+							if(!isNaN(t))
+							{
+								t = callback(t);
+								if(!isNaN(t)) r += t;
+							}
+
+						}
 					}
 				}
 				return r;
 			};
 		} // End if window.SUM
+
+		if(window.SIGMA == undefined)
+		{
+			window.SIGMA = window.sigma = function ()
+			{
+				var r = 0,
+					l = arguments.length,
+					n,m,callback,t;
+				if(l == 3) {
+
+					n = parseInt(arguments[0]);
+					m = parseInt(arguments[1]);
+					callback = arguments[2];
+
+					if(
+						!isNaN(n) &&
+						!isNaN(m) &&
+						typeof callback == 'function'
+					) {
+
+						for(var i=n; i<=m; i++) {
+							t = callback(i);
+							if(!isNaN(t)) r += t;
+						}
+					}
+				}
+				return r;
+			};
+		} // End if window.SIGMA
 
 		if(window.CONCATENATE == undefined)
 		{

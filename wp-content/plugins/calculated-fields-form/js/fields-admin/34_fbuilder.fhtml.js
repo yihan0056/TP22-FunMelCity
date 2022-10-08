@@ -39,8 +39,10 @@
 							htmlEditorSettings['htmlhint']['spec-char-escape'] = false;
 							htmlEditorSettings['htmlhint']['alt-require'] = false;
 							htmlEditorSettings['htmlhint']['tag-pair'] = false;
-							editor = wp.codeEditor.initialize($('#sContent'), htmlEditorSettings);
-							editor.codemirror.on('change', function(cm){ $('#sContent').val(cm.getValue()).change();});
+							if($('#sContent').length) {
+								editor = wp.codeEditor.initialize($('#sContent'), htmlEditorSettings);
+								editor.codemirror.on('change', function(cm){ $('#sContent').val(cm.getValue()).change();});
+							}
 
 							$('.cff-editor-extend-shrink').on('click', function(){$(this).closest('.cff-editor-container').toggleClass('fullscreen');});
 

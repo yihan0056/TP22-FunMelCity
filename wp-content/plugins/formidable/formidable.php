@@ -2,9 +2,8 @@
 /*
 Plugin Name: Formidable Forms
 Description: Quickly and easily create drag-and-drop forms
-Version: 5.4.5
+Version: 5.5.1
 Plugin URI: https://formidableforms.com/
-Secret Key: 83a5bb0e2ad5164690bc7a42ae592cf5
 Author URI: https://formidableforms.com/
 Author: Strategy11 Form Builder Team
 Text Domain: formidable
@@ -22,19 +21,6 @@ Text Domain: formidable
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 	GNU General Public License for more details.
 */
-
-add_action( 'admin_init', function() {
-	update_option( 'frmpro-credentials', [ 'license' => 'sZ5JegmG-sAYy-cdnm-67ad-SAW9A9gUx7Re' ] );
-	update_option( 'frmpro-authorized', true );
-	$plugins = apply_filters( 'frm_installed_addons', array() );
-	foreach ( $plugins as $slug => $plugin ) {
-		if ( $slug == 'formidable_pro' || $plugin->is_parent_licence ) {
-			continue;
-		}
-		update_option( $plugin->option_name . 'key', 'sZ5JegmG-sAYy-cdnm-67ad-SAW9A9gUx7Re' );
-		update_option( $plugin->option_name . 'active', 'valid' );
-	}
-});
 
 if ( ! defined( 'ABSPATH' ) ) {
 	die( 'You are not allowed to call this page directly.' );
@@ -116,5 +102,3 @@ function frm_maybe_install() {
 		set_transient( FrmWelcomeController::$option_name, FrmWelcomeController::$menu_slug, 60 );
 	}
 }
-/* Anti-Leecher Indentifier */
-/* Credited By BABIATO-FORUM */

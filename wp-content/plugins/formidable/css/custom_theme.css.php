@@ -339,6 +339,7 @@ legend.frm_hidden{
 	width:<?php echo esc_html( $defaults['auto_width'] ); ?>;
 	width:var(--auto-width)<?php echo esc_html( $important ); ?>;
 	max-width:100%;
+	background-position-y: center;
 }
 
 .with_frm_style input[disabled],
@@ -527,7 +528,8 @@ legend.frm_hidden{
 	transition: opacity 0.3s ease-in;
 }
 
-.with_frm_style .frm_description{
+.with_frm_style .frm_description,
+.with_frm_style .frm_pro_max_limit_desc{
 	clear:both;
 }
 
@@ -1222,7 +1224,10 @@ select.frm_loading_lookup{
 
 .frm_grid .frm_error,
 .frm_grid_first .frm_error,
-.frm_grid_odd .frm_error{
+.frm_grid_odd .frm_error,
+.frm_grid .frm_limit_error,
+.frm_grid_first .frm_limit_error,
+.frm_grid_odd .frm_limit_error{
 	display:none;
 }
 
@@ -1563,9 +1568,18 @@ select.frm_loading_lookup{
 	margin-bottom: 0 !important;
 }
 
-/* Fonts */
-<?php readfile( FrmAppHelper::plugin_path() . '/css/font_icons.css' ); ?>
-<?php do_action( 'frm_include_front_css', compact( 'defaults' ) ); ?>
+<?php
+FrmStylesHelper::maybe_include_font_icon_css();
+
+/**
+ * Call action so other plugins can add additional CSS.
+ *
+ * @param array $args {
+ *     @type array $defaults
+ * }
+ */
+do_action( 'frm_include_front_css', compact( 'defaults' ) );
+?>
 
 /* Responsive */
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,69 +8,488 @@
     <title>地图</title>
     <link rel="stylesheet" type="text/css" href="map.css">
     <style>
-        html,body{
+        html,
+        body {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
         }
-
     </style>
 </head>
+
 <body>
     <div class="map">
-        <div class="office"></div>
-        <a href="./airport.html" >
-            <div class="airport"></div>
-        </a>
-        
-        <a id="bankbtn"><div class="bank"></div></a>
-        <a href="./findjob.html" >
-            <div class="house">
 
+
+
+        <a id="shopbtn">
+            <div class="shop">
             </div>
         </a>
+        <a id="airbtn"">
+            <div class="airport"></div>
+        </a>
 
-        <a href="./transport.html" >
+        <a id="transportbtn">
             <div class="bus"></div>
         </a>
-       
-        
-        <div class="shoping"></div>
-        
-        <div class="shop">
-        </div>
+        <a id="findjobbtn">
+            <div class="house">
+            </div>
+        </a>
+        <a id="bankbtn">
+            <div class="bank"></div>
+        </a>
+        <a id="homebtn">
+            <div class="office"></div>
+        </a>
 
-       
+
+
     </div>
-    <div class="pic">
-        <img src="resourse\map\person.jpg" width=60px" height="60px" >
+    <div class="pic" style="z-index: 2;">
+        <img src="resourse\map\person.jpg" width=60px" height="60px">
     </div>
-<script type="text/javascript">
-    var div = document.getElementsByClassName('pic')[0];
-    
-    document.body.appendChild(div);
-    div.style.position = "absolute";
-    div.style.right =  "440px";
-    div.style.top = "240px";
+    <script type="text/javascript">
 
-    //走你按钮触发事件
-    document.getElementById('bankbtn').onclick = function(){
-        var timeId = setInterval(function(){
-           
-            div.style.top = parseInt(div.style.top) + 5  + "px";
-            if (div.style.top=='450px') {
-                clearInterval(timeId);
-            }
-            if(div.style.top=='450px'){
-                window.open('bank.html','_self');
-            }
-            
-        },50);
-       
-    }
+        var div = document.getElementsByClassName('pic')[0];
+        document.body.appendChild(div);
+        div.style.position = "absolute";
 
-  
-</script>
+        //获取返回参数
+        var params = location.search.substr(1)
+        if (params == "bank") {
+            console.log(params)
+            div.style.right = "440px";
+            div.style.top = "460px";
+        } else if (params == "shop") {
+            console.log(params)
+            div.style.right = "1100px";
+            div.style.top = "460px";
+        }else if (params == "transport") {
+            console.log("params")
+            div.style.right = "700px";
+            div.style.top = "220px";
+        }else if (params == "work") {
+            console.log("params")
+            div.style.right = "1050px";
+            div.style.top = "250px";
+        }else if (params == "home") {
+            console.log("params")
+            div.style.right = "750px";
+            div.style.top = "450px";
+        } else {
+            div.style.right = "440px";
+            div.style.top = "240px";
+        }
+
+
+
+
+
+
+        //走你按钮触发事件---开始 bank
+        document.getElementById('bankbtn').onclick = function () {
+            var top = parseInt(div.style.top);
+            var right = parseInt(div.style.right);
+            console.log(right)
+            if (top > '460') {
+                console.log("sss")
+                var timeId = setInterval(function () {
+
+                    div.style.top = parseInt(div.style.top) - 5 + "px";
+                    if (div.style.top == '460px') {
+                        clearInterval(timeId);
+                    }
+                    if (div.style.top == '460px') {
+                        sss();
+                    }
+                }, 50);
+            } else if (top < '460') {
+                console.log(top)
+                var timeId = setInterval(function () {
+
+                    div.style.top = parseInt(div.style.top) + 5 + "px";
+                    if (div.style.top == '460px') {
+                        clearInterval(timeId);
+                    }
+                    if (div.style.top == '460px') {
+                        sss();
+                    }
+                }, 50);
+            } else {
+                sss();
+            }
+            function sss() {
+                console.log("ddd")
+
+                console.log(right)
+                if (right > '440') {
+                    var timeId = setInterval(function () {
+
+                        div.style.right = parseInt(div.style.right) - 5 + "px";
+                        if (div.style.right == '440px') {
+                            clearInterval(timeId);
+                        }
+                        if (div.style.right == '440px') {
+                            window.open('bank.html', '_self');
+                        }
+                    }, 50);
+                } else if (right < '440') {
+                    var timeId = setInterval(function () {
+
+                        div.style.right = parseInt(div.style.right) + 5 + "px";
+                        if (div.style.right == '440px') {
+                            clearInterval(timeId);
+                        }
+                        if (div.style.right == '440px') {
+                            window.open('bank.html', '_self');
+                        }
+                    }, 50);
+                } else {
+                    window.open('bank.html', '_self');
+                }
+
+            }
+        }
+        //走你按钮触发事件---结束
+
+ //走你按钮触发事件---开始 airport
+ document.getElementById('airbtn').onclick = function () {
+            var top = parseInt(div.style.top);
+            var right = parseInt(div.style.right);
+            console.log(right)
+            if (top > '240') {
+                console.log("sss")
+                var timeId = setInterval(function () {
+
+                    div.style.top = parseInt(div.style.top) - 5 + "px";
+                    if (div.style.top == '240px') {
+                        clearInterval(timeId);
+                    }
+                    if (div.style.top == '240px') {
+                        sss();
+                    }
+                }, 50);
+            } else if (top < '240') {
+                console.log(top)
+                var timeId = setInterval(function () {
+
+                    div.style.top = parseInt(div.style.top) + 5 + "px";
+                    if (div.style.top == '240px') {
+                        clearInterval(timeId);
+                    }
+                    if (div.style.top == '240px') {
+                        sss();
+                    }
+                }, 50);
+            } else {
+                sss();
+            }
+            function sss() {
+                console.log("ddd")
+
+                console.log(right)
+                if (right > '440') {
+                    var timeId = setInterval(function () {
+
+                        div.style.right = parseInt(div.style.right) - 5 + "px";
+                        if (div.style.right == '440px') {
+                            clearInterval(timeId);
+                        }
+                        if (div.style.right == '440px') {
+                            window.open('airport.html', '_self');
+                        }
+                    }, 50);
+                } else if (right < '440') {
+                    var timeId = setInterval(function () {
+
+                        div.style.right = parseInt(div.style.right) + 5 + "px";
+                        if (div.style.right == '440px') {
+                            clearInterval(timeId);
+                        }
+                        if (div.style.right == '440px') {
+                            window.open('airport.html', '_self');
+                        }
+                    }, 50);
+                } else {
+                    window.open('airport.html', '_self');
+                }
+
+            }
+        }
+        //走你按钮触发事件---结束
+
+
+        
+ //走你按钮触发事件---开始 transport
+ document.getElementById('transportbtn').onclick = function () {
+            var top = parseInt(div.style.top);
+            var right = parseInt(div.style.right);
+            console.log(right)
+            if (top > '220') {
+                console.log("sss")
+                var timeId = setInterval(function () {
+
+                    div.style.top = parseInt(div.style.top) - 5 + "px";
+                    if (div.style.top == '220px') {
+                        clearInterval(timeId);
+                    }
+                    if (div.style.top == '220px') {
+                        sss();
+                    }
+                }, 50);
+            } else if (top < '220') {
+                console.log(top)
+                var timeId = setInterval(function () {
+
+                    div.style.top = parseInt(div.style.top) + 5 + "px";
+                    if (div.style.top == '220px') {
+                        clearInterval(timeId);
+                    }
+                    if (div.style.top == '220px') {
+                        sss();
+                    }
+                }, 50);
+            } else {
+                sss();
+            }
+            function sss() {
+                console.log("ddd")
+
+                console.log(right)
+                if (right > '700') {
+                    var timeId = setInterval(function () {
+
+                        div.style.right = parseInt(div.style.right) - 5 + "px";
+                        if (div.style.right == '700px') {
+                            clearInterval(timeId);
+                        }
+                        if (div.style.right == '700px') {
+                            window.open('transport.html', '_self');
+                        }
+                    }, 50);
+                } else if (right < '700') {
+                    var timeId = setInterval(function () {
+
+                        div.style.right = parseInt(div.style.right) + 5 + "px";
+                        if (div.style.right == '700px') {
+                            clearInterval(timeId);
+                        }
+                        if (div.style.right == '700px') {
+                            window.open('transport.html', '_self');
+                        }
+                    }, 50);
+                } else {
+                    window.open('transport.html', '_self');
+                }
+
+            }
+        }
+        //走你按钮触发事件---结束
+
+        //走你按钮触发事件---开始 shopping
+ document.getElementById('shopbtn').onclick = function () {
+            var top = parseInt(div.style.top);
+            var right = parseInt(div.style.right);
+            console.log(right)
+            if (top > '460') {
+                console.log("sss")
+                var timeId = setInterval(function () {
+
+                    div.style.top = parseInt(div.style.top) - 5 + "px";
+                    if (div.style.top == '460px') {
+                        clearInterval(timeId);
+                    }
+                    if (div.style.top == '460px') {
+                        sss();
+                    }
+                }, 50);
+            } else if (top < '460') {
+                console.log(top)
+                var timeId = setInterval(function () {
+
+                    div.style.top = parseInt(div.style.top) + 5 + "px";
+                    if (div.style.top == '460px') {
+                        clearInterval(timeId);
+                    }
+                    if (div.style.top == '460px') {
+                        sss();
+                    }
+                }, 50);
+            } else {
+                sss();
+            }
+            function sss() {
+                console.log("ddd")
+
+                console.log(right)
+                if (right > '1100') {
+                    var timeId = setInterval(function () {
+
+                        div.style.right = parseInt(div.style.right) - 5 + "px";
+                        if (div.style.right == '1100px') {
+                            clearInterval(timeId);
+                        }
+                        if (div.style.right == '1100px') {
+                            window.open('shopping.html', '_self');
+                        }
+                    }, 50);
+                } else if (right < '1100') {
+                    var timeId = setInterval(function () {
+
+                        div.style.right = parseInt(div.style.right) + 5 + "px";
+                        if (div.style.right == '1100px') {
+                            clearInterval(timeId);
+                        }
+                        if (div.style.right == '1100px') {
+                            window.open('shopping.html', '_self');
+                        }
+                    }, 50);
+                } else {
+                    window.open('shopping.html', '_self');
+                }
+
+            }
+        }
+        //走你按钮触发事件---结束
+
+
+        
+        //走你按钮触发事件---开始 work
+ document.getElementById('findjobbtn').onclick = function () {
+            var top = parseInt(div.style.top);
+            var right = parseInt(div.style.right);
+            console.log(right)
+            if (top > '250') {
+                console.log("sss")
+                var timeId = setInterval(function () {
+
+                    div.style.top = parseInt(div.style.top) - 5 + "px";
+                    if (div.style.top == '250px') {
+                        clearInterval(timeId);
+                    }
+                    if (div.style.top == '250px') {
+                        sss();
+                    }
+                }, 50);
+            } else if (top < '250') {
+                console.log(top)
+                var timeId = setInterval(function () {
+
+                    div.style.top = parseInt(div.style.top) + 5 + "px";
+                    if (div.style.top == '250px') {
+                        clearInterval(timeId);
+                    }
+                    if (div.style.top == '250px') {
+                        sss();
+                    }
+                }, 50);
+            } else {
+                sss();
+            }
+            function sss() {
+                console.log("ddd")
+
+                console.log(right)
+                if (right > '1050') {
+                    var timeId = setInterval(function () {
+
+                        div.style.right = parseInt(div.style.right) - 5 + "px";
+                        if (div.style.right == '1050px') {
+                            clearInterval(timeId);
+                        }
+                        if (div.style.right == '1050px') {
+                            window.open('findjob.html', '_self');
+                        }
+                    }, 50);
+                } else if (right < '1050') {
+                    var timeId = setInterval(function () {
+
+                        div.style.right = parseInt(div.style.right) + 5 + "px";
+                        if (div.style.right == '1050px') {
+                            clearInterval(timeId);
+                        }
+                        if (div.style.right == '1050px') {
+                            window.open('findjob.html', '_self');
+                        }
+                    }, 50);
+                } else {
+                    window.open('findjob.html', '_self');
+                }
+
+            }
+        }
+        //走你按钮触发事件---结束
+
+        //走你按钮触发事件---开始 home
+ document.getElementById('homebtn').onclick = function () {
+            var top = parseInt(div.style.top);
+            var right = parseInt(div.style.right);
+            console.log(right)
+            if (top > '450') {
+                console.log("sss")
+                var timeId = setInterval(function () {
+
+                    div.style.top = parseInt(div.style.top) - 5 + "px";
+                    if (div.style.top == '450px') {
+                        clearInterval(timeId);
+                    }
+                    if (div.style.top == '450px') {
+                        sss();
+                    }
+                }, 50);
+            } else if (top < '450') {
+                console.log(top)
+                var timeId = setInterval(function () {
+
+                    div.style.top = parseInt(div.style.top) + 5 + "px";
+                    if (div.style.top == '450px') {
+                        clearInterval(timeId);
+                    }
+                    if (div.style.top == '450px') {
+                        sss();
+                    }
+                }, 50);
+            } else {
+                sss();
+            }
+            function sss() {
+                console.log("ddd")
+
+                console.log(right)
+                if (right > '750') {
+                    var timeId = setInterval(function () {
+
+                        div.style.right = parseInt(div.style.right) - 5 + "px";
+                        if (div.style.right == '750px') {
+                            clearInterval(timeId);
+                        }
+                        if (div.style.right == '750px') {
+                            window.open('accommodation.html', '_self');
+                        }
+                    }, 50);
+                } else if (right < '750') {
+                    var timeId = setInterval(function () {
+
+                        div.style.right = parseInt(div.style.right) + 5 + "px";
+                        if (div.style.right == '750px') {
+                            clearInterval(timeId);
+                        }
+                        if (div.style.right == '750px') {
+                            window.open('accommodation.html', '_self');
+                        }
+                    }, 50);
+                } else {
+                    window.open('accommodation.html', '_self');
+                }
+
+            }
+        }
+        //走你按钮触发事件---结束
+
+    </script>
 </body>
+
 </html>

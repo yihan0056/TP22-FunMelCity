@@ -1,0 +1,306 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>弹出层</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="accommodation-yes.css">
+    <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .black_overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+        .white_content2 {
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+        .white_content_small {
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            width: 40%;
+            height: 50%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+
+        }
+
+        .Button1 {
+            z-index: -1;
+        }
+
+        .table {
+            border: black 1px solid;
+        }
+
+        .tr {
+            border-collapse: collapse;
+            border: 1px solid;
+        }
+
+        .td {
+            border: black 1px solid;
+        }
+
+        .closebuton {
+
+            width: 60px;
+            height: 60px;
+        }
+
+        .insideword {
+            right: 1px;
+            width: 98%;
+            color: black;
+            font-size: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 400;
+            border-width: 4px;
+            text-align: left;
+            padding-right: 2px;
+            line-height: 24px;
+
+        }
+    </style>
+    <script type="text/javascript">
+        //弹出隐藏层
+        function ShowDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv = document.getElementById(bg_div);
+            bgdiv.style.width = document.body.scrollWidth;  // bgdiv.style.height = $(document).height();
+
+            $("#" + bg_div).height($(document).height());
+        };
+        //关闭弹出层
+        function CloseDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        };
+    </script>
+</head>
+
+<body>
+    <div class="backgroud">
+        <button class="need">
+            To rent a property, 
+you should know:
+
+        </button>
+
+
+        <a href="./map.html?home" class="backairport">
+
+            Go Back to the map
+
+
+        </a>
+        <a href="./map.html?home" class="backs">
+            <img src="resourse\airport\l.png" class="pic" ">
+                
+        
+            </a>
+           
+            <div class=" normal2">
+            <div style="margin:30px ;">
+                <div style="color: red ;margin-bottom: 25px;font-weight: 200;">
+                    Click the texts to see more information
+                </div>
+                <br>
+                <a href="javascript:ShowDiv('MyDiv','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 60px;">
+                        Apply for a rental
+
+                    </li>
+                </a>
+                <a href="javascript:ShowDiv('MyDiv2','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 60px;">
+                        Bonds
+
+
+                    </li>
+                </a>
+
+                <a href="javascript:ShowDiv('MyDiv3','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 40px;">
+                        Mould and damp
+
+                    </li>
+                </a>
+
+            </div>
+
+            <br>
+    </div>
+
+
+
+    </div>
+
+    <!--弹出层时背景层DIV-->
+    <div id="fade" class="black_overlay">
+    </div>
+
+    <div id="MyDiv" class="white_content2">
+        <span style="font-size: 16px;float: right;" onclick="CloseDiv('MyDiv','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="text-align: right; cursor: default; height: 40px; margin: 20px;">
+
+            <div class="insideword">
+                <p style="font-size: 50px;margin-bottom: 60px;font-weight: 900;">
+                    Apply for a Rental
+
+                </p>
+                <p>
+                    There are several things to think about both before and during your home hunt. If a landlord wants to rent out a home, they must also go by a number of laws.
+
+                </p><br>
+                <p>
+                    Determine the rental fees. Before you begin looking for a rental property, establish a budget.
+
+                </p>
+                <p>
+                    Inspections. Thoroughly inspect the property inside and outside. Before submitting an application or paying any money, be certain that you are satisfied with the property.
+
+
+                </p>
+                <p>
+                    If your application is successful, You might be given a residential rental agreement (lease) to sign if the rental provider agrees to rent you the property. This is a legal agreement; carefully read it and make sure you understand it before you sign.
+
+                </p>
+                <p>
+                    For detailed information, go to our FunMelCity website:
+
+                </p>
+                <a href="https://www.interlifemel.link/rental-right-apply-for-a-rental/">
+                    <p>
+                        https://www.interlifemel.link/rental-right-apply-for-a-rental/
+
+                    </p>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div id="MyDiv2" class="white_content2">
+        <span style="font-size: 16px;float: right;" onclick="CloseDiv('MyDiv2','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="text-align: right; cursor: default; height: 40px; margin: 20px;">
+
+            <div class="insideword">
+                <p style="font-size: 50px;margin-bottom: 60px;font-weight: 900;">
+                    Bonds
+
+
+                </p>
+                <p>
+                    You will be required to pay a bond when you begin your tenancy. It serves as a guarantee in the event that there is a disagreement at the end of your lease regarding issues like damage, cleaning, or unpaid rent. If you pay a bond, it must, by law, be kept by the bond authority until the end of your tenancy. 
+                    <br>
+                </p>
+                <p>
+                    There is nothing under the law requiring you to pay a ‘pet bond’ if you have a pet.
+                    <br>
+                </p><br>
+                <p style="font-weight: 900;">
+                    The bond belongs to you.
+                    <br>
+                </p><br>
+                <p>
+                    For detailed information, go to our FunMelCity website:
+
+
+                </p>
+                <a href="https://www.interlifemel.link/rental-right-bonds/">
+                    <p>
+                        https://www.interlifemel.link/rental-right-bonds/
+
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="MyDiv3" class="white_content">
+        <span style="font-size: 16px;  float: right;" onclick="CloseDiv('MyDiv3','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="text-align: right; cursor: default; height: 40px; margin-left: 20px; margin-right: 20px;">
+
+            <div class="insideword">
+                <p style="font-size: 50px;margin-bottom: 60px;font-weight: 900;">
+                    Mould and damp
+
+
+                </p>
+                <p style="line-height:30px">
+                    Properties for rent need to be free from mould and damp and meet minimum standards for ventilation. The rental provider (landlord) must tell you if a property you want to rent has a history of mould and damp.
+                    Before you sign a lease, legally called the rental agreement, the rental provider (landlord) must tell you certain information about the property to help you make an informed decision about renting it.
+                    <br>
+                </p><br>
+                <p style="line-height:30px">
+                    For mould and damp, this includes telling you if:
+
+                </p>
+                <p style="line-height:30px;text-indent:30px">
+                   <li style="text-indent:30px">
+                    The rental provider has received a repair notice for mould or damp related to the building structure within the last 3 years
+
+                   </li>
+                   <li style="text-indent:30px">
+                    The property meets minimum ventilation standards (see the heading Minimum Standards on this page) [section 30D, regulation 16]
+
+                   </li>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

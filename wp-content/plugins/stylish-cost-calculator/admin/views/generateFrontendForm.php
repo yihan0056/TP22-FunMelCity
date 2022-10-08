@@ -14,7 +14,7 @@ if ( ! isset( $calculatorCount ) ) {
 	$calculatorCount += 1;
 }
 if ( $calculatorCount > 2 ) {
-	echo '<p>Only one calculator is allowed on the same page</p>';
+	echo '<p>Only one calculator is allowed on the same page with the free version of Stylish Cost Calculator. The premium version allows multiple calculator forms on a single page because it writes unique CSS classes for each calculator form. Please upgrade to premium if you want more than one calculator form on a single web page.</p>';
 	return;
 }
 $paypalConfigArray       = wp_parse_args(

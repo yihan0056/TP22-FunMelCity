@@ -14,9 +14,11 @@
  
 
 .startbutton{
-    position: relative;
-    top: 350PX;
-    float: right;
+    position: absolute;
+    
+    margin-left: 26%;
+    margin-top: 25%;
+    
     animation-name: likes;
     animation-direction: alternate;
     animation-timing-function:linear;
@@ -46,13 +48,14 @@
 
 .word{
     color: rgba(0, 0, 0, 0.992);
-    font-size: 30px;
+    font-size: 33px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     -webkit-text-stroke: 1px;
     -webkit-text-fill-color: white;
     float: right;
     text-align: right;
+    margin-right: 30px;
 }
 
 

@@ -1,12 +1,12 @@
 === Stylish Cost Calculator ===
 Plugin Name: Stylish Cost Calculator
 Plugin URL: https://www.stylishcostcalculator.com
-Version: 7.2.7
+Version: 7.2.9
 Contributors: Designful
 Tags: Price calculator, Cost calculator, cost estimator, quote generator, Form builder, woocommerce price calculator, price estimator
 Requires at least: 4.0
-Tested up to: 6.0.0
-Stable tag: 7.2.8
+Tested up to: 6.0.2
+Stable tag: 7.2.9
 Requires PHP: 7.0
 Description: A stylish Cost Calculator that allows users to get an instant estimate of your products or services. It's super easy for you and your visitors to use.
 

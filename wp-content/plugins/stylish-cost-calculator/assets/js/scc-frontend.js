@@ -23,7 +23,7 @@ async function initializeScc() {
 		}
 	
 		// parse and store config to data object
-		sccData[formId].config = JSON.parse(document.getElementById('scc-config-' + formId).innerText)
+		sccData[formId].config = JSON.parse(document.getElementById('scc-config-' + formId).textContent)
 		if (sccData[formId].config?.enableStripe) {
 			var stripeScript = document.createElement("script");
 			stripeScript.src = 'https://js.stripe.com/v3/';

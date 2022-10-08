@@ -61,6 +61,8 @@
 .cp_cff_minimalist #fbuilder .select2-selection__arrow{min-height:35px;}
 .cp_cff_minimalist #fbuilder .select2-results__option--highlighted{background:#2CBBBB;}
 .cp_cff_minimalist #fbuilder textarea{height:auto;}
+.cp_cff_minimalist .cff-spinner .cff-spinner-down,
+.cp_cff_minimalist .cff-spinner .cff-spinner-up,
 .cp_cff_minimalist #fbuilder .pbSubmit,
 .cp_cff_minimalist #fbuilder .pbreak .pbPrevious,
 .cp_cff_minimalist #fbuilder .pbreak .pbNext,

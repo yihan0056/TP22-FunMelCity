@@ -14,6 +14,11 @@ fbuilderjQuery[ 'fbuilder' ][ 'modules' ][ 'processing' ] = {
 								"tip" : "<p>Get the field object. <strong>getField( # or fieldname# )</strong></p><p>Returns the internal representation of a field object. For example, if there is the slider field: fieldname1, to assing it a value, for example:50, enter as part of the equation associated to the calculated field the piece of code: getField(1).setVal(50);</p><p>The getField operation can be used only in the context of the equations.</p>"
 							},
 							{
+								"value" : "GOTOFIELD",
+								"code" : "GOTOFIELD(",
+								"tip" : "<p>Jumps to a field in the form. <strong>GOTOPAGE( field, form object )</strong></p><p><b>field</b>, integer number corresponding to the number component in the field name or the field name (required parameter).<br><b>form object</b>, an optional parameter corresponding to the form where the field is.<br>In the context of the equation, call the operation passing only the number component in the field name,<br>Ex. <b>GOTOFIELD (2);</b><br>But if the operation is called from the onclick event of a button, the form object is required,<br>Ex. <b>GOTOFIELD (&quot;fieldname2&quot;, this.form);</b></p>"
+							},
+							{
 								"value" : "GOTOPAGE",
 								"code" : "GOTOPAGE(",
 								"tip" : "<p>Jumps to a page in a multipage form. <strong>GOTOPAGE( page, form object )</strong></p><p><b>page</b>, integer corresponding to the page index, starting at zero (required parameter).<br><b>form object</b>, optional parameter corresponding to the multipage form.<br>In the context of the equation, call the operation passing only the page index,<br>Ex. <b>GOTOPAGE (2);</b><br>But if the operation is called from the onclick event of a button, the form object is required,<br>Ex. <b>GOTOPAGE (2, this.form);</b></p>"

@@ -88,7 +88,7 @@
             font-size: 25px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: 400;
-            border-width: 4px;
+            border-width: 0px;
             text-align: left;
             padding-right: 2px;
 
@@ -122,7 +122,7 @@
 
         <a href="./bank.html" class="backairport">
 
-            Go Back to the airport
+            Go Back to the Bank
 
 
         </a>
@@ -132,34 +132,42 @@
         
             </a>
            
-            <div class=" normal">
-            <br>
-            <a href="javascript:ShowDiv('MyDiv','fade')" style="text-decoration: none;color: black;">
-                <li style="text-decoration: none;color: black;margin-bottom: 60px;">
-                    ANZ
+            <div class=" normal3">
+            <div style="margin:40px">
 
-                </li>
-            </a>
-            <a href="javascript:ShowDiv('MyDiv2','fade')" style="text-decoration: none;color: black;">
-                <li style="text-decoration: none;color: black;margin-bottom: 60px;">
-                   CBA
-                </li>
-            </a>
 
-            <a href="javascript:ShowDiv('MyDiv3','fade')" style="text-decoration: none;color: black;">
-                <li style="text-decoration: none;color: black;margin-bottom: 40px;">
-                   NBA
-                </li>
-            </a>
-            <a href="javascript:ShowDiv('MyDiv4','fade')" style="text-decoration: none;color: black;">
-                <li style="text-decoration: none;color: black;margin-bottom: 40px;">
-                    Westpac
-                </li>
-            </a>
-            <br>
+                <div style="color: red ;margin-bottom: 25px;">
+                    Click the texts to see more information
+                </div>
+
+                <a href="javascript:ShowDiv('MyDiv1','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 60px;">
+                        ANZ
+
+                    </li>
+                </a>
+                <a href="javascript:ShowDiv('MyDiv2','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 60px;">
+                        CBA
+                    </li>
+                </a>
+
+                <a href="javascript:ShowDiv('MyDiv3','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 40px;">
+                        NBA
+                    </li>
+                </a>
+                <a href="javascript:ShowDiv('MyDiv4','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 40px;">
+                        Westpac
+                    </li>
+                </a>
+
+            </div>
+
     </div>
 
-    <a class="airporttaxi">
+    <a class="airporttaxi1">
         <img class="taxi" src="resourse/bank/big 4 bank.jpg" />
     </a>
 
@@ -170,49 +178,45 @@
     <div id="fade" class="black_overlay">
     </div>
 
-    <div id="MyDiv" class="white_content">
+    <div id="MyDiv1" class="white_content">
+        <span style="font-size: 16px;float: right" onclick="CloseDiv('MyDiv1','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="text-align: right; cursor: default; height: 40px;margin: 20px;">
 
-        <div style="text-align: right; cursor: default; height: 40px; display: inline;">
-            <span style="font-size: 16px;" onclick="CloseDiv('MyDiv','fade')">
-                <img src="resourse\airport\close.png" class="closebuton">
-
-            </span>
+            <div class="insideword">
+                <p style="font-size: 45px;margin-bottom: 60px;font-weight: 900;">
+                    Australia & New Zealand Banking Group Limited (ANZ)
+                </p>
+                <p>
+                    ANZ is one of the five largest companies in Australia and a major international banking and
+                    financial services group, which is among the top 50 banks in the world. It is also the number one
+                    bank in New Zealand following the acquisition of The National Bank of New Zealand in 2003. The
+                    organisation employs more than 30,000 people and has 1,190 points of representation around the world
+                    including Australia, New Zealand, Asia, the Pacific, UK/Europe, India and the USA. It provides a
+                    full range of financial products and services to more than five million customers and has assets of
+                    AUD $259 billion.
+                    <br>
+                </p>
+                <p>
+                    ANZ world headquarters is located in Melbourne, where it first opened an office as the Bank of
+                    Australasia in the 1830s. ANZ’s goal is to become Australasia’s leading, most respected and fastest
+                    growing major bank.               
+                </p>
+                <br>
+                <img src="resourse\bank\anz.jpg" height="90px" style="padding-left: 80%;padding-top: 0px;">
+            </div>
         </div>
-        <div style="font-size: 35px; position: relative; top:6px;">
-            At Terminal 2, International Arrivals, there are 2 SIM card shops:<br><br>
-        </div>
-
-        <div style="font-size: 20px;margin-bottom:20px;line-height: 30px;">
-            <p style="font-size: 20px;margin-bottom:20px;line-height: 30px;">
-                ANZ is one of the five largest companies in Australia and a major international banking and financial
-                services group, which is among the top 50 banks in the world. It is also the number one bank in New
-                Zealand following the acquisition of The National Bank of New Zealand in 2003. The organisation employs
-                more than 30,000 people and has 1,190 points of representation around the world including Australia, New
-                Zealand, Asia, the Pacific, UK/Europe, India and the USA. It provides a full range of financial products
-                and services to more than five million customers and has assets of AUD $259 billion.
-                <br><br>
-            </p>
-            <p style="font-size: 20px;margin-bottom:20px;line-height: 30px;">
-                ANZ world headquarters is located in Melbourne, where it first opened an office as the Bank of
-                Australasia in the 1830s. ANZ’s goal is to become Australasia’s leading, most respected and fastest
-                growing major bank.
-                <br><br>
-            </p>
-        </div>
-
-        <br>
-        <img src="resourse\bank\anz.jpg" height="90px" style="padding-left: 80%;">
-
-
     </div>
     <div id="MyDiv2" class="white_content">
-        <div style="text-align: right; cursor: default; height: 40px;">
-            <span style="font-size: 16px;" onclick="CloseDiv('MyDiv2','fade')">
-                <img src="resourse\airport\close.png" class="closebuton">
-            </span>
+        <span style="font-size: 16px;float: right" onclick="CloseDiv('MyDiv2','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="text-align: right; cursor: default; height: 40px;margin: 20px;">
+
             <div class="insideword">
-                <p style="font-size: 50px;margin-bottom: 60px">
-                    The Commonwealth Bank Australia (CBA).<br>
+                <p style="font-size: 50px;margin-bottom: 60px;font-weight: 900;">
+                    The Commonwealth Bank Australia (CBA).
 
                 </p>
                 <p>
@@ -232,17 +236,18 @@
     </div>
 
     <div id="MyDiv3" class="white_content">
-        <div style="text-align: right; cursor: default; height: 40px;">
-            <span style="font-size: 16px;" onclick="CloseDiv('MyDiv3','fade')">
-                <img src="resourse\airport\close.png" class="closebuton">
-            </span>
+        <span style="font-size: 16px;float: right" onclick="CloseDiv('MyDiv3','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="text-align: right; cursor: default; height: 40px;margin: 20px;">
+
             <div class="insideword">
                 <div style="display:flex">
-                    <p style="font-size: 50px;margin-bottom: 60px">
-                        National Australia Bank (NAB) <br>
-                        
+                    <p style="font-size: 40px;margin-bottom: 60px;font-weight: 900;">
+                        National Australia Bank (NAB) 
+
                     </p>
-                    <img src="resourse\bank\nab.png" height="90px" style="margin-left: 300px;margin-top: 40px;">
+                    <img src="resourse\bank\nab.png" height="140px" style="margin-left: 300px;margin-top: 10px;">
                 </div>
 
 
@@ -269,28 +274,31 @@
 
 
     <div id="MyDiv4" class="white_content">
-        <div style="text-align: right; cursor: default; height: 40px;">
-            <span style="font-size: 16px;" onclick="CloseDiv('MyDiv4','fade')">
-                <img src="resourse\airport\close.png" class="closebuton">
-            </span>
+        <span style="font-size: 16px;float: right" onclick="CloseDiv('MyDiv4','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="text-align: right; cursor: default; height: 40px;margin: 20px;">
+
             <div class="insideword">
-                <div style="display:flex;" >
-                    <p style="font-size: 40px;margin-bottom: 60px">
+                <div style="display:flex;">
+                    <p style="font-size: 36px;margin-bottom: 60px;font-weight: 900;width: auto;">
                         Westpac Banking Corporation(WestPac)
- <br>
-                        
                     </p>
-                    <img src="resourse\bank\Westpac.png" height="90px" style="margin-left: 300px;margin-top: 40px;">
+                    <img src="resourse\bank\Westpac.png" height="140px" style="margin-left: 300px;margin-top: 10px;float: righ;">
                 </div>
 
 
                 <p>
-                    Westpac Banking Corporation, known simply as Westpac, is an Australian multinational banking and financial services company headquartered at Westpac Place in Sydney, New South Wales.
+                    Westpac Banking Corporation, known simply as Westpac, is an Australian multinational banking and
+                    financial services company headquartered at Westpac Place in Sydney, New South Wales.
 
                     <br>
                 </p>
                 <p>
-                    Established in 1817 as the Bank of New South Wales, it acquired the Commercial Bank of Australia in 1982 before being renamed to Westpac Banking Corporation. Westpac is one of Australia's Big Four banks, and is Australia's first and oldest banking institution. Its name is a portmanteau of "Western" and "Pacific".
+                    Established in 1817 as the Bank of New South Wales, it acquired the Commercial Bank of Australia in
+                    1982 before being renamed to Westpac Banking Corporation. Westpac is one of Australia's Big Four
+                    banks, and is Australia's first and oldest banking institution. Its name is a portmanteau of
+                    "Western" and "Pacific".
 
                     <br>
                 </p>
@@ -298,10 +306,13 @@
                     As of 2021, Westpac has 14 million customers worldwide, and employs around 40,000 people.
 
                     <br>
-                </p><p>
-                    It provides best services in foreign exchange area among the various bank of Australia and on this basis, it has secured top position in foreign exchange services among all Australian banks. Its service in derivative is even outstanding.
+                </p>
+                <p>
+                    It provides best services in foreign exchange area among the various bank of Australia and on this
+                    basis, it has secured top position in foreign exchange services among all Australian banks. Its
+                    service in derivative is even outstanding.
 
-            
+
                 </p>
             </div>
         </div>

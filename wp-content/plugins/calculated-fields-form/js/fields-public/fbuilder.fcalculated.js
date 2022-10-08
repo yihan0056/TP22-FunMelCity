@@ -265,6 +265,11 @@
 					};
 
 				// Private function, the variable names in the equations are replaced by its values, return the equation result or false if error
+				_eval = function(eq)
+					{
+						return eval(eq); // Evaluate the final equation
+					};
+
 				_calculate = function(eq, suffix, __ME__)
 					{
 						var e = $.fbuilder['forms'][suffix].getItem(__ME__),
@@ -298,7 +303,7 @@
 						}
 						try
 						{
-							var r = eval(eq.replace(/^\(/, '').replace(/\)$/, '').replace(/\b__ME__\b/g, __ME__)); // Evaluate the final equation
+							var r = _eval(eq.replace(/^\(/, '').replace(/\)$/, '').replace(/\b__ME__\b/g, __ME__)); // Evaluate the final equation
 							return (typeof r != 'undefined' && _validate_result(r)) ? r : false;
 						}
 						catch(e)
@@ -527,10 +532,10 @@
 									field.val((result !== false) ? me.format(result, eq_obj.resultField.configuration()) : '');
 									if(bk != field.val())
 									{
+										field.data('bk',field.val());
 										field.trigger('calcualtedfield_changed');
 										field.change();
 									}
-									field.data('bk',field.val());
 								}
 							}
 

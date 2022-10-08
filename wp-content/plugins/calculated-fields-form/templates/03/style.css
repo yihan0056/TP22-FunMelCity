@@ -38,6 +38,8 @@
 
 .cp_cff_natural #fbuilder input[type=button],
 .cp_cff_natural #fbuilder input[type=reset],
+.cp_cff_natural .cff-spinner .cff-spinner-down,
+.cp_cff_natural .cff-spinner .cff-spinner-up,
 .cp_cff_natural #fbuilder .pbSubmit,
 .cp_cff_natural #fbuilder .pbPrevious,
 .cp_cff_natural #fbuilder .pbNext{color:#fff;font-variant:small-caps;font-size:14px;font-weight:bold;background:url("top_bg.png");-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;padding: 5px 20px;border:0;}

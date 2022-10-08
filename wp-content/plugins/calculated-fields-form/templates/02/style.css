@@ -90,6 +90,8 @@ padding-left:10px; padding-right:10px;
 
 .cp_cff_professional #fbuilder input[type="button"],
 .cp_cff_professional #fbuilder input[type="reset"],
+.cp_cff_professional .cff-spinner .cff-spinner-down,
+.cp_cff_professional .cff-spinner .cff-spinner-up,
 .cp_cff_professional #fbuilder .pbSubmit,
 .cp_cff_professional #fbuilder .pbPrevious,
 .cp_cff_professional #fbuilder .pbNext{color:#fff;font-size:13px;font-weight:bold;text-shadow:0px 1px 0px #000;background: #bfd255;

@@ -1036,10 +1036,76 @@ $edit_page_func = new Stylish_Cost_Calculator_Edit_Page();
 		loadPreviewForm(id)
 		// find existing quote form fields backend buttons and register click events on it
 		addEventsToQuoteFormBtns(jQuery('.editing-action-cards.action-quoteform .btn.btn-cards:not(.btn-plus)'))
+
+		// checking for debug points
+		jQuery.ajax({
+			url: ajaxurl,
+			cache: false,
+			data: {
+				action: 'scc_get_debug_items',
+				nonce: pageEditCalculator.nonce
+			},
+			success: function(data, textStatus, request) {
+				const isCloudFlare = request.getResponseHeader('server') == 'cloudflare';
+				const diagMsgsWrapper = document.querySelector('#debug_messages_wrapper');
+				diagMsgsWrapper.innerHTML = wp.template('scc-diag-alert')(debugMessages(data, isCloudFlare));
+				diagMsgsWrapper.classList.remove('d-none');
+			}
+		})
 	})
 	const df_scc_resources = {
 		dropdownTumbnailDefaultImage: "<?php echo esc_url(SCC_ASSETS_URL . '/images/image.png'); ?>",
 		assetsPath: "<?php echo esc_url(SCC_ASSETS_URL); ?>"
+	}
+
+	const debugMessages = (data, isCloudFlare = false) => {
+		let msgs = data.diag_items
+		let ignore_list = data.exclusions
+		let messages = {
+			low_memory: {
+				title: `WordPress memory limit: ${msgs.ram_info}`,
+				message: 'Increase PHP Memory Limit to 512M or higher for PHP with WordPress. To do this, edit php.ini and wp-config.php files, or ask your hosting comapny to do so. <br><br><a href="http://designful.freshdesk.com/en/support/solutions/articles/48001141896-wp-memory-limit-or-the-email-quote-gets-stuck-at-90-" target="_blank">Full tutorial here.</a><br></div>',
+				show: msgs.ram_sufficient == false
+			},
+			php_incompatible_version: {
+				title: `Bad PHP version: ${msgs.php_version}`,
+				message: 'Change your PHP level in your cPanel, or ask your hosting comapny to do so.',
+				show: msgs.php_supported_version == false
+			},
+			wp_incompatible_version: {
+				title: `Incompatible WordPress version: ${msgs.wp_version}`,
+				message: 'Your WordPress core version is really outdated. Please backup, then upgrade.',
+				show: msgs.wp_supported_version == false
+			},
+			has_mod_security: {
+				title: 'ModSecurity',
+				message: msgs.mod_security_message,
+				show: msgs.rhas_mod_security == true
+			},
+			bad_charset: {
+				title: msgs.bad_charset_msg,
+				message: 'Warning: You should edit the DB_CHARSET variable in your wp_config.php file to utf8mb4',
+				show: msgs.has_good_charset == false
+			},
+			has_cloudflare: {
+				title: 'You are using CloudFlare',
+				message: 'You are using CloudFlare, please ensure you have disabled CloudFlare \'Rocket Loader\' from your CloudFlare dashboard',
+				show: Boolean(isCloudFlare)
+			}
+		}
+		let shownMessages = Object.keys(messages).filter(msgKey => messages[msgKey].show);
+		// let notShownMessages = shownMessages.filter(msgKey => messages[msgKey].show);
+		Object.keys(messages).forEach(msgKey => {
+			if (shownMessages.findIndex(e => e == msgKey) < 0) {
+				delete messages[msgKey];
+			}
+		})
+		ignore_list.forEach(msgKey => {
+			if (shownMessages.findIndex(e => e == msgKey) >= 0) {
+				delete messages[msgKey];
+			}
+		})
+		return messages;
 	}
 
 	function loadPreviewForm(formId) {
@@ -4082,7 +4148,7 @@ $edit_page_func = new Stylish_Cost_Calculator_Edit_Page();
 		// loading calculator configs
 		const urlParams = new URLSearchParams(window.location.search);
 		const calcId = urlParams.get('id_form');
-		let calcConfig = JSON.parse(document.getElementById('scc-config-' + calcId).innerText);
+		let calcConfig = JSON.parse(document.getElementById('scc-config-' + calcId).textContent);
 		let {
 			quoteFormFields
 		} = calcConfig;

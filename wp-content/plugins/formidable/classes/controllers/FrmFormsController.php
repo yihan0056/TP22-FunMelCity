@@ -298,25 +298,38 @@ class FrmFormsController {
 		wp_die();
 	}
 
+	/**
+	 * Set the page global to any available page (except for the Blog Page).
+	 *
+	 * @return void
+	 */
 	private static function set_preview_query() {
-		$random_page = get_posts(
-			array(
-				'numberposts' => 1,
-				'orderby'     => 'date',
-				'order'       => 'ASC',
-				'post_type'   => 'page',
-			)
+		$page_query = array(
+			'numberposts' => 1,
+			'orderby'     => 'date',
+			'order'       => 'ASC',
+			'post_type'   => 'page',
 		);
 
-		if ( ! empty( $random_page ) ) {
-			$random_page = reset( $random_page );
-			query_posts(
-				array(
-					'post_type' => 'page',
-					'page_id'   => $random_page->ID,
-				)
-			);
+		$page_for_posts = get_option( 'page_for_posts' );
+		if ( is_numeric( $page_for_posts ) ) {
+			// Avoid querying for the "Posts Page" or "Blog Page" so we don't display 10 forms.
+			$page_query['post__not_in'] = array( $page_for_posts );
 		}
+
+		$random_page = get_posts( $page_query );
+
+		if ( ! $random_page ) {
+			return;
+		}
+
+		$random_page = reset( $random_page );
+		query_posts(
+			array(
+				'post_type' => 'page',
+				'page_id'   => $random_page->ID,
+			)
+		);
 	}
 
 	/**
@@ -1442,6 +1455,7 @@ class FrmFormsController {
 			$entry_shortcodes['default-message'] = __( 'Default Msg', 'formidable' );
 			$entry_shortcodes['default-html']    = __( 'Default HTML', 'formidable' );
 			$entry_shortcodes['default-plain']   = __( 'Default Plain', 'formidable' );
+			$entry_shortcodes['form_name']       = __( 'Form Name', 'formidable' );
 		}
 
 		/**
@@ -1496,7 +1510,15 @@ class FrmFormsController {
 		wp_die();
 	}
 
+	/**
+	 * @param string                    $content
+	 * @param stdClass|string|int       $form
+	 * @param stdClass|string|int|false $entry
+	 * @return string
+	 */
 	public static function filter_content( $content, $form, $entry = false ) {
+		$content = self::replace_form_name_shortcodes( $content, $form );
+
 		self::get_entry_by_param( $entry );
 		if ( ! $entry ) {
 			return $content;
@@ -1512,6 +1534,32 @@ class FrmFormsController {
 		return $content;
 	}
 
+	/**
+	 * Replace any [form_name] shortcodes in a string.
+	 *
+	 * @since 5.5
+	 *
+	 * @param string              $string
+	 * @param stdClass|string|int $form
+	 * @return string
+	 */
+	public static function replace_form_name_shortcodes( $string, $form ) {
+		if ( false === strpos( $string, '[form_name]' ) ) {
+			return $string;
+		}
+
+		if ( ! is_object( $form ) ) {
+			$form = FrmForm::getOne( $form );
+		}
+
+		$form_name = is_object( $form ) ? $form->name : '';
+		return str_replace( '[form_name]', $form_name, $string );
+	}
+
+	/**
+	 * @param stdClass|string|int|false $entry
+	 * @return void
+	 */
 	private static function get_entry_by_param( &$entry ) {
 		if ( ! $entry || ! is_object( $entry ) ) {
 			if ( ! $entry || ! is_numeric( $entry ) ) {

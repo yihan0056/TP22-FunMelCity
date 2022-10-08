@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>机场</title>
+    <title>弹出层</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="bank-doucment.css">
+    <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
     <style>
         html,
         body {
@@ -15,7 +15,253 @@
             width: 100%;
             height: 100%;
         }
+
+        .black_overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+        .white_content2 {
+            display: none;
+            position: absolute;
+            top: 16%;
+            left: 33%;
+            height: 70%;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+        .white_content_small {
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            width: 40%;
+            height: 50%;
+            border: 16px solid lightblue;
+            background-color: white;
+            background-size: 20px auto;
+            z-index: 1002;
+
+        }
+
+        .Button1 {
+            z-index: -1;
+        }
+
+        .table {
+            border: black 1px solid;
+        }
+
+        .tr {
+            border-collapse: collapse;
+            border: 1px solid;
+        }
+
+        .td {
+            border: black 1px solid;
+        }
+
+        .closebuton {
+
+            width: 60px;
+            height: 60px;
+        }
+
+        .insideword {
+            right: 1px;
+            width: 98%;
+            color: black;
+            font-size: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 400;
+            border-width: 4px;
+            text-align: left;
+            padding-right: 2px;
+
+        }
+
+        .mydiv1 {
+
+            width: auto;
+            padding: 10px;
+            height: auto;
+            margin-top: 4%;
+            background: rgb(176, 171, 171);
+            position: absolute;
+            animation: mymove 5s infinite;
+            -webkit-animation: mymove 5s infinite;
+            /*Safari and Chrome*/
+            border-style: solid;
+            border-width: 2px;
+
+        }
+
+        .mydiv2 {
+
+            width: auto;
+            padding: 10px;
+            height: auto;
+            margin-top: 15%;
+            margin-left: 53%;
+            background: rgb(176, 171, 171);
+            position: absolute;
+            animation: mymove 5s infinite;
+            -webkit-animation: mymove2 5s infinite;
+            /*Safari and Chrome*/
+            border-style: solid;
+            border-width: 2px;
+
+        }
+
+        .mydiv3 {
+
+            width: auto;
+            padding: 10px;
+            height: auto;
+            margin-top: 16%;
+            margin-left: 4%;
+            background: rgb(176, 171, 171);
+            position: absolute;
+            animation: mymove 5s infinite;
+            -webkit-animation: mymove3 5s infinite;
+            /*Safari and Chrome*/
+            border-style: solid;
+            border-width: 2px;
+
+        }
+
+        .mydiv4 {
+
+            width: auto;
+            padding: 10px;
+            height: auto;
+            margin-top: 8%;
+            margin-left: 2%;
+            background: rgb(176, 171, 171);
+            position: absolute;
+            animation: mymove 5s infinite;
+            -webkit-animation: mymove4 5s infinite;
+            /*Safari and Chrome*/
+            border-style: solid;
+            border-width: 2px;
+
+        }
+
+
+
+        @keyframes mymove {
+
+            0% {
+                left: 20%;
+            }
+
+            50% {
+                left: 60%;
+            }
+
+            100% {
+                left: 20%;
+            }
+
+        }
+
+        @keyframes mymove2 {
+
+            0% {
+                top: 15%;
+            }
+
+            50% {
+                top: 50%;
+            }
+
+            100% {
+                top: 15%;
+            }
+
+        }
+
+        @keyframes mymove3 {
+
+            0% {
+                right: 20%;
+            }
+
+            50% {
+                right: 60%;
+            }
+
+            100% {
+                right: 20%;
+            }
+
+        }
+
+        @keyframes mymove4 {
+
+            0% {
+                bottom: 15%;
+            }
+
+            50% {
+                bottom: 50%;
+            }
+
+            100% {
+                bottom: 15%;
+            }
+
+        }
+
+        .container {
+            height: 50%;
+            background-color: rgb(219, 220, 220);
+            margin-top: 4%;
+            margin-left: 15%;
+            margin-right: 10%;
+            overflow: hidden;
+
+            border: 1px solid black;
+
+        }
+
+        .title {
+            width: auto;
+            color: black;
+            font-size: 23px;
+            background-color: rgb(219, 220, 220);
+            margin-top: 11%;
+            margin-left: 15%;
+            margin-right: 10%;
+            padding: 20px;
+        }
     </style>
+    <script type="text/javascript">
+       
+    </script>
 </head>
 
 <body>
@@ -35,62 +281,118 @@
         </a>
         <a href="./airport.html" class="backs">
             <img src="resourse\airport\l.png" class="pic" ">
-            
-    
+                
+        
+            </a>
+            <div class=" title">
+            Click on the moving boxes to collect the documents you need to open an account in Melbourne.
+    </div>
+    <div class="container">
+
+        <a class="mydiv1" onclick="aaa()">Australian Tax File Number (TFN)
         </a>
-        <div class=" normal">
+        <a class="mydiv2" onclick="bbb()" >Residential Address in Australia
+        </a>
+        <a class="mydiv3" onclick="ccc()">Passport
+        </a>
+        <a class="mydiv4" onclick="ddd()">Electronic Confirmation of Enrolment (eCOE)
+        </a>
 
-
-
-
-
-
-
-
-
-            <p>
-                1) Underneath the name of the business/person, comes the street address. If the destination is an
-                apartment, then the apartment number appears before the street number, with the number separated with a
-                dash. (eg: 91/17 Jones St)
-                <br>
-            </p>
-
-            <p>
-                2) After the street address, the city, state and postal code should all appear together on one line.
-                Similar to the US, the names of the states or abbreviated.
-
-
-                <br>
-
-            </p>
-
-            <li>
-
-                Make sure to use state abbreviations. <br>
-            </li>
-            <li>
-
-                City/Town, State name and postal code are all entered on one line. </li>
-            <li>
-
-                Do not use punctuation marks, commas or full stops. </li>
-            <li>
-
-                All text should be aligned to the left. </li>
     </div>
 
+    
 
-
-
-
-
-
-    <a class="airporttaxi">
-        <img class="taxi" src="resourse/airport/adress.jpg" />
-    </a>
 
 
     </div>
+
+    <!--弹出层时背景层DIV-->
+    <div id="fade" class="black_overlay">
+    </div>
+
+    <div id="MyDiv2" class="white_content2">
+
+        <img src="./resourse/bank/bankback.png" alt="" style="width:570px ;"> 
+        <span style="font-size: 16px;margin-left: -21%; margin-top: 10%;position:absolute;" onclick="CloseDiv('MyDiv2','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+    </div>
+
+    <div id="MyDiv22" class="white_content2">
+        
+        <div style="text-align: right; cursor: default; height: 40px; margin: 20px;">
+
+            <div class="insideword">
+
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    var total=0;
+    function aaa(){
+        var div = document.getElementsByClassName('mydiv1')[0];
+        console.log(div.style.display);
+        div.style.display="none";
+        total=total+1;
+        
+        show()
+    }
+    function bbb(){
+        var div = document.getElementsByClassName('mydiv2')[0];
+        div.style.display="none";
+        total=total+1;
+        
+        show()
+    }
+    function ccc(){
+        var div = document.getElementsByClassName('mydiv3')[0];
+        total=total+1;
+        div.style.display="none";
+       
+        show()
+    }
+    function ddd(){
+        var div = document.getElementsByClassName('mydiv4')[0];
+        total=total+1;
+        
+        div.style.display="none";
+        
+        show()
+    }
+ 
+    function show(){
+        if(total==4){
+            ShowDiv('MyDiv2','fade');
+        }
+    }
+
+     //弹出隐藏层
+     function ShowDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv = document.getElementById(bg_div);
+            bgdiv.style.width = document.body.scrollWidth;  // bgdiv.style.height = $(document).height();
+
+            $("#" + bg_div).height($(document).height());
+        };
+        //关闭弹出层
+        function CloseDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+            total=0;
+            var div = document.getElementsByClassName('mydiv1')[0];
+            div.style.display="block";
+            var div = document.getElementsByClassName('mydiv2')[0];
+            div.style.display="block";
+            var div = document.getElementsByClassName('mydiv3')[0];
+            div.style.display="block";
+            var div = document.getElementsByClassName('mydiv4')[0];
+            div.style.display="block";
+            
+        };
+
+</script>
 
 </body>
 

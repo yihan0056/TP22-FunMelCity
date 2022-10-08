@@ -174,36 +174,37 @@ $isSCCFreeVersion = defined( 'STYLISH_COST_CALCULATOR_VERSION' );
 		<div class="col-12 col-md-7 col-lg-7 scc-navbar">
 				<div class="scc-top-nav-container">
 					<ul class="scc-edit-nav-items">
-						<li><a href="<?php echo esc_url( admin_url( 'admin.php?page=scc-tabs' ) ); ?>">Add New</a></li>
-						<li><a href="<?php echo esc_url( admin_url( 'admin.php?page=Stylish_Cost_Calculator_EditItems' ) ); ?>">Edit Existing</a></li>
+						<li><a class="fw-bold" href="<?php echo esc_url( admin_url( 'admin.php?page=scc-tabs' ) ); ?>">Add New</a></li>
+						<li><a class="fw-bold" href="<?php echo esc_url( admin_url( 'admin.php?page=Stylish_Cost_Calculator_EditItems' ) ); ?>">Edit Existing</a></li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feedback <span class="caret"></span></a>
+							<a class="dropdown-toggle fw-bold" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feedback <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a target="_blank" href="https://stylishcostcalculator.com/how-can-we-be-better/">Send Feedback</a></li>
-								<li><a target="_blank" href="https://stylishcostcalculator.com/poll/new-features/">Suggest Feature</a></li>
+								<li><a class="fw-bold" target="_blank" href="https://stylishcostcalculator.com/how-can-we-be-better/">Send Feedback</a></li>
+								<li><a class="fw-bold" target="_blank" href="https://stylishcostcalculator.com/poll/new-features/">Suggest Feature</a></li>
 							</ul>
 						</li>
 
 						<li class="dropdown">
-							<a  class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
+							<a  class="dropdown-toggle fw-bold" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a target="_blank" href="https://designful.freshdesk.com/support/solutions/48000446985">User Guides</a></li>
-								<li><a target="_blank" href="https://designful.freshdesk.com/support/solutions/folders/48000657938">Video Guides</a></li>
-								<li><a target="_blank" href="<?php echo esc_url( admin_url( 'admin.php?page=stylish_cost_calculator_Diagnostic' ) ); ?>">Diagnostic</a></li>
-								<li><a target="_blank" href="https://designful.freshdesk.com/support/solutions/folders/48000670797">Troubleshooting</a></li>
-								<li><a target="_blank" href="https://stylishcostcalculator.com/support/">Contact Support</a></li>
-								<li><a target="_blank" href="https://members.stylishcostcalculator.com/">Member's Portal</a></li>
+								<li><a class="fw-bold" target="_blank" href="https://designful.freshdesk.com/support/solutions/48000446985">User Guides</a></li>
+								<li><a class="fw-bold" target="_blank" href="https://designful.freshdesk.com/support/solutions/folders/48000657938">Video Guides</a></li>
+								<li><a class="fw-bold" target="_blank" href="<?php echo esc_url( admin_url( 'admin.php?page=stylish_cost_calculator_Diagnostic' ) ); ?>">Diagnostic</a></li>
+								<li><a class="fw-bold" target="_blank" href="https://designful.freshdesk.com/support/solutions/folders/48000670797">Troubleshooting</a></li>
+								<li><a class="fw-bold" target="_blank" href="https://stylishcostcalculator.com/support/">Contact Support</a></li>
+								<li><a class="fw-bold" target="_blank" href="https://members.stylishcostcalculator.com/">Member's Portal</a></li>
 							</ul>
 						</li>
 					</ul>
 					<?php if (isset($_REQUEST['id_form'])) { ?>    
                         <button class="btn btn-warning">
-                            <a class="text-decoration-none text-dark" href="<?php echo admin_url() ?>">WP Dashboard</a>
+                            <a class="fw-bold text-decoration-none text-dark" href="<?php echo admin_url() ?>">WP Dashboard</a>
                         </button>
                     <?php } ?>
 				</div>
 		</div>
 	</div>
+	<div id="debug_messages_wrapper" class="d-none"></div>
 	<script>
 		function showSettingsTab(type) {
 			switch (type) {

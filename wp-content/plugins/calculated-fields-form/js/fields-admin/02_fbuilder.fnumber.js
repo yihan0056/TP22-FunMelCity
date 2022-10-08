@@ -18,6 +18,7 @@
 				exclude:false,
 				readonly:false,
                 numberpad:false,
+				spinner:false,
 				size:"small",
 				thousandSeparator:"",
 				decimalSymbol:".",
@@ -32,7 +33,8 @@
 					},
 				editItemEvents:function()
 					{
-						var evt = [
+						var f   = function(el){return el.is(':checked');},
+							evt = [
 							{s:"#sSize",e:"change", l:"size", x:1},
 							{s:"#sFormat",e:"change", l:"dformat", f:function(el){
 								var v = el.val();
@@ -45,7 +47,8 @@
 							{s:"#sMax",e:"change keyup", l:"max", x:1},
 							{s:"#sThousandSeparator",e:"change keyup", l:"thousandSeparator", x:1},
 							{s:"#sDecimalSymbol",e:"change keyup", l:"decimalSymbol", x:1},
-							{s:"#sFormatDynamically",e:"click", l:"formatDynamically",f:function(el){return el.is(':checked');}},
+							{s:"#sSpinner",e:"click", l:"spinner",f:f},
+							{s:"#sFormatDynamically",e:"click", l:"formatDynamically",f:f},
 						];
 						$.fbuilder.controls[ 'ffields' ].prototype.editItemEvents.call(this, evt);
 					},
@@ -56,9 +59,10 @@
 						{
 							str += '<option value="'+this.formats[i]+'" '+((this.formats[i]==df)?"selected":"")+'>'+this.formats[i]+'</option>';
 						}
-						return '<div><label>Number Format</label><select name="sFormat" id="sFormat">'+str+'</select></div>'+
+						return '<div><label><input type="checkbox" name="sSpinner" id="sSpinner" '+( (this.spinner) ? 'CHECKED' : '')+'> Display spinner buttons</label></div>'+
+						'<div><label>Number Format</label><select name="sFormat" id="sFormat">'+str+'</select></div>'+
 						'<div class="fnumber-hint" '+((df != 'percent') ? 'style="display:none;"' : '')+'><i>The field value in the equations would be its decimal representation. Ex. 10% would be 0.1</i></div>'+
-						'<div class="fnumber-symbols" '+((df == 'digits') ? 'style="display:none;"' : '')+'><label>Decimals separator symbol (Ex: 25.20)</label><input type="text" name="sDecimalSymbol" id="sDecimalSymbol" class="large" value="'+cff_esc_attr(this.decimalSymbol)+'" /><label>Symbol for grouping thousands (Ex: 3,000,000)</label><input type="text" name="sThousandSeparator" id="sThousandSeparator" class="large" value="'+cff_esc_attr(this.thousandSeparator)+'" /><label><input type="checkbox" name="sFormatDynamically" id="sFormatDynamically" '+( (this.formatDynamically) ? 'CHECKED' : '')+'> Format Dynamically</label></div>';
+						'<div class="fnumber-symbols" '+((df == 'digits') ? 'style="display:none;"' : '')+'><label>Decimals separator symbol (Ex: 25.20)</label><input type="text" name="sDecimalSymbol" id="sDecimalSymbol" class="large" value="'+cff_esc_attr(this.decimalSymbol)+'" /><label>Symbol for grouping thousands (Ex: 3,000,000)</label><input type="text" name="sThousandSeparator" id="sThousandSeparator" class="large" value="'+cff_esc_attr(this.thousandSeparator)+'" /><label><input type="checkbox" name="sFormatDynamically" id="sFormatDynamically" '+( (this.formatDynamically) ? 'CHECKED' : '')+'> Format dynamically</label></div>';
 					},
 				showRangeIntance: function()
 					{

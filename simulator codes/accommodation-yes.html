@@ -1,0 +1,293 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>弹出层</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="accommodation-yes.css">
+    <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .black_overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+        .white_content2 {
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+        .white_content_small {
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            width: 40%;
+            height: 50%;
+            border: 16px solid lightblue;
+            background-color: white;
+            z-index: 1002;
+
+        }
+
+        .Button1 {
+            z-index: -1;
+        }
+
+        .table {
+            border: black 1px solid;
+        }
+
+        .tr {
+            border-collapse: collapse;
+            border: 1px solid;
+        }
+
+        .td {
+            border: black 1px solid;
+        }
+
+        .closebuton {
+
+            width: 60px;
+            height: 60px;
+        }
+
+        .insideword {
+            right: 1px;
+            width: 98%;
+            color: black;
+            font-size: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 400;
+            border-width: 4px;
+            text-align: left;
+            padding-right: 2px;
+            line-height: 24px;
+
+        }
+    </style>
+    <script type="text/javascript">
+        //弹出隐藏层
+        function ShowDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv = document.getElementById(bg_div);
+            bgdiv.style.width = document.body.scrollWidth;  // bgdiv.style.height = $(document).height();
+
+            $("#" + bg_div).height($(document).height());
+        };
+        //关闭弹出层
+        function CloseDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        };
+    </script>
+</head>
+
+<body>
+    <div class="backgroud">
+        <button class="need">
+            After renting a property, you should know:
+        </button>
+
+
+        <a href="./map.html?home" class="backairport">
+
+            Go Back to the map
+
+
+        </a>
+        <a href="./map.html?home" class="backs">
+            <img src="resourse\airport\l.png" class="pic" ">
+                
+        
+            </a>
+           
+            <div class=" normal2">
+            <div style="margin:30px ;">
+                <div style="color: red ;margin-bottom: 25px;font-weight: 200;">
+                    Click the texts to see more information
+                </div>
+                <br>
+                <a href="javascript:ShowDiv('MyDiv','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 60px;">
+                        Repairs and Maintenance
+
+                    </li>
+                </a>
+                <a href="javascript:ShowDiv('MyDiv2','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 60px;">
+                        Lease Breaking
+
+                    </li>
+                </a>
+
+                <a href="javascript:ShowDiv('MyDiv3','fade')" style="text-decoration: none;color: black;">
+                    <li style="text-decoration: none;color: black;margin-bottom: 40px;">
+                        Report discrimination
+                    </li>
+                </a>
+
+            </div>
+
+            <br>
+    </div>
+
+
+
+    </div>
+
+    <!--弹出层时背景层DIV-->
+    <div id="fade" class="black_overlay">
+    </div>
+
+    <div id="MyDiv" class="white_content2">
+        <span style="font-size: 16px;float: right;" onclick="CloseDiv('MyDiv','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="text-align: right; cursor: default; height: 40px; margin: 20px;">
+
+            <div class="insideword">
+                <p style="font-size: 50px;margin-bottom: 60px;font-weight: 900;">
+                    Repairs and Maintenance
+                   
+                </p>
+                <p>
+                    You have the legal right to request repairs from the landlord or leasing agent.
+                  
+                </p><br>
+                <p>
+                    The rental provider must ensure:
+                </p>
+                <div style="text-indent:30px">
+                    <p>
+                        – Your rented home is ‘maintained in good repair and in a reasonably fit and suitable condition’,
+                        including any shared areas they own or manage [section 68]
+                    </p>
+                    <p>
+                        – All repairs are done by a ‘suitably qualified person’ [section 68]
+                    </p>
+                    <p>
+                        – They comply with safety-related repairs and maintenance requirements [section 68A]
+                    </p>
+
+                </div>
+               <br>
+                <p>
+                    For detailed information, go to our FunMelCity website:
+                </p>
+                <a href="https://www.interlifemel.link/rental-right-repairs-and-maintence/">
+                    <p>
+                        https://www.interlifemel.link/rental-right-repairs-and-maintence/
+                    </p>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div id="MyDiv2" class="white_content2">
+        <span style="font-size: 16px;float: right;" onclick="CloseDiv('MyDiv2','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="text-align: right; cursor: default; height: 40px; margin: 20px;">
+
+            <div class="insideword">
+                <p style="font-size: 50px;margin-bottom: 60px;font-weight: 900;">
+                    Lease Breaking
+
+                </p>
+                <p>
+                    Renters often report that they have been discriminated against when applying for rental properties or during their rental agreement (lease). If you have been treated unfairly you can send a report to the Victorian Equal Opportunity & Human Rights Commission.
+                    <br>
+                </p>
+                <p>
+                    The Victorian Equal Opportunity & Human Rights Commission’s Community Reporting Tool allows you to make a report without having to go through a formal process.
+<br>
+                </p><br>
+                <p>
+                    If you want to, you can ask for someone at the commission to contact you for further information about your rights or how you can make a complaint using its free complaints service.
+                    <br>
+                </p><br>
+                <p>
+                    For detailed information, go to our FunMelCity website:
+
+                </p>
+                <a href="https://www.interlifemel.link/rental-right-lease-breaking/">
+                    <p>
+                        https://www.interlifemel.link/rental-right-lease-breaking/
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="MyDiv3" class="white_content">
+        <span style="font-size: 16px;  float: right;" onclick="CloseDiv('MyDiv3','fade')">
+            <img src="resourse\airport\close.png" class="closebuton">
+        </span>
+        <div style="text-align: right; cursor: default; height: 40px; margin-left: 20px; margin-right: 20px;">
+
+            <div class="insideword">
+                <p style="font-size: 50px;margin-bottom: 60px;font-weight: 900;">
+                    Report discrimination
+
+                </p>
+                <p style="line-height:30px">
+                    Renters often report that they have been discriminated against when applying for rental properties or during their rental agreement (lease). If you have been treated unfairly you can send a report to the Victorian Equal Opportunity & Human Rights Commission.
+<br>
+                </p><br>
+                <p style="line-height:30px">
+                    The Victorian Equal Opportunity & Human Rights Commission’s Community Reporting Tool allows you to make a report without having to go through a formal process.
+                    <br>
+                </p><br>
+                <p style="line-height:30px">
+                    If you want to, you can ask for someone at the commission to contact you for further information about your rights or how you can make a complaint using its free complaints service.
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

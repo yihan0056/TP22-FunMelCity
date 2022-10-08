@@ -61,6 +61,7 @@ class ajaxRequest {
 
 			add_action( 'wp_ajax_sccPDFSettings', array( $this, 'sccPDFSettings' ) );
 			add_action( 'wp_ajax_scc_feedback_manage', array( $this, 'sccFeedbackManage' ) );
+			add_action( 'wp_ajax_scc_get_debug_items', array( $this, 'get_debug_items' ) );
 		}
 
 		// public ajax calls
@@ -1373,5 +1374,20 @@ class ajaxRequest {
 			)
 		);
 	}
+	function get_debug_items()
+    {
+        check_ajax_referer('edit-calculator-page', 'nonce');
+        require dirname( __FILE__ ) . '/admin/views/diagnostic.php';
+        $existing_ignore_list = get_option( 'scc-diag-dissmissed', array() );
+        if (isset($_REQUEST['method']) && $_REQUEST['method'] == 'set_ignore') {
+            $ignored_param = sanitize_text_field( $_REQUEST['value'] );
+            array_push( $existing_ignore_list, $ignored_param );
+            $existing_ignore_list = array_unique($existing_ignore_list);
+            update_option( 'scc-diag-dissmissed', $existing_ignore_list );
+        }
+        $diag_page = new Stylish_Cost_Calculator_Diagnostic();
+        $res = $diag_page->diagnostic_page(true);
+        wp_send_json(array( "diag_items" => $res, "exclusions" => $existing_ignore_list));
+    }
 }
 new ajaxRequest();

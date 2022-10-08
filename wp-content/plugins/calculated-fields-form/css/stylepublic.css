@@ -573,3 +573,11 @@
 #fbuilder .cff-record-av-field .cff-record-time{display:inline-block;margin-left:10px;}
 #fbuilder .cff-record-av-field .cff-record-time:after{content:"/";margin-left:5px;margin-right:5px;}
 #fbuilder .cff-record-av-field .cff-record-max-time{display:inline-block;color:red;}
+
+#fbuilder .cff-spinner input[type='number'] {-moz-appearance:textfield;}
+#fbuilder .cff-spinner input[type=number]::-webkit-inner-spin-button,
+#fbuilder .cff-spinner input[type=number]::-webkit-outer-spin-button {-webkit-appearance:none;margin:0;}
+
+#fbuilder .cff-spinner .cff-spinner-down,
+#fbuilder .cff-spinner .cff-spinner-up{padding-left:0;padding-right:0;width:30px;}
+#fbuilder .cff-spinner input{max-width: calc( 100% - 70px );margin-left:5px !important;margin-right:5px !important;}

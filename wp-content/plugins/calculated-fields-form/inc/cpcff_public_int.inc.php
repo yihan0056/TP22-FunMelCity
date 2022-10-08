@@ -33,6 +33,9 @@ if ( ! wp_script_is( 'select2' ) ) {
 }
 
 if ( ! empty( $form_data ) ) {
+	if ( isset( $form_data[1] ) && is_object( $form_data[1] ) ) {
+		$form_data[1] = (array) $form_data[1];
+	}
 	if ( isset( $form_data[1] ) && isset( $form_data[1][0] ) ) {
 		if ( ! empty( $form_data[1][0]->formtemplate ) ) {
 			CPCFF_TEMPLATES::enqueue_template_resources( $form_data[1][0]->formtemplate );
@@ -41,9 +44,6 @@ if ( ! empty( $form_data ) ) {
 		if ( ! empty( $form_data[1][0]->customstyles ) ) {
 			print '<style>' . wp_strip_all_tags( $form_data[1][0]->customstyles ) . '</style>'; // phpcs:ignore WordPress.Security.EscapeOutput
 		}
-	}
-	if ( isset( $form_data[1] ) && is_object( $form_data[1] ) ) {
-		$form_data[1] = (array) $form_data[1];
 	}
 	$form_data[1]['formid'] = 'cp_calculatedfieldsf_pform_' . CPCFF_MAIN::$form_counter;
 	?>

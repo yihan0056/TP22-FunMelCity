@@ -49,6 +49,8 @@
     -webkit-appearance: menulist-button;
     height:35px;
 }
+.cp_cff_pastel .cff-spinner .cff-spinner-down,
+.cp_cff_pastel .cff-spinner .cff-spinner-up,
 .cp_cff_pastel #fbuilder .pbSubmit,
 .cp_cff_pastel #fbuilder .pbreak .pbPrevious,
 .cp_cff_pastel #fbuilder .pbreak .pbNext,
@@ -62,6 +64,8 @@
     border: 1px solid #16a085;
     border-width: 1px 1px 3px;
 }
+.cp_cff_pastel .cff-spinner .cff-spinner-down,
+.cp_cff_pastel .cff-spinner .cff-spinner-up{height:35px;padding:5px;}
 .cp_cff_pastel #fbuilder .select2-selection{background:#e8eeef;border:0;}
 .cp_cff_pastel #fbuilder .select2-selection__rendered{color:#8a97a0;}
 .cp_cff_pastel #fbuilder .select2-selection__choice{background:#1abc9c;border:0;padding:5px;color:#fff;}

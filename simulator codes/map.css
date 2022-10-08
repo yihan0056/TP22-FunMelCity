@@ -1,95 +1,111 @@
-.map{
-    
+.map {
+
     width: 950px;
     height: 100%;
-   
-   margin:auto;
-   background-image: url("resourse/map/background.png");
-   background-repeat: no-repeat;
-   background-position: center,400px;
-   background-size: 100% 100%;
-   border-radius: 10%;
+
+    margin: auto;
+    background-image: url("resourse/map/background.png");
+    background-repeat: no-repeat;
+    background-position: center, 400px;
+    background-size: 100% 100%;
+    border-radius: 10%;
+    overflow: hidden;
 
 }
 
-.office{
+.office {
     width: 300px;
     height: 300px;
-    position: relative;
-    top: 310PX;
-    left: 320px;
+    
+    
+    position:absolute;
+    margin-top: 300px;
+    margin-left: 340px;
+    
     background-image: url("resourse/map/house.png");
-   background-repeat: no-repeat;
-   background-position: center,400px;
-   background-size: 100% 100%;
-   border-radius: 10%;
+    background-repeat: no-repeat;
+    background-position: center, 400px;
+    background-size: 100% 100%;
+    border-radius: 10%;
+    z-index: 1;
 }
-.airport{
+
+.airport {
     width: 190px;
     height: 190px;
-    position: relative;
-    top: -250pX;
-    left: 690px;
+    position:absolute;
+   margin-top: 40px;
+   margin-left: 680px;
+
+   
     background-image: url("resourse/map/airport.png");
-   background-repeat: no-repeat;
-   background-position: center,400px;
-   background-size: 100% 100%;
-   border-radius: 10%;
+    background-repeat: no-repeat;
+    background-position: center, 400px;
+    background-size: 100% 100%;
+    border-radius: 10%;
 }
-.bank{
+
+.bank {
     width: 230px;
     height: 190px;
-    position: relative;
-    top: -10pX;
-    left: 690px;
+    position:absolute;
+    margin-top: 500px;
+    margin-left: 680px;
+
     background-image: url("resourse/map/bankpng.png");
-   background-repeat: no-repeat;
-   background-position: center,400px;
-   background-size: 100% 100%;
-   border-radius: 60%;
+    background-repeat: no-repeat;
+    background-position: center, 400px;
+    background-size: 100% 100%;
+    border-radius: 60%;
 
 }
-.bus{
+
+.bus {
     width: 250px;
     height: 180px;
-    position:relative;
-    top: -650pX;
-    left: 380px;
+    position:absolute;
+    margin-top: 50px;
+    margin-left: 400px;
     background-image: url("resourse/map/bus.png");
-   background-repeat: no-repeat;
-   background-position: center,400px;
-   background-size: 100% 100%;
-   border-radius: 10%;
+    background-repeat: no-repeat;
+    background-position: center, 400px;
+    background-size: 100% 100%;
+    border-radius: 10%;
 }
-.house{
+
+.house {
     width: 230px;
+    
     height: 190px;
-    position: relative;
-    top: -850pX;
-    left: 20px;
+    position:absolute;
+    margin-top: 50px;
+    margin-left: 40px;
+    
     background-image: url("resourse/map/office.png");
-   background-repeat: no-repeat;
-   background-position: center,400px;
-   background-size: 100% 100%;
-   
+    background-repeat: no-repeat;
+    background-position: center, 400px;
+    background-size: 100% 100%;
+
 }
-.shop{
+
+.shop {
     width: 250px;
     height: 220px;
-    position: relative;
-    top: -580pX;
-    left: 50px;
-    background-image: url("resourse/map/shopping\ mall.jpg.png");
-   background-repeat: no-repeat;
-   background-position: center,400px;
-   background-size: 100% 100%;
+    float: left;
+    margin-left: 10px;
+    margin-top:500px;
    
+    background-image: url("resourse/map/shopping\ mall.jpg.png");
+    background-repeat: no-repeat;
+    background-position: center, 400px;
+    background-size: 100% 100%;
+
 }
 
 
 
 
 .moveleft {
-  
-  transform: translateY(100px);
+
+    transform: translateY(100px);
 }

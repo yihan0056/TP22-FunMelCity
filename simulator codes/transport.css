@@ -39,7 +39,7 @@
 }
 
 .total{
-    margin-top: 20%;
+    margin-top: 16%;
    
     width: 100%;
     height: 350px;
@@ -66,7 +66,7 @@
 }
 
 .title1{
-    margin-left: 190px;
+    margin-left: 90px;
     margin-right: auto;
     color: black;
     font-size: 35px;
@@ -101,7 +101,7 @@
     top: 60px;
     left: 20px;
     color: black;
-    font-size: 40px;
+    font-size: 50px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 800;
     border-width: 4px;
@@ -131,9 +131,9 @@
 .normal{
 
     position: absolute;
-    top: 200px;
-    left: 20px;
-    width: 800px;
+    top: 27%;
+    left: 4%;
+    width: 60%;
     color: black;
     font-size: 25px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -141,8 +141,20 @@
     border-width: 4px;
     float: left;
     background-color:aliceblue;
-   
+}
+.normal2{
 
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    width: 80%;
+    color: black;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    border-width: 4px;
+    float: left;
+    background-color:aliceblue;
 }
 .airporttaxi{
     position: absolute;

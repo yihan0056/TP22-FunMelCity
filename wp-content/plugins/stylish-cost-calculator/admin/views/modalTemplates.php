@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<# 
 								var {calcId}=data;
 								var pendingLicense=jQuery('.scc-pending-license').length ? true : false;
-								var { quoteFormFields }=JSON.parse(document.getElementById('scc-config-' + calcId).innerHTML);
+								var { quoteFormFields }=JSON.parse(document.getElementById('scc-config-' + calcId).textContent);
 								var submitBtnText= sccGetTranslationByKey(calcId, 'Submit') ;
 								var cancelBtnText= sccGetTranslationByKey(calcId, 'Cancel') ;
 								var fieldsByKey=quoteFormFields.map((e,i)=>
@@ -89,7 +89,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- start of edit existing quote form field modal's template. In this template data represents fieldKey -->
 <script type="text/html" id="tmpl-scc-quote-form-field-edit">
 	<div class="df-scc-euiOverlayMask df-scc-euiOverlayMask--aboveHeader">
-		<# const urlParams=new URLSearchParams(window.location.search); const calcId=urlParams.get('id_form'); var { quoteFormFields }=JSON.parse(document.getElementById('scc-config-' + calcId).innerHTML); let fieldProps=quoteFormFields.filter(e=> Object.keys(e)[0] == data)[0][data];
+		<# const urlParams=new URLSearchParams(window.location.search); const calcId=urlParams.get('id_form'); var { quoteFormFields }=JSON.parse(document.getElementById('scc-config-' + calcId).textContent); let fieldProps=quoteFormFields.filter(e=> Object.keys(e)[0] == data)[0][data];
 			#>
 			<div class="df-scc-euiModal df-scc-euiModal--maxWidth-default df-scc-euiModal--confirmation">
 				<button class="df-scc-euiButtonIcon df-scc-euiButtonIcon--text df-scc-euiModal__closeIcon" type="button" data-dismiss="modal"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="df-scc-euiIcon df-scc-euiIcon--medium df-scc-euiButtonIcon__icon" focusable="false" role="img" aria-hidden="true">
@@ -753,4 +753,21 @@ test public_key: pk_test_TYooMQauvdEDq54NiTphI7jx
 	  <p style="color:green"> <span class="trn">{{ sccGetTranslationByKey('Your discount has been applied correctly') }}</span>. -{{ data.discountAmountText }} </p>
 	</div>
 </div>
+</script>
+
+<script type="text/html" id="tmpl-scc-diag-alert">
+    <# if (data) {
+      Object.keys(data).forEach(e => {
+        let msgContents = data[e];
+        #>
+          <div class="alert alert-warning" role="alert">
+            <div class="diag-msg-container">
+              <b>{{ msgContents.title }}</b>
+              <p>{{{ jQuery('<span>' + msgContents.message + '</span>').html() }}}</p>
+              <i class="material-icons diag-msg-close" onclick="javascript:handleDiagRemove(this)" data-diag-key={{ e }}>close</i>
+            </div>
+          </div>
+        <#
+      })
+    } #>
 </script>

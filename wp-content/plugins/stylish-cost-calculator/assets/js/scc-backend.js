@@ -1001,6 +1001,23 @@ function toolPrem(){
       })
     })
 
+function handleDiagRemove($this) {
+	let ignoredMsgKey = $this.getAttribute('data-diag-key');
+	jQuery.ajax({
+			url: ajaxurl,
+			cache: false,
+			data: {
+			action: 'scc_get_debug_items',
+			nonce: pageEditCalculator.nonce,
+			method: 'set_ignore',
+			value: ignoredMsgKey
+		},
+		success: function(data) {
+			$this.closest('.alert.alert-warning').remove();
+		}
+	})
+}
+
 document.querySelectorAll('#close-btn').forEach(element =>{
 	element.addEventListener('click',function(){
 		if(this.innerText!='-') return

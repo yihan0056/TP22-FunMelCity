@@ -16,7 +16,7 @@ class FrmAppHelper {
 	/**
 	 * @since 2.0
 	 */
-	public static $plug_version = '5.4.5';
+	public static $plug_version = '5.5.1';
 
 	/**
 	 * @since 1.07.02
@@ -3089,7 +3089,7 @@ class FrmAppHelper {
 		/**
 		 * Filter available locale options.
 		 *
-		 * @since x.x Added $args parameter with type.
+		 * @since 5.4.5 Added $args parameter with type.
 		 *
 		 * @param array<string,string> $locales
 		 * @param array                $args {
@@ -3579,6 +3579,20 @@ class FrmAppHelper {
 	 */
 	private static function get_form_listing_page_actions() {
 		return array( 'list', 'trash', 'untrash', 'destroy' );
+	}
+
+	/**
+	 * Safely call get_plugins, importing the required files if they are not yet loaded.
+	 *
+	 * @since 5.5
+	 *
+	 * @return array
+	 */
+	public static function get_plugins() {
+		if ( ! function_exists( 'get_plugins' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/plugin.php';
+		}
+		return get_plugins();
 	}
 
 	/**

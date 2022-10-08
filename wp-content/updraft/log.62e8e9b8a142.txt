@@ -1,0 +1,1103 @@
+0000.000 (0) Opened log file at time: Thu, 06 Oct 2022 13:23:44 +0000 on https://www.interlifemel.link
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.19 WP: 6.0.2 PHP: 8.0.17 (fpm-fcgi, Linux ip-172-26-10-152 4.19.0-20-cloud-amd64 #1 SMP Debian 4.19.235-1 (2022-03-17) x86_64) MySQL: 10.6.7-MariaDB (max packet size=16777216) WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 14.9M | 18M) multisite: N openssl: OpenSSL 1.1.1n  15 Mar 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.002 (0) Free space on disk containing Updraft's temporary directory: 53528.3 MB
+0000.004 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB: 1 (schedule: daily)
+0000.007 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.011 (0) Set semaphore last lock (fd) time to 2022-10-06 13:23:44
+0000.012 (0) Semaphore lock (fd) complete
+0000.016 (0) Backup run: resumption=0, nonce=62e8e9b8a142, file_nonce=62e8e9b8a142 begun at=1665062624 (0s ago), job type=backup
+0000.018 (0) Scheduling a resumption (1) after 300 seconds (1665062924) in case this run gets aborted
+0000.021 (0) Checking if we have a zip executable available
+0000.021 (0) Testing: /usr/bin/zip
+0000.029 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.030 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.031 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.032 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.033 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.040 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.041 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.043 (0) Working binary zip found: /usr/bin/zip
+0000.045 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.046 (0) Creation of backups of directories: beginning
+0000.050 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0002.500 (0) Total entities for the zip file: 5419 directories, 22120 files (0 skipped as non-modified), 318.4 MB
+0002.502 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0002.682 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: size is now: 1.30 MB
+0002.686 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 100 files added (on-disk size: 1318.8 KB)
+0002.688 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 200 files added (on-disk size: 1318.8 KB)
+0002.690 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 300 files added (on-disk size: 1318.8 KB)
+0002.692 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 400 files added (on-disk size: 1318.8 KB)
+0002.694 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 500 files added (on-disk size: 1318.8 KB)
+0002.695 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 600 files added (on-disk size: 1318.8 KB)
+0002.698 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 700 files added (on-disk size: 1318.8 KB)
+0002.699 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 800 files added (on-disk size: 1318.8 KB)
+0002.701 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 900 files added (on-disk size: 1318.8 KB)
+0002.703 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 1000 files added (on-disk size: 1318.8 KB)
+0002.705 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (7.4 MB, 22120 files batched, 1001 (1002) added so far); re-opening (prior size: 1318.8 KB)
+0003.584 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: size is now: 3.70 MB
+0003.588 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 1100 files added (on-disk size: 3753.1 KB)
+0003.590 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 1200 files added (on-disk size: 3753.1 KB)
+0003.592 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 1300 files added (on-disk size: 3753.1 KB)
+0003.594 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 1400 files added (on-disk size: 3753.1 KB)
+0003.596 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 1500 files added (on-disk size: 3753.1 KB)
+0003.598 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 1600 files added (on-disk size: 3753.1 KB)
+0003.600 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 1700 files added (on-disk size: 3753.1 KB)
+0003.602 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 1800 files added (on-disk size: 3753.1 KB)
+0003.604 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 1900 files added (on-disk size: 3753.1 KB)
+0003.606 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 2000 files added (on-disk size: 3753.1 KB)
+0003.607 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (18.8 MB, 22120 files batched, 1001 (2003) added so far); re-opening (prior size: 3753.1 KB)
+0004.955 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: size is now: 9.80 MB
+0004.958 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 2100 files added (on-disk size: 10076 KB)
+0004.960 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 2200 files added (on-disk size: 10076 KB)
+0004.962 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 2300 files added (on-disk size: 10076 KB)
+0004.964 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 2400 files added (on-disk size: 10076 KB)
+0004.966 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 2500 files added (on-disk size: 10076 KB)
+0004.968 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 2600 files added (on-disk size: 10076 KB)
+0004.970 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 2700 files added (on-disk size: 10076 KB)
+0004.972 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 2800 files added (on-disk size: 10076 KB)
+0004.974 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 2900 files added (on-disk size: 10076 KB)
+0004.975 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.6 MB, 22120 files batched, 912 (2915) added so far); re-opening (prior size: 10076 KB)
+0006.520 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: size is now: 18.40 MB
+0006.522 (0) A useful amount of data was added after this amount of zip processing: 2.2 s (normalised: 2.1 s, rate: 12154.9 KB/s)
+0006.524 (0) Performance is good - will increase the amount of data we attempt to batch (time=2.15420794487, normalised_time=2.1061529744313, max_time=6.5231912136078, data points known=1, old_max_bytes=26214400, new_max_bytes=74679475)
+0006.527 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 3000 files added (on-disk size: 18800.9 KB)
+0006.529 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 3100 files added (on-disk size: 18800.9 KB)
+0006.531 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 3200 files added (on-disk size: 18800.9 KB)
+0006.533 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 3300 files added (on-disk size: 18800.9 KB)
+0006.535 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 3400 files added (on-disk size: 18800.9 KB)
+0006.537 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 3500 files added (on-disk size: 18800.9 KB)
+0006.539 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 3600 files added (on-disk size: 18800.9 KB)
+0006.541 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 3700 files added (on-disk size: 18800.9 KB)
+0006.543 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 3800 files added (on-disk size: 18800.9 KB)
+0006.545 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 3900 files added (on-disk size: 18800.9 KB)
+0006.546 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (12.1 MB, 22120 files batched, 1001 (3916) added so far); re-opening (prior size: 18800.9 KB)
+0007.567 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 4000 files added (on-disk size: 21877.6 KB)
+0007.569 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 4100 files added (on-disk size: 21877.6 KB)
+0007.571 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 4200 files added (on-disk size: 21877.6 KB)
+0007.573 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 4300 files added (on-disk size: 21877.6 KB)
+0007.575 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 4400 files added (on-disk size: 21877.6 KB)
+0007.577 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 4500 files added (on-disk size: 21877.6 KB)
+0007.579 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 4600 files added (on-disk size: 21877.6 KB)
+0007.581 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 4700 files added (on-disk size: 21877.6 KB)
+0007.583 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 4800 files added (on-disk size: 21877.6 KB)
+0007.585 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 4900 files added (on-disk size: 21877.6 KB)
+0007.586 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (14.3 MB, 22120 files batched, 1001 (4917) added so far); re-opening (prior size: 21877.6 KB)
+0008.616 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 5000 files added (on-disk size: 23783.3 KB)
+0008.618 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 5100 files added (on-disk size: 23783.3 KB)
+0008.620 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 5200 files added (on-disk size: 23783.3 KB)
+0008.622 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 5300 files added (on-disk size: 23783.3 KB)
+0008.624 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 5400 files added (on-disk size: 23783.3 KB)
+0008.626 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 5500 files added (on-disk size: 23783.3 KB)
+0008.628 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 5600 files added (on-disk size: 23783.3 KB)
+0008.630 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 5700 files added (on-disk size: 23783.3 KB)
+0008.632 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 5800 files added (on-disk size: 23783.3 KB)
+0008.633 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 5900 files added (on-disk size: 23783.3 KB)
+0008.635 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (5.6 MB, 22120 files batched, 1001 (5918) added so far); re-opening (prior size: 23783.3 KB)
+0009.426 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 6000 files added (on-disk size: 24870.7 KB)
+0009.428 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 6100 files added (on-disk size: 24870.7 KB)
+0009.430 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 6200 files added (on-disk size: 24870.7 KB)
+0009.432 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 6300 files added (on-disk size: 24870.7 KB)
+0009.434 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 6400 files added (on-disk size: 24870.7 KB)
+0009.436 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 6500 files added (on-disk size: 24870.7 KB)
+0009.438 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 6600 files added (on-disk size: 24870.7 KB)
+0009.440 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 6700 files added (on-disk size: 24870.7 KB)
+0009.442 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 6800 files added (on-disk size: 24870.7 KB)
+0009.443 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 6900 files added (on-disk size: 24870.7 KB)
+0009.445 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (4.1 MB, 22120 files batched, 1001 (6919) added so far); re-opening (prior size: 24870.7 KB)
+0010.243 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 7000 files added (on-disk size: 26374.2 KB)
+0010.245 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 7100 files added (on-disk size: 26374.2 KB)
+0010.247 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 7200 files added (on-disk size: 26374.2 KB)
+0010.249 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 7300 files added (on-disk size: 26374.2 KB)
+0010.258 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 7400 files added (on-disk size: 26374.2 KB)
+0010.261 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 7500 files added (on-disk size: 26374.2 KB)
+0010.265 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 7600 files added (on-disk size: 26374.2 KB)
+0010.267 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 7700 files added (on-disk size: 26374.2 KB)
+0010.272 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 7800 files added (on-disk size: 26374.2 KB)
+0010.276 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 7900 files added (on-disk size: 26374.2 KB)
+0010.280 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (8.2 MB, 22120 files batched, 1001 (7920) added so far); re-opening (prior size: 26374.2 KB)
+0011.335 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 8000 files added (on-disk size: 28787.3 KB)
+0011.337 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 8100 files added (on-disk size: 28787.3 KB)
+0011.339 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 8200 files added (on-disk size: 28787.3 KB)
+0011.342 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 8300 files added (on-disk size: 28787.3 KB)
+0011.344 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 8400 files added (on-disk size: 28787.3 KB)
+0011.346 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 8500 files added (on-disk size: 28787.3 KB)
+0011.348 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 8600 files added (on-disk size: 28787.3 KB)
+0011.351 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 8700 files added (on-disk size: 28787.3 KB)
+0011.353 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 8800 files added (on-disk size: 28787.3 KB)
+0011.355 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 8900 files added (on-disk size: 28787.3 KB)
+0011.356 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (6.9 MB, 22120 files batched, 1001 (8921) added so far); re-opening (prior size: 28787.3 KB)
+0012.273 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 9000 files added (on-disk size: 30796.1 KB)
+0012.275 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 9100 files added (on-disk size: 30796.1 KB)
+0012.277 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 9200 files added (on-disk size: 30796.1 KB)
+0012.279 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 9300 files added (on-disk size: 30796.1 KB)
+0012.281 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 9400 files added (on-disk size: 30796.1 KB)
+0012.283 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 9500 files added (on-disk size: 30796.1 KB)
+0012.285 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 9600 files added (on-disk size: 30796.1 KB)
+0012.287 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 9700 files added (on-disk size: 30796.1 KB)
+0012.289 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 9800 files added (on-disk size: 30796.1 KB)
+0012.291 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 9900 files added (on-disk size: 30796.1 KB)
+0012.293 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (20.5 MB, 22120 files batched, 1001 (9922) added so far); re-opening (prior size: 30796.1 KB)
+0013.849 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: size is now: 40.70 MB
+0013.853 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 10000 files added (on-disk size: 41693 KB)
+0013.855 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 10100 files added (on-disk size: 41693 KB)
+0013.857 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 10200 files added (on-disk size: 41693 KB)
+0013.859 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 10300 files added (on-disk size: 41693 KB)
+0013.861 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 10400 files added (on-disk size: 41693 KB)
+0013.863 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 10500 files added (on-disk size: 41693 KB)
+0013.866 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 10600 files added (on-disk size: 41693 KB)
+0013.868 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 10700 files added (on-disk size: 41693 KB)
+0013.870 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 10800 files added (on-disk size: 41693 KB)
+0013.873 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 10900 files added (on-disk size: 41693 KB)
+0013.874 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (21.8 MB, 22120 files batched, 1001 (10923) added so far); re-opening (prior size: 41693 KB)
+0015.655 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 11000 files added (on-disk size: 49213.1 KB)
+0015.658 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 11100 files added (on-disk size: 49213.1 KB)
+0015.659 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 11200 files added (on-disk size: 49213.1 KB)
+0015.661 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 11300 files added (on-disk size: 49213.1 KB)
+0015.663 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 11400 files added (on-disk size: 49213.1 KB)
+0015.665 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 11500 files added (on-disk size: 49213.1 KB)
+0015.667 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 11600 files added (on-disk size: 49213.1 KB)
+0015.669 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 11700 files added (on-disk size: 49213.1 KB)
+0015.671 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 11800 files added (on-disk size: 49213.1 KB)
+0015.673 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 11900 files added (on-disk size: 49213.1 KB)
+0015.674 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (12 MB, 22120 files batched, 1001 (11924) added so far); re-opening (prior size: 49213.1 KB)
+0017.051 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 12000 files added (on-disk size: 53867.4 KB)
+0017.056 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 12100 files added (on-disk size: 53867.4 KB)
+0017.059 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 12200 files added (on-disk size: 53867.4 KB)
+0017.062 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 12300 files added (on-disk size: 53867.4 KB)
+0017.066 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 12400 files added (on-disk size: 53867.4 KB)
+0017.069 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 12500 files added (on-disk size: 53867.4 KB)
+0017.073 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 12600 files added (on-disk size: 53867.4 KB)
+0017.075 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 12700 files added (on-disk size: 53867.4 KB)
+0017.079 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 12800 files added (on-disk size: 53867.4 KB)
+0017.083 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 12900 files added (on-disk size: 53867.4 KB)
+0017.085 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (25.5 MB, 22120 files batched, 1001 (12925) added so far); re-opening (prior size: 53867.4 KB)
+0019.295 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 13000 files added (on-disk size: 60726.8 KB)
+0019.297 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 13100 files added (on-disk size: 60726.8 KB)
+0019.299 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 13200 files added (on-disk size: 60726.8 KB)
+0019.301 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 13300 files added (on-disk size: 60726.8 KB)
+0019.303 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 13400 files added (on-disk size: 60726.8 KB)
+0019.305 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 13500 files added (on-disk size: 60726.8 KB)
+0019.307 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 13600 files added (on-disk size: 60726.8 KB)
+0019.309 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 13700 files added (on-disk size: 60726.8 KB)
+0019.311 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 13800 files added (on-disk size: 60726.8 KB)
+0019.313 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 13900 files added (on-disk size: 60726.8 KB)
+0019.314 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (5.2 MB, 22120 files batched, 1001 (13926) added so far); re-opening (prior size: 60726.8 KB)
+0020.236 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 14000 files added (on-disk size: 62911.7 KB)
+0020.238 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 14100 files added (on-disk size: 62911.7 KB)
+0020.240 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 14200 files added (on-disk size: 62911.7 KB)
+0020.242 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 14300 files added (on-disk size: 62911.7 KB)
+0020.244 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 14400 files added (on-disk size: 62911.7 KB)
+0020.246 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 14500 files added (on-disk size: 62911.7 KB)
+0020.248 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 14600 files added (on-disk size: 62911.7 KB)
+0020.250 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 14700 files added (on-disk size: 62911.7 KB)
+0020.251 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 14800 files added (on-disk size: 62911.7 KB)
+0020.253 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 14900 files added (on-disk size: 62911.7 KB)
+0020.255 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (25.8 MB, 22120 files batched, 1001 (14927) added so far); re-opening (prior size: 62911.7 KB)
+0021.982 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 15000 files added (on-disk size: 68445.5 KB)
+0021.984 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 15100 files added (on-disk size: 68445.5 KB)
+0021.988 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 15200 files added (on-disk size: 68445.5 KB)
+0021.990 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 15300 files added (on-disk size: 68445.5 KB)
+0021.993 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 15400 files added (on-disk size: 68445.5 KB)
+0021.995 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 15500 files added (on-disk size: 68445.5 KB)
+0021.998 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 15600 files added (on-disk size: 68445.5 KB)
+0022.001 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 15700 files added (on-disk size: 68445.5 KB)
+0022.004 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 15800 files added (on-disk size: 68445.5 KB)
+0022.007 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 15900 files added (on-disk size: 68445.5 KB)
+0022.008 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (26.3 MB, 22120 files batched, 1001 (15928) added so far); re-opening (prior size: 68445.5 KB)
+0023.947 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 16000 files added (on-disk size: 76285.9 KB)
+0023.949 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 16100 files added (on-disk size: 76285.9 KB)
+0023.951 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 16200 files added (on-disk size: 76285.9 KB)
+0023.952 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 16300 files added (on-disk size: 76285.9 KB)
+0023.954 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 16400 files added (on-disk size: 76285.9 KB)
+0023.956 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 16500 files added (on-disk size: 76285.9 KB)
+0023.958 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 16600 files added (on-disk size: 76285.9 KB)
+0023.960 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 16700 files added (on-disk size: 76285.9 KB)
+0023.961 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 16800 files added (on-disk size: 76285.9 KB)
+0023.963 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 16900 files added (on-disk size: 76285.9 KB)
+0023.964 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (8.9 MB, 22120 files batched, 1001 (16929) added so far); re-opening (prior size: 76285.9 KB)
+0025.096 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 17000 files added (on-disk size: 79079.6 KB)
+0025.098 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 17100 files added (on-disk size: 79079.6 KB)
+0025.100 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 17200 files added (on-disk size: 79079.6 KB)
+0025.102 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 17300 files added (on-disk size: 79079.6 KB)
+0025.104 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 17400 files added (on-disk size: 79079.6 KB)
+0025.106 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 17500 files added (on-disk size: 79079.6 KB)
+0025.108 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 17600 files added (on-disk size: 79079.6 KB)
+0025.110 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 17700 files added (on-disk size: 79079.6 KB)
+0025.112 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 17800 files added (on-disk size: 79079.6 KB)
+0025.114 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 17900 files added (on-disk size: 79079.6 KB)
+0025.115 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (2.4 MB, 22120 files batched, 1001 (17930) added so far); re-opening (prior size: 79079.6 KB)
+0025.983 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 18000 files added (on-disk size: 80151.5 KB)
+0025.985 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 18100 files added (on-disk size: 80151.5 KB)
+0025.987 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 18200 files added (on-disk size: 80151.5 KB)
+0025.989 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 18300 files added (on-disk size: 80151.5 KB)
+0025.991 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 18400 files added (on-disk size: 80151.5 KB)
+0025.993 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 18500 files added (on-disk size: 80151.5 KB)
+0025.995 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 18600 files added (on-disk size: 80151.5 KB)
+0025.996 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 18700 files added (on-disk size: 80151.5 KB)
+0025.998 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 18800 files added (on-disk size: 80151.5 KB)
+0026.000 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 18900 files added (on-disk size: 80151.5 KB)
+0026.002 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (13.1 MB, 22120 files batched, 1001 (18931) added so far); re-opening (prior size: 80151.5 KB)
+0027.365 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 19000 files added (on-disk size: 86120.3 KB)
+0027.375 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 19100 files added (on-disk size: 86120.3 KB)
+0027.390 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 19200 files added (on-disk size: 86120.3 KB)
+0027.405 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 19300 files added (on-disk size: 86120.3 KB)
+0027.418 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 19400 files added (on-disk size: 86120.3 KB)
+0027.433 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 19500 files added (on-disk size: 86120.3 KB)
+0027.447 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 19600 files added (on-disk size: 86120.3 KB)
+0027.478 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 19700 files added (on-disk size: 86120.3 KB)
+0027.495 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 19800 files added (on-disk size: 86120.3 KB)
+0027.524 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 19900 files added (on-disk size: 86120.3 KB)
+0027.552 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (11.3 MB, 22120 files batched, 1001 (19932) added so far); re-opening (prior size: 86120.3 KB)
+0028.993 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 20000 files added (on-disk size: 89589.4 KB)
+0028.995 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 20100 files added (on-disk size: 89589.4 KB)
+0028.997 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 20200 files added (on-disk size: 89589.4 KB)
+0028.999 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 20300 files added (on-disk size: 89589.4 KB)
+0029.001 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 20400 files added (on-disk size: 89589.4 KB)
+0029.003 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 20500 files added (on-disk size: 89589.4 KB)
+0029.005 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 20600 files added (on-disk size: 89589.4 KB)
+0029.007 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 20700 files added (on-disk size: 89589.4 KB)
+0029.009 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 20800 files added (on-disk size: 89589.4 KB)
+0029.011 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 20900 files added (on-disk size: 89589.4 KB)
+0029.012 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (26.1 MB, 22120 files batched, 1001 (20933) added so far); re-opening (prior size: 89589.4 KB)
+0030.597 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 21000 files added (on-disk size: 96807.8 KB)
+0030.599 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 21100 files added (on-disk size: 96807.8 KB)
+0030.601 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 21200 files added (on-disk size: 96807.8 KB)
+0030.603 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 21300 files added (on-disk size: 96807.8 KB)
+0030.605 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 21400 files added (on-disk size: 96807.8 KB)
+0030.608 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 21500 files added (on-disk size: 96807.8 KB)
+0030.610 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 21600 files added (on-disk size: 96807.8 KB)
+0030.612 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 21700 files added (on-disk size: 96807.8 KB)
+0030.614 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 21800 files added (on-disk size: 96807.8 KB)
+0030.616 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 21900 files added (on-disk size: 96807.8 KB)
+0030.618 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (13.2 MB, 22120 files batched, 1001 (21934) added so far); re-opening (prior size: 96807.8 KB)
+0031.855 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 22000 files added (on-disk size: 99830.7 KB)
+0031.858 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.tmp: 22100 files added (on-disk size: 99830.7 KB)
+0032.839 (0) Creating zip file manifest (backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.list-temp.tmp)
+0032.963 (0) Successfully created zip file manifest (size: 2055923)
+0034.202 (0) Created plugins zip (0) - 100896.2 KB in 34.2 s (2954.4 KB/s) (sha1: 5253ff16ddc1358d3478552cd81ead39e8300588, sha256: 5f298cb6c307152727e5b214731c811a677b962e0ce8cdbba78c2ecca1f3ff87)
+0034.205 (0) Beginning creation of dump of themes (split every: 400 MB)
+0034.299 (0) Total entities for the zip file: 432 directories, 1389 files (0 skipped as non-modified), 42.9 MB
+0034.301 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0034.303 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0034.305 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0034.307 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0034.309 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0034.311 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0034.313 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0034.315 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0034.317 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 900 files added (on-disk size: 0 KB)
+0034.319 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0034.320 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (31.7 MB, 1389 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0036.433 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: size is now: 13.20 MB
+0036.439 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 1100 files added (on-disk size: 13513.4 KB)
+0036.442 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 1200 files added (on-disk size: 13513.4 KB)
+0036.444 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: 1300 files added (on-disk size: 13513.4 KB)
+0036.981 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.tmp: size is now: 20.30 MB
+0036.998 (0) Creating zip file manifest (backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.list-temp.tmp)
+0037.002 (0) Successfully created zip file manifest (size: 108109)
+0037.241 (0) Created themes zip (0) - 20783.2 KB in 3 s (6849.8 KB/s) (sha1: 0a15b12f851d21ca8d6e04cb0cad3c406308fa3b, sha256: 523ed698534bd3793bd5129ff4d4e33ab3634fcc4439573d10a530a76307700e)
+0037.243 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0037.245 (0) Looking for candidates to backup in: /opt/bitnami/wordpress/wp-content/uploads
+0037.246 (0) finding files: astra-sites: adding to list (1)
+0037.247 (0) finding files: uag-plugin: adding to list (2)
+0037.248 (0) finding files: 2016: adding to list (3)
+0037.249 (0) finding files: happyaddons: adding to list (4)
+0037.250 (0) finding files: wpforms: adding to list (5)
+0037.251 (0) finding files: 2020: adding to list (6)
+0037.252 (0) finding files: 2022: adding to list (7)
+0037.253 (0) finding files: woocommerce_uploads: adding to list (8)
+0037.254 (0) finding files: piotnet-addons-for-elementor: adding to list (9)
+0037.255 (0) finding files: 2021: adding to list (10)
+0037.256 (0) finding files: elementor: adding to list (11)
+0037.257 (0) finding files: wc-logs: adding to list (12)
+0037.257 (0) finding files: forminator: adding to list (13)
+0037.258 (0) finding files: presto-player-private: adding to list (14)
+0037.260 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0037.291 (0) Total entities for the zip file: 31 directories, 772 files (0 skipped as non-modified), 78.5 MB
+0037.293 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0037.295 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0037.297 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0037.299 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip.tmp: 400 files added (on-disk size: 0 KB)
+0037.301 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip.tmp: 500 files added (on-disk size: 0 KB)
+0037.303 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip.tmp: 600 files added (on-disk size: 0 KB)
+0037.305 (0) Zip: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip.tmp: 700 files added (on-disk size: 0 KB)
+0037.306 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 71.2 MB added on this batch (71.4 MB, 772 files batched, 706 (706) added so far); re-opening (prior size: 0 KB)
+0038.383 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip.tmp: size is now: 68.80 MB
+0038.385 (0) A useful amount of data was added after this amount of zip processing: 2 s (normalised: 2 s, rate: 36223.9 KB/s)
+0038.388 (0) Performance is good - will increase the amount of data we attempt to batch (time=2.017245054245, normalised_time=2.0132887038496, max_time=38.3866751194, data points known=1, old_max_bytes=74679475, new_max_bytes=209715200)
+0038.798 (0) Creating zip file manifest (backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip.list-temp.tmp)
+0038.801 (0) Successfully created zip file manifest (size: 48830)
+0039.692 (0) Created uploads zip (0) - 77627.5 KB in 2.4 s (31933.3 KB/s) (sha1: 77c34fe08ba2df1866c897bc1eec0d85b4dd1b81, sha256: ad23e44e668210e686df16243be5110c655dc92744e6860556634e3740f25251)
+0039.695 (0) Beginning backup of other directories found in the content directory (index: 0)
+0039.696 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0039.698 (0) Looking for candidates to backup in: /opt/bitnami/wordpress/wp-content
+0039.699 (0) finding files: themes: skipping: this is the themes directory
+0039.700 (0) finding files: uploads: skipping: this is the uploads directory
+0039.702 (0) finding files: languages: adding to list (1)
+0039.702 (0) finding files: ai1wm-backups: skipping: excluded by options (glob)
+0039.703 (0) finding files: index.php: adding to list (2)
+0039.704 (0) finding files: updraft: skipping: this is the updraft directory
+0039.705 (0) finding files: plugins: skipping: this is the plugins directory
+0039.706 (0) finding files: upgrade: skipping: excluded by options
+0039.707 (0) finding files: mu-plugins: adding to list (3)
+0039.710 (0) Total entities for the zip file: 2 directories, 2 files (0 skipped as non-modified), 0 MB
+0039.717 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-others.zip.tmp: size is now: 0.00 MB
+0039.719 (0) Creating zip file manifest (backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-others.zip.list-temp.tmp)
+0039.720 (0) Successfully created zip file manifest (size: 88)
+0039.724 (0) Created others zip (0) - 2.2 KB in 0 s (141.5 KB/s) (sha1: b93919e13c0d50a73f938544df7f8581999ee4ad, sha256: 5fb6e9ac3d1e4912e52015203b19309412c368c221c072b95bdb95edc1414f4b)
+0039.729 (0) Saving backup status to database (elements: 8)
+0039.732 (0) Beginning creation of database dump (WordPress DB)
+0039.733 (0) SQL compatibility mode is: ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0039.751 (0) Table wp_options: Total expected rows (via COUNT): 807
+0039.977 (0) Table wp_options: Rows added in this batch (next record: 34602): 803 (uncompressed bytes in this segment=7834803) in 0.23 seconds
+0039.982 (0) Table wp_options: finishing file(s) (2, 973 KB)
+0039.986 (0) Table wp_users: Total expected rows (via COUNT): 1
+0039.987 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0039.989 (0) Table wp_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1366) in 0.00 seconds
+0039.993 (0) Table wp_users: finishing file(s) (2, 0.6 KB)
+0039.998 (0) Table wp_usermeta: Total expected rows (via COUNT): 38
+0039.999 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0040.003 (0) Table wp_usermeta: Rows added in this batch (next record: 38): 38 (uncompressed bytes in this segment=52259) in 0.01 seconds
+0040.008 (0) Table wp_usermeta: finishing file(s) (2, 5.4 KB)
+0040.013 (0) Table wp_actionscheduler_actions: Total expected rows (via COUNT): 158
+0040.014 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0040.019 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 254): 158 (uncompressed bytes in this segment=61766) in 0.01 seconds
+0040.024 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 5.1 KB)
+0040.028 (0) Table wp_actionscheduler_claims: Total expected rows (via COUNT): 0
+0040.030 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=627) in 0.00 seconds
+0040.033 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0040.037 (0) Table wp_actionscheduler_groups: Total expected rows (via COUNT): 2
+0040.038 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0040.041 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=706) in 0.00 seconds
+0040.045 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0040.050 (0) Table wp_actionscheduler_logs: Total expected rows (via COUNT): 462
+0040.051 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0040.056 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 669): 462 (uncompressed bytes in this segment=40392) in 0.01 seconds
+0040.060 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 4.5 KB)
+0040.065 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0040.068 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=696) in 0.01 seconds
+0040.073 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0040.077 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0040.078 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0040.080 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2176) in 0.00 seconds
+0040.084 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0040.089 (0) Table wp_e_notes: Total expected rows (via COUNT): 0
+0040.091 (0) Table wp_e_notes: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=2102) in 0.00 seconds
+0040.097 (0) Table wp_e_notes: finishing file(s) (2, 0.8 KB)
+0040.100 (0) Table wp_e_notes_users_relations: Total expected rows (via COUNT): 0
+0040.101 (0) Table wp_e_notes_users_relations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=883) in 0.00 seconds
+0040.105 (0) Table wp_e_notes_users_relations: finishing file(s) (2, 0.4 KB)
+0040.108 (0) Table wp_links: Total expected rows (via COUNT): 0
+0040.110 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1306) in 0.00 seconds
+0040.113 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0040.128 (0) Table wp_postmeta: Total expected rows (approximate): 10187
+0040.690 (0) Table wp_postmeta: Rows added in this batch (next record: 13717): 10187 (uncompressed bytes in this segment=26103816) in 0.57 seconds
+0040.695 (0) Table wp_postmeta: finishing file(s) (2, 1944.8 KB)
+0040.704 (0) Table wp_posts: Total expected rows (approximate): 1426
+0040.910 (0) Table wp_posts: Rows added in this batch (next record: 26059): 1426 (uncompressed bytes in this segment=11780537) in 0.21 seconds
+0040.915 (0) Table wp_posts: finishing file(s) (2, 550.6 KB)
+0040.920 (0) Table wp_snippets: Total expected rows (via COUNT): 4
+0040.921 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0040.923 (0) Table wp_snippets: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=2281) in 0.01 seconds
+0040.929 (0) Table wp_snippets: finishing file(s) (2, 0.9 KB)
+0040.932 (0) Table wp_term_relationships: Total expected rows (approximate): 24
+0040.935 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 24 (uncompressed bytes in this segment=1057) in 0.00 seconds
+0040.939 (0) Table wp_term_relationships: finishing file(s) (2, 0.5 KB)
+0040.944 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 22
+0040.945 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0040.948 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 22): 22 (uncompressed bytes in this segment=1771) in 0.01 seconds
+0040.952 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.6 KB)
+0040.958 (0) Table wp_termmeta: Total expected rows (via COUNT): 2
+0040.959 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0040.960 (0) Table wp_termmeta: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=807) in 0.00 seconds
+0040.965 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0040.968 (0) Table wp_terms: Total expected rows (via COUNT): 22
+0040.969 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0040.971 (0) Table wp_terms: Rows added in this batch (next record: 22): 22 (uncompressed bytes in this segment=1514) in 0.00 seconds
+0040.975 (0) Table wp_terms: finishing file(s) (2, 0.7 KB)
+0040.976 (0) Skipping table (lacks our prefix (wp_)): casual_salary
+0040.977 (0) Skipping table (lacks our prefix (wp_)): mel_product_price
+0040.978 (0) Skipping table (lacks our prefix (wp_)): mel_rental_price
+0040.979 (0) Skipping table (lacks our prefix (wp_)): part_time_salary
+0040.984 (0) Table wp_as3cf_items: Total expected rows (via COUNT): 0
+0040.987 (0) Table wp_as3cf_items: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1681) in 0.00 seconds
+0040.992 (0) Table wp_as3cf_items: finishing file(s) (2, 0.6 KB)
+0040.996 (0) Table wp_cc_orders: Total expected rows (via COUNT): 0
+0040.997 (0) Table wp_cc_orders: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=915) in 0.00 seconds
+0041.002 (0) Table wp_cc_orders: finishing file(s) (2, 0.4 KB)
+0041.007 (0) Table wp_cc_payments: Total expected rows (via COUNT): 0
+0041.009 (0) Table wp_cc_payments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1156) in 0.00 seconds
+0041.013 (0) Table wp_cc_payments: finishing file(s) (2, 0.5 KB)
+0041.017 (0) Table wp_chained_choices: Total expected rows (via COUNT): 84
+0041.018 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.021 (0) Table wp_chained_choices: Rows added in this batch (next record: 132): 84 (uncompressed bytes in this segment=5094) in 0.00 seconds
+0041.026 (0) Table wp_chained_choices: finishing file(s) (2, 1.5 KB)
+0041.029 (0) Table wp_chained_completed: Total expected rows (via COUNT): 121
+0041.030 (0) Table is relatively small; fetch_rows will thus be: 200 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.034 (0) Table wp_chained_completed: Rows added in this batch (next record: 175): 121 (uncompressed bytes in this segment=41394) in 0.01 seconds
+0041.038 (0) Table wp_chained_completed: finishing file(s) (2, 4.2 KB)
+0041.042 (0) Table wp_chained_mail_relations: Total expected rows (via COUNT): 0
+0041.044 (0) Table wp_chained_mail_relations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=796) in 0.00 seconds
+0041.048 (0) Table wp_chained_mail_relations: finishing file(s) (2, 0.4 KB)
+0041.052 (0) Table wp_chained_questions: Total expected rows (via COUNT): 29
+0041.053 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.055 (0) Table wp_chained_questions: Rows added in this batch (next record: 42): 29 (uncompressed bytes in this segment=3834) in 0.00 seconds
+0041.059 (0) Table wp_chained_questions: finishing file(s) (2, 1.1 KB)
+0041.063 (0) Table wp_chained_quizzes: Total expected rows (via COUNT): 3
+0041.064 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.067 (0) Table wp_chained_quizzes: Rows added in this batch (next record: 4): 3 (uncompressed bytes in this segment=1662) in 0.00 seconds
+0041.070 (0) Table wp_chained_quizzes: finishing file(s) (2, 0.7 KB)
+0041.074 (0) Table wp_chained_results: Total expected rows (via COUNT): 43
+0041.075 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.079 (0) Table wp_chained_results: Rows added in this batch (next record: 43): 43 (uncompressed bytes in this segment=19977) in 0.01 seconds
+0041.082 (0) Table wp_chained_results: finishing file(s) (2, 3.5 KB)
+0041.086 (0) Table wp_chained_user_answers: Total expected rows (via COUNT): 353
+0041.087 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.091 (0) Table wp_chained_user_answers: Rows added in this batch (next record: 353): 353 (uncompressed bytes in this segment=14829) in 0.01 seconds
+0041.095 (0) Table wp_chained_user_answers: finishing file(s) (2, 2.6 KB)
+0041.099 (0) Table wp_cp_calculated_fields_form_discount_codes: Total expected rows (via COUNT): 0
+0041.101 (0) Table wp_cp_calculated_fields_form_discount_codes: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=923) in 0.00 seconds
+0041.105 (0) Table wp_cp_calculated_fields_form_discount_codes: finishing file(s) (2, 0.4 KB)
+0041.109 (0) Table wp_cp_calculated_fields_form_posts: Total expected rows (via COUNT): 0
+0041.111 (0) Table wp_cp_calculated_fields_form_posts: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=925) in 0.00 seconds
+0041.114 (0) Table wp_cp_calculated_fields_form_posts: finishing file(s) (2, 0.4 KB)
+0041.120 (0) Table wp_cp_calculated_fields_form_revision: Total expected rows (via COUNT): 23
+0041.121 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.125 (0) Table wp_cp_calculated_fields_form_revision: Rows added in this batch (next record: 35): 23 (uncompressed bytes in this segment=116411) in 0.01 seconds
+0041.131 (0) Table wp_cp_calculated_fields_form_revision: finishing file(s) (2, 4.7 KB)
+0041.137 (0) Table wp_cp_calculated_fields_form_settings: Total expected rows (via COUNT): 5
+0041.138 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.140 (0) Table wp_cp_calculated_fields_form_settings: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=19253) in 0.01 seconds
+0041.145 (0) Table wp_cp_calculated_fields_form_settings: finishing file(s) (2, 3.6 KB)
+0041.150 (0) Table wp_df_scc_conditions: Total expected rows (via COUNT): 0
+0041.153 (0) Table wp_df_scc_conditions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1430) in 0.00 seconds
+0041.157 (0) Table wp_df_scc_conditions: finishing file(s) (2, 0.5 KB)
+0041.161 (0) Table wp_df_scc_coupons: Total expected rows (via COUNT): 0
+0041.162 (0) Table wp_df_scc_coupons: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=977) in 0.00 seconds
+0041.166 (0) Table wp_df_scc_coupons: finishing file(s) (2, 0.4 KB)
+0041.170 (0) Table wp_df_scc_elementitems: Total expected rows (via COUNT): 0
+0041.171 (0) Table wp_df_scc_elementitems: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1333) in 0.00 seconds
+0041.175 (0) Table wp_df_scc_elementitems: finishing file(s) (2, 0.5 KB)
+0041.179 (0) Table wp_df_scc_elements: Total expected rows (via COUNT): 46
+0041.180 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.183 (0) Table wp_df_scc_elements: Rows added in this batch (next record: 78): 46 (uncompressed bytes in this segment=8619) in 0.00 seconds
+0041.187 (0) Table wp_df_scc_elements: finishing file(s) (2, 2.1 KB)
+0041.191 (0) Table wp_df_scc_forms: Total expected rows (via COUNT): 1
+0041.192 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.195 (0) Table wp_df_scc_forms: Rows added in this batch (next record: 2): 1 (uncompressed bytes in this segment=8614) in 0.00 seconds
+0041.198 (0) Table wp_df_scc_forms: finishing file(s) (2, 1.7 KB)
+0041.203 (0) Table wp_df_scc_quote_submissions: Total expected rows (via COUNT): 0
+0041.206 (0) Table wp_df_scc_quote_submissions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1297) in 0.01 seconds
+0041.211 (0) Table wp_df_scc_quote_submissions: finishing file(s) (2, 0.5 KB)
+0041.215 (0) Table wp_df_scc_section_conditions: Total expected rows (approximate): 0
+0041.216 (0) Table wp_df_scc_section_conditions: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=792) in 0.00 seconds
+0041.219 (0) Table wp_df_scc_section_conditions: finishing file(s) (2, 0.4 KB)
+0041.223 (0) Table wp_df_scc_sections: Total expected rows (via COUNT): 7
+0041.224 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.227 (0) Table wp_df_scc_sections: Rows added in this batch (next record: 13): 7 (uncompressed bytes in this segment=1642) in 0.00 seconds
+0041.230 (0) Table wp_df_scc_sections: finishing file(s) (2, 0.7 KB)
+0041.234 (0) Table wp_df_scc_subsections: Total expected rows (via COUNT): 6
+0041.235 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.236 (0) Table wp_df_scc_subsections: Rows added in this batch (next record: 24): 6 (uncompressed bytes in this segment=908) in 0.00 seconds
+0041.240 (0) Table wp_df_scc_subsections: finishing file(s) (2, 0.5 KB)
+0041.245 (0) Table wp_e_events: Total expected rows (via COUNT): 0
+0041.248 (0) Table wp_e_events: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=542) in 0.00 seconds
+0041.252 (0) Table wp_e_events: finishing file(s) (2, 0.4 KB)
+0041.256 (0) Table wp_e_submissions: Total expected rows (via COUNT): 0
+0041.257 (0) Table wp_e_submissions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=2289) in 0.00 seconds
+0041.260 (0) Table wp_e_submissions: finishing file(s) (2, 0.7 KB)
+0041.264 (0) Table wp_e_submissions_actions_log: Total expected rows (via COUNT): 0
+0041.265 (0) Table wp_e_submissions_actions_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1264) in 0.00 seconds
+0041.268 (0) Table wp_e_submissions_actions_log: finishing file(s) (2, 0.5 KB)
+0041.273 (0) Table wp_e_submissions_values: Total expected rows (via COUNT): 0
+0041.274 (0) Table wp_e_submissions_values: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=735) in 0.00 seconds
+0041.279 (0) Table wp_e_submissions_values: finishing file(s) (2, 0.4 KB)
+0041.283 (0) Table wp_export_page_to_html_logs: Total expected rows (via COUNT): 0
+0041.285 (0) Table wp_export_page_to_html_logs: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=698) in 0.00 seconds
+0041.289 (0) Table wp_export_page_to_html_logs: finishing file(s) (2, 0.4 KB)
+0041.293 (0) Table wp_export_urls_logs: Total expected rows (via COUNT): 0
+0041.294 (0) Table wp_export_urls_logs: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=723) in 0.00 seconds
+0041.297 (0) Table wp_export_urls_logs: finishing file(s) (2, 0.4 KB)
+0041.301 (0) Table wp_ezfc_forms_views: Total expected rows (via COUNT): 0
+0041.303 (0) Table wp_ezfc_forms_views: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=540) in 0.00 seconds
+0041.306 (0) Table wp_ezfc_forms_views: finishing file(s) (2, 0.3 KB)
+0041.311 (0) Table wp_ff_scheduled_actions: Total expected rows (via COUNT): 0
+0041.312 (0) Table wp_ff_scheduled_actions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1092) in 0.00 seconds
+0041.317 (0) Table wp_ff_scheduled_actions: finishing file(s) (2, 0.4 KB)
+0041.323 (0) Table wp_fluentform_entry_details: Total expected rows (via COUNT): 6
+0041.324 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.326 (0) Table wp_fluentform_entry_details: Rows added in this batch (next record: 6): 6 (uncompressed bytes in this segment=1143) in 0.01 seconds
+0041.331 (0) Table wp_fluentform_entry_details: finishing file(s) (2, 0.5 KB)
+0041.335 (0) Table wp_fluentform_form_analytics: Total expected rows (via COUNT): 0
+0041.338 (0) Table wp_fluentform_form_analytics: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1060) in 0.00 seconds
+0041.342 (0) Table wp_fluentform_form_analytics: finishing file(s) (2, 0.4 KB)
+0041.347 (0) Table wp_fluentform_form_meta: Total expected rows (via COUNT): 16
+0041.348 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.350 (0) Table wp_fluentform_form_meta: Rows added in this batch (next record: 16): 16 (uncompressed bytes in this segment=7524) in 0.01 seconds
+0041.355 (0) Table wp_fluentform_form_meta: finishing file(s) (2, 1.8 KB)
+0041.360 (0) Table wp_fluentform_forms: Total expected rows (via COUNT): 4
+0041.361 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.362 (0) Table wp_fluentform_forms: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=9734) in 0.00 seconds
+0041.368 (0) Table wp_fluentform_forms: finishing file(s) (2, 2 KB)
+0041.373 (0) Table wp_fluentform_logs: Total expected rows (via COUNT): 0
+0041.376 (0) Table wp_fluentform_logs: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=927) in 0.00 seconds
+0041.380 (0) Table wp_fluentform_logs: finishing file(s) (2, 0.4 KB)
+0041.385 (0) Table wp_fluentform_submission_meta: Total expected rows (via COUNT): 4
+0041.386 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.389 (0) Table wp_fluentform_submission_meta: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1546) in 0.01 seconds
+0041.396 (0) Table wp_fluentform_submission_meta: finishing file(s) (2, 0.6 KB)
+0041.402 (0) Table wp_fluentform_submissions: Total expected rows (via COUNT): 2
+0041.403 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.404 (0) Table wp_fluentform_submissions: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=2714) in 0.00 seconds
+0041.410 (0) Table wp_fluentform_submissions: finishing file(s) (2, 0.8 KB)
+0041.415 (0) Table wp_frm_fields: Total expected rows (via COUNT): 49
+0041.416 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.421 (0) Table wp_frm_fields: Rows added in this batch (next record: 94): 49 (uncompressed bytes in this segment=107450) in 0.01 seconds
+0041.425 (0) Table wp_frm_fields: finishing file(s) (2, 4.8 KB)
+0041.430 (0) Table wp_frm_forms: Total expected rows (via COUNT): 8
+0041.431 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.434 (0) Table wp_frm_forms: Rows added in this batch (next record: 8): 8 (uncompressed bytes in this segment=20499) in 0.01 seconds
+0041.439 (0) Table wp_frm_forms: finishing file(s) (2, 3.1 KB)
+0041.445 (0) Table wp_frm_item_metas: Total expected rows (via COUNT): 320
+0041.446 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.450 (0) Table wp_frm_item_metas: Rows added in this batch (next record: 750): 320 (uncompressed bytes in this segment=14805) in 0.01 seconds
+0041.454 (0) Table wp_frm_item_metas: finishing file(s) (2, 2.3 KB)
+0041.458 (0) Table wp_frm_items: Total expected rows (via COUNT): 40
+0041.459 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.462 (0) Table wp_frm_items: Rows added in this batch (next record: 80): 40 (uncompressed bytes in this segment=15304) in 0.00 seconds
+0041.466 (0) Table wp_frm_items: finishing file(s) (2, 1.7 KB)
+0041.469 (0) Table wp_frmt_form_entry: Total expected rows (via COUNT): 3
+0041.470 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.473 (0) Table wp_frmt_form_entry: Rows added in this batch (next record: 17): 3 (uncompressed bytes in this segment=1095) in 0.00 seconds
+0041.477 (0) Table wp_frmt_form_entry: finishing file(s) (2, 0.5 KB)
+0041.482 (0) Table wp_frmt_form_entry_meta: Total expected rows (via COUNT): 9
+0041.483 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.484 (0) Table wp_frmt_form_entry_meta: Rows added in this batch (next record: 66): 9 (uncompressed bytes in this segment=1929) in 0.00 seconds
+0041.489 (0) Table wp_frmt_form_entry_meta: finishing file(s) (2, 0.7 KB)
+0041.492 (0) Table wp_frmt_form_views: Total expected rows (via COUNT): 0
+0041.495 (0) Table wp_frmt_form_views: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=966) in 0.00 seconds
+0041.498 (0) Table wp_frmt_form_views: finishing file(s) (2, 0.4 KB)
+0041.503 (0) Table wp_nf3_action_meta: Total expected rows (via COUNT): 154
+0041.504 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.507 (0) Table wp_nf3_action_meta: Rows added in this batch (next record: 154): 154 (uncompressed bytes in this segment=12084) in 0.01 seconds
+0041.512 (0) Table wp_nf3_action_meta: finishing file(s) (2, 2 KB)
+0041.517 (0) Table wp_nf3_actions: Total expected rows (via COUNT): 7
+0041.518 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.520 (0) Table wp_nf3_actions: Rows added in this batch (next record: 7): 7 (uncompressed bytes in this segment=1351) in 0.01 seconds
+0041.525 (0) Table wp_nf3_actions: finishing file(s) (2, 0.5 KB)
+0041.530 (0) Table wp_nf3_chunks: Total expected rows (via COUNT): 0
+0041.532 (0) Table wp_nf3_chunks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=444) in 0.00 seconds
+0041.537 (0) Table wp_nf3_chunks: finishing file(s) (2, 0.3 KB)
+0041.542 (0) Table wp_nf3_field_meta: Total expected rows (via COUNT): 481
+0041.543 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.548 (0) Table wp_nf3_field_meta: Rows added in this batch (next record: 481): 481 (uncompressed bytes in this segment=58959) in 0.01 seconds
+0041.553 (0) Table wp_nf3_field_meta: finishing file(s) (2, 5.3 KB)
+0041.558 (0) Table wp_nf3_fields: Total expected rows (via COUNT): 16
+0041.559 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.562 (0) Table wp_nf3_fields: Rows added in this batch (next record: 16): 16 (uncompressed bytes in this segment=3276) in 0.01 seconds
+0041.566 (0) Table wp_nf3_fields: finishing file(s) (2, 0.9 KB)
+0041.571 (0) Table wp_nf3_form_meta: Total expected rows (via COUNT): 117
+0041.572 (0) Table is relatively small; fetch_rows will thus be: 200 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.575 (0) Table wp_nf3_form_meta: Rows added in this batch (next record: 117): 117 (uncompressed bytes in this segment=10771) in 0.01 seconds
+0041.580 (0) Table wp_nf3_form_meta: finishing file(s) (2, 2 KB)
+0041.584 (0) Table wp_nf3_forms: Total expected rows (via COUNT): 2
+0041.586 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.588 (0) Table wp_nf3_forms: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1201) in 0.01 seconds
+0041.593 (0) Table wp_nf3_forms: finishing file(s) (2, 0.5 KB)
+0041.598 (0) Table wp_nf3_object_meta: Total expected rows (via COUNT): 0
+0041.600 (0) Table wp_nf3_object_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=571) in 0.00 seconds
+0041.605 (0) Table wp_nf3_object_meta: finishing file(s) (2, 0.3 KB)
+0041.610 (0) Table wp_nf3_objects: Total expected rows (via COUNT): 0
+0041.612 (0) Table wp_nf3_objects: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=568) in 0.00 seconds
+0041.618 (0) Table wp_nf3_objects: finishing file(s) (2, 0.3 KB)
+0041.623 (0) Table wp_nf3_relationships: Total expected rows (via COUNT): 0
+0041.624 (0) Table wp_nf3_relationships: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=631) in 0.00 seconds
+0041.630 (0) Table wp_nf3_relationships: finishing file(s) (2, 0.3 KB)
+0041.636 (0) Table wp_nf3_upgrades: Total expected rows (via COUNT): 2
+0041.637 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.640 (0) Table wp_nf3_upgrades: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=44832) in 0.01 seconds
+0041.645 (0) Table wp_nf3_upgrades: finishing file(s) (2, 4.4 KB)
+0041.651 (0) Table wp_presto_player_audio_presets: Total expected rows (via COUNT): 4
+0041.652 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.654 (0) Table wp_presto_player_audio_presets: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=3195) in 0.00 seconds
+0041.659 (0) Table wp_presto_player_audio_presets: finishing file(s) (2, 0.8 KB)
+0041.663 (0) Table wp_presto_player_email_collection: Total expected rows (via COUNT): 0
+0041.666 (0) Table wp_presto_player_email_collection: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1479) in 0.00 seconds
+0041.671 (0) Table wp_presto_player_email_collection: finishing file(s) (2, 0.5 KB)
+0041.676 (0) Table wp_presto_player_presets: Total expected rows (via COUNT): 5
+0041.677 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.680 (0) Table wp_presto_player_presets: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=4037) in 0.01 seconds
+0041.686 (0) Table wp_presto_player_presets: finishing file(s) (2, 1 KB)
+0041.691 (0) Table wp_presto_player_videos: Total expected rows (via COUNT): 0
+0041.693 (0) Table wp_presto_player_videos: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1169) in 0.00 seconds
+0041.697 (0) Table wp_presto_player_videos: finishing file(s) (2, 0.5 KB)
+0041.701 (0) Table wp_presto_player_visits: Total expected rows (via COUNT): 0
+0041.703 (0) Table wp_presto_player_visits: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=983) in 0.00 seconds
+0041.707 (0) Table wp_presto_player_visits: finishing file(s) (2, 0.5 KB)
+0041.712 (0) Table wp_wc_admin_note_actions: Total expected rows (via COUNT): 45
+0041.713 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.716 (0) Table wp_wc_admin_note_actions: Rows added in this batch (next record: 86): 45 (uncompressed bytes in this segment=8114) in 0.01 seconds
+0041.721 (0) Table wp_wc_admin_note_actions: finishing file(s) (2, 1.9 KB)
+0041.727 (0) Table wp_wc_admin_notes: Total expected rows (via COUNT): 39
+0041.728 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.730 (0) Table wp_wc_admin_notes: Rows added in this batch (next record: 39): 39 (uncompressed bytes in this segment=19456) in 0.01 seconds
+0041.735 (0) Table wp_wc_admin_notes: finishing file(s) (2, 4.8 KB)
+0041.739 (0) Table wp_wc_category_lookup: Total expected rows (approximate): 1
+0041.741 (0) Table wp_wc_category_lookup: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=589) in 0.00 seconds
+0041.745 (0) Table wp_wc_category_lookup: finishing file(s) (2, 0.3 KB)
+0041.748 (0) Table wp_wc_customer_lookup: Total expected rows (via COUNT): 0
+0041.750 (0) Table wp_wc_customer_lookup: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1266) in 0.00 seconds
+0041.753 (0) Table wp_wc_customer_lookup: finishing file(s) (2, 0.5 KB)
+0041.756 (0) Table wp_wc_download_log: Total expected rows (via COUNT): 0
+0041.757 (0) Table wp_wc_download_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=926) in 0.00 seconds
+0041.761 (0) Table wp_wc_download_log: finishing file(s) (2, 0.5 KB)
+0041.765 (0) Table wp_wc_order_coupon_lookup: Total expected rows (approximate): 0
+0041.766 (0) Table wp_wc_order_coupon_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=715) in 0.00 seconds
+0041.770 (0) Table wp_wc_order_coupon_lookup: finishing file(s) (2, 0.4 KB)
+0041.774 (0) Table wp_wc_order_product_lookup: Total expected rows (via COUNT): 0
+0041.775 (0) Table wp_wc_order_product_lookup: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1215) in 0.00 seconds
+0041.778 (0) Table wp_wc_order_product_lookup: finishing file(s) (2, 0.5 KB)
+0041.782 (0) Table wp_wc_order_stats: Total expected rows (via COUNT): 0
+0041.783 (0) Table wp_wc_order_stats: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1110) in 0.00 seconds
+0041.786 (0) Table wp_wc_order_stats: finishing file(s) (2, 0.5 KB)
+0041.790 (0) Table wp_wc_order_tax_lookup: Total expected rows (approximate): 0
+0041.791 (0) Table wp_wc_order_tax_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=793) in 0.00 seconds
+0041.795 (0) Table wp_wc_order_tax_lookup: finishing file(s) (2, 0.4 KB)
+0041.798 (0) Table wp_wc_product_attributes_lookup: Total expected rows (approximate): 0
+0041.800 (0) Table wp_wc_product_attributes_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=862) in 0.00 seconds
+0041.804 (0) Table wp_wc_product_attributes_lookup: finishing file(s) (2, 0.4 KB)
+0041.808 (0) Table wp_wc_product_download_directories: Total expected rows (via COUNT): 2
+0041.809 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.811 (0) Table wp_wc_product_download_directories: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=916) in 0.00 seconds
+0041.816 (0) Table wp_wc_product_download_directories: finishing file(s) (2, 0.5 KB)
+0041.819 (0) Table wp_wc_product_meta_lookup: Total expected rows (via COUNT): 0
+0041.822 (0) Table wp_wc_product_meta_lookup: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1349) in 0.00 seconds
+0041.825 (0) Table wp_wc_product_meta_lookup: finishing file(s) (2, 0.5 KB)
+0041.829 (0) Table wp_wc_rate_limits: Total expected rows (via COUNT): 0
+0041.830 (0) Table wp_wc_rate_limits: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=698) in 0.00 seconds
+0041.833 (0) Table wp_wc_rate_limits: finishing file(s) (2, 0.4 KB)
+0041.837 (0) Table wp_wc_reserved_stock: Total expected rows (approximate): 0
+0041.838 (0) Table wp_wc_reserved_stock: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=663) in 0.00 seconds
+0041.842 (0) Table wp_wc_reserved_stock: finishing file(s) (2, 0.4 KB)
+0041.846 (0) Table wp_wc_tax_rate_classes: Total expected rows (via COUNT): 2
+0041.847 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.849 (0) Table wp_wc_tax_rate_classes: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=812) in 0.00 seconds
+0041.853 (0) Table wp_wc_tax_rate_classes: finishing file(s) (2, 0.4 KB)
+0041.857 (0) Table wp_wc_webhooks: Total expected rows (via COUNT): 0
+0041.859 (0) Table wp_wc_webhooks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1226) in 0.00 seconds
+0041.864 (0) Table wp_wc_webhooks: finishing file(s) (2, 0.5 KB)
+0041.869 (0) Table wp_woocommerce_api_keys: Total expected rows (via COUNT): 0
+0041.870 (0) Table wp_woocommerce_api_keys: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1059) in 0.00 seconds
+0041.875 (0) Table wp_woocommerce_api_keys: finishing file(s) (2, 0.5 KB)
+0041.879 (0) Table wp_woocommerce_attribute_taxonomies: Total expected rows (via COUNT): 0
+0041.880 (0) Table wp_woocommerce_attribute_taxonomies: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=959) in 0.00 seconds
+0041.884 (0) Table wp_woocommerce_attribute_taxonomies: finishing file(s) (2, 0.4 KB)
+0041.888 (0) Table wp_woocommerce_downloadable_product_permissions: Total expected rows (via COUNT): 0
+0041.889 (0) Table wp_woocommerce_downloadable_product_permissions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1534) in 0.00 seconds
+0041.892 (0) Table wp_woocommerce_downloadable_product_permissions: finishing file(s) (2, 0.5 KB)
+0041.897 (0) Table wp_woocommerce_log: Total expected rows (via COUNT): 0
+0041.899 (0) Table wp_woocommerce_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=735) in 0.00 seconds
+0041.904 (0) Table wp_woocommerce_log: finishing file(s) (2, 0.4 KB)
+0041.908 (0) Table wp_woocommerce_order_itemmeta: Total expected rows (via COUNT): 0
+0041.911 (0) Table wp_woocommerce_order_itemmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=784) in 0.00 seconds
+0041.915 (0) Table wp_woocommerce_order_itemmeta: finishing file(s) (2, 0.4 KB)
+0041.919 (0) Table wp_woocommerce_order_items: Total expected rows (via COUNT): 0
+0041.921 (0) Table wp_woocommerce_order_items: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=739) in 0.00 seconds
+0041.925 (0) Table wp_woocommerce_order_items: finishing file(s) (2, 0.4 KB)
+0041.930 (0) Table wp_woocommerce_payment_tokenmeta: Total expected rows (via COUNT): 0
+0041.933 (0) Table wp_woocommerce_payment_tokenmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=811) in 0.00 seconds
+0041.938 (0) Table wp_woocommerce_payment_tokenmeta: finishing file(s) (2, 0.4 KB)
+0041.941 (0) Table wp_woocommerce_payment_tokens: Total expected rows (via COUNT): 0
+0041.943 (0) Table wp_woocommerce_payment_tokens: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=837) in 0.00 seconds
+0041.947 (0) Table wp_woocommerce_payment_tokens: finishing file(s) (2, 0.4 KB)
+0041.952 (0) Table wp_woocommerce_sessions: Total expected rows (via COUNT): 1
+0041.953 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.955 (0) Table wp_woocommerce_sessions: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2160) in 0.01 seconds
+0041.962 (0) Table wp_woocommerce_sessions: finishing file(s) (2, 0.8 KB)
+0041.966 (0) Table wp_woocommerce_shipping_zone_locations: Total expected rows (via COUNT): 0
+0041.968 (0) Table wp_woocommerce_shipping_zone_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=874) in 0.00 seconds
+0041.972 (0) Table wp_woocommerce_shipping_zone_locations: finishing file(s) (2, 0.4 KB)
+0041.975 (0) Table wp_woocommerce_shipping_zone_methods: Total expected rows (via COUNT): 0
+0041.976 (0) Table wp_woocommerce_shipping_zone_methods: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=773) in 0.00 seconds
+0041.979 (0) Table wp_woocommerce_shipping_zone_methods: finishing file(s) (2, 0.4 KB)
+0041.983 (0) Table wp_woocommerce_shipping_zones: Total expected rows (via COUNT): 0
+0041.984 (0) Table wp_woocommerce_shipping_zones: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=633) in 0.00 seconds
+0041.987 (0) Table wp_woocommerce_shipping_zones: finishing file(s) (2, 0.4 KB)
+0041.991 (0) Table wp_woocommerce_tax_rate_locations: Total expected rows (via COUNT): 0
+0041.992 (0) Table wp_woocommerce_tax_rate_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=848) in 0.00 seconds
+0041.996 (0) Table wp_woocommerce_tax_rate_locations: finishing file(s) (2, 0.4 KB)
+0041.999 (0) Table wp_woocommerce_tax_rates: Total expected rows (via COUNT): 0
+0042.000 (0) Table wp_woocommerce_tax_rates: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1297) in 0.00 seconds
+0042.004 (0) Table wp_woocommerce_tax_rates: finishing file(s) (2, 0.5 KB)
+0042.010 (0) Table wp_wp_phpmyadmin_extension__errors_log: Total expected rows (via COUNT): 0
+0042.011 (0) Table wp_wp_phpmyadmin_extension__errors_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=810) in 0.00 seconds
+0042.016 (0) Table wp_wp_phpmyadmin_extension__errors_log: finishing file(s) (2, 0.4 KB)
+0042.021 (0) Table wp_wpbi_bar_charts: Total expected rows (via COUNT): 0
+0042.023 (0) Table wp_wpbi_bar_charts: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=787) in 0.00 seconds
+0042.028 (0) Table wp_wpbi_bar_charts: finishing file(s) (2, 0.4 KB)
+0042.031 (0) Table wp_wpbi_database_connections: Total expected rows (via COUNT): 0
+0042.033 (0) Table wp_wpbi_database_connections: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=958) in 0.00 seconds
+0042.037 (0) Table wp_wpbi_database_connections: finishing file(s) (2, 0.4 KB)
+0042.041 (0) Table wp_wpbi_datatables: Total expected rows (via COUNT): 0
+0042.042 (0) Table wp_wpbi_datatables: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=634) in 0.00 seconds
+0042.046 (0) Table wp_wpbi_datatables: finishing file(s) (2, 0.4 KB)
+0042.051 (0) Table wp_wpbi_grouped_bar_charts: Total expected rows (via COUNT): 0
+0042.053 (0) Table wp_wpbi_grouped_bar_charts: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=890) in 0.00 seconds
+0042.057 (0) Table wp_wpbi_grouped_bar_charts: finishing file(s) (2, 0.4 KB)
+0042.062 (0) Table wp_wpbi_line_charts: Total expected rows (via COUNT): 0
+0042.063 (0) Table wp_wpbi_line_charts: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=841) in 0.00 seconds
+0042.068 (0) Table wp_wpbi_line_charts: finishing file(s) (2, 0.4 KB)
+0042.072 (0) Table wp_wpbi_phinx_log: Total expected rows (via COUNT): 11
+0042.073 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0042.075 (0) Table wp_wpbi_phinx_log: Rows added in this batch (next record: 20210320071153): 11 (uncompressed bytes in this segment=1667) in 0.00 seconds
+0042.079 (0) Table wp_wpbi_phinx_log: finishing file(s) (2, 0.6 KB)
+0042.084 (0) Table wp_wpbi_pie_charts: Total expected rows (via COUNT): 0
+0042.086 (0) Table wp_wpbi_pie_charts: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=834) in 0.00 seconds
+0042.091 (0) Table wp_wpbi_pie_charts: finishing file(s) (2, 0.4 KB)
+0042.095 (0) Table wp_wpbi_queries3: Total expected rows (via COUNT): 0
+0042.096 (0) Table wp_wpbi_queries3: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=807) in 0.00 seconds
+0042.100 (0) Table wp_wpbi_queries3: finishing file(s) (2, 0.4 KB)
+0042.104 (0) Table wp_wpforms_tasks_meta: Total expected rows (via COUNT): 11
+0042.105 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0042.108 (0) Table wp_wpforms_tasks_meta: Rows added in this batch (next record: 79): 11 (uncompressed bytes in this segment=1524) in 0.01 seconds
+0042.113 (0) Table wp_wpforms_tasks_meta: finishing file(s) (2, 0.6 KB)
+0042.116 (0) Table wp_wtbp_favorites: Total expected rows (approximate): 1
+0042.119 (0) Table wp_wtbp_favorites: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=540) in 0.00 seconds
+0042.122 (0) Table wp_wtbp_favorites: finishing file(s) (2, 0.3 KB)
+0042.125 (0) Table wp_wtbp_tables: Total expected rows (via COUNT): 2
+0042.126 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0042.128 (0) Table wp_wtbp_tables: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=6719) in 0.00 seconds
+0042.132 (0) Table wp_wtbp_tables: finishing file(s) (2, 1.9 KB)
+0042.133 (0) PHP event: code E_WARNING: filemtime(): stat failed for /opt/bitnami/wordpress/wp-content/updraft/backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db.gz (line 1912, /bitnami/wordpress/wp-content/plugins/updraftplus/backup.php)
+0042.135 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_options.table.tmpr34603.gz (1/126/fopen): adding to final database dump
+0042.145 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_options.table.gz (2/126/fopen): adding to final database dump
+0042.146 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_users.table.tmpr2.gz (3/126/fopen): adding to final database dump
+0042.147 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_users.table.gz (4/126/fopen): adding to final database dump
+0042.148 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_usermeta.table.tmpr39.gz (5/126/fopen): adding to final database dump
+0042.149 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_usermeta.table.gz (6/126/fopen): adding to final database dump
+0042.150 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_actionscheduler_actions.table.tmpr255.gz (7/126/fopen): adding to final database dump
+0042.151 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_actionscheduler_actions.table.gz (8/126/fopen): adding to final database dump
+0042.152 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_actionscheduler_claims.table.tmpr0.gz (9/126/fopen): adding to final database dump
+0042.153 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_actionscheduler_claims.table.gz (10/126/fopen): adding to final database dump
+0042.154 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_actionscheduler_groups.table.tmpr3.gz (11/126/fopen): adding to final database dump
+0042.155 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_actionscheduler_groups.table.gz (12/126/fopen): adding to final database dump
+0042.156 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_actionscheduler_logs.table.tmpr670.gz (13/126/fopen): adding to final database dump
+0042.157 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_actionscheduler_logs.table.gz (14/126/fopen): adding to final database dump
+0042.158 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_commentmeta.table.tmpr0.gz (15/126/fopen): adding to final database dump
+0042.159 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_commentmeta.table.gz (16/126/fopen): adding to final database dump
+0042.160 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_comments.table.tmpr2.gz (17/126/fopen): adding to final database dump
+0042.161 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_comments.table.gz (18/126/fopen): adding to final database dump
+0042.162 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_e_notes.table.tmpr0.gz (19/126/fopen): adding to final database dump
+0042.163 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_e_notes.table.gz (20/126/fopen): adding to final database dump
+0042.164 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_e_notes_users_relations.table.tmpr0.gz (21/126/fopen): adding to final database dump
+0042.165 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_e_notes_users_relations.table.gz (22/126/fopen): adding to final database dump
+0042.166 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_links.table.tmpr0.gz (23/126/fopen): adding to final database dump
+0042.167 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_links.table.gz (24/126/fopen): adding to final database dump
+0042.168 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_postmeta.table.tmpr13718.gz (25/126/fopen): adding to final database dump
+0042.188 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_postmeta.table.gz (26/126/fopen): adding to final database dump
+0042.189 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_posts.table.tmpr26060.gz (27/126/fopen): adding to final database dump
+0042.195 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_posts.table.gz (28/126/fopen): adding to final database dump
+0042.196 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_snippets.table.tmpr5.gz (29/126/fopen): adding to final database dump
+0042.197 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_snippets.table.gz (30/126/fopen): adding to final database dump
+0042.198 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_term_relationships.table.tmpr100001.gz (31/126/fopen): adding to final database dump
+0042.199 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_term_relationships.table.gz (32/126/fopen): adding to final database dump
+0042.200 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_term_taxonomy.table.tmpr23.gz (33/126/fopen): adding to final database dump
+0042.201 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_term_taxonomy.table.gz (34/126/fopen): adding to final database dump
+0042.202 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_termmeta.table.tmpr3.gz (35/126/fopen): adding to final database dump
+0042.203 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_termmeta.table.gz (36/126/fopen): adding to final database dump
+0042.204 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_terms.table.tmpr23.gz (37/126/fopen): adding to final database dump
+0042.205 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_terms.table.gz (38/126/fopen): adding to final database dump
+0042.206 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_as3cf_items.table.tmpr0.gz (39/126/fopen): adding to final database dump
+0042.207 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_as3cf_items.table.gz (40/126/fopen): adding to final database dump
+0042.208 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_cc_orders.table.tmpr0.gz (41/126/fopen): adding to final database dump
+0042.209 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_cc_orders.table.gz (42/126/fopen): adding to final database dump
+0042.210 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_cc_payments.table.tmpr0.gz (43/126/fopen): adding to final database dump
+0042.211 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_cc_payments.table.gz (44/126/fopen): adding to final database dump
+0042.212 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_choices.table.tmpr133.gz (45/126/fopen): adding to final database dump
+0042.214 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_choices.table.gz (46/126/fopen): adding to final database dump
+0042.214 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_completed.table.tmpr176.gz (47/126/fopen): adding to final database dump
+0042.216 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_completed.table.gz (48/126/fopen): adding to final database dump
+0042.217 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_mail_relations.table.tmpr0.gz (49/126/fopen): adding to final database dump
+0042.217 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_mail_relations.table.gz (50/126/fopen): adding to final database dump
+0042.218 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_questions.table.tmpr43.gz (51/126/fopen): adding to final database dump
+0042.219 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_questions.table.gz (52/126/fopen): adding to final database dump
+0042.220 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_quizzes.table.tmpr5.gz (53/126/fopen): adding to final database dump
+0042.221 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_quizzes.table.gz (54/126/fopen): adding to final database dump
+0042.222 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_results.table.tmpr44.gz (55/126/fopen): adding to final database dump
+0042.222 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_results.table.gz (56/126/fopen): adding to final database dump
+0042.223 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_user_answers.table.tmpr354.gz (57/126/fopen): adding to final database dump
+0042.225 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_chained_user_answers.table.gz (58/126/fopen): adding to final database dump
+0042.226 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_cp_calculated_fields_form_discount_codes.table.tmpr0.gz (59/126/fopen): adding to final database dump
+0042.228 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_cp_calculated_fields_form_discount_codes.table.gz (60/126/fopen): adding to final database dump
+0042.228 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_cp_calculated_fields_form_posts.table.tmpr0.gz (61/126/fopen): adding to final database dump
+0042.229 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_cp_calculated_fields_form_posts.table.gz (62/126/fopen): adding to final database dump
+0042.230 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_cp_calculated_fields_form_revision.table.tmpr36.gz (63/126/fopen): adding to final database dump
+0042.231 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_cp_calculated_fields_form_revision.table.gz (64/126/fopen): adding to final database dump
+0042.232 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_cp_calculated_fields_form_settings.table.tmpr6.gz (65/126/fopen): adding to final database dump
+0042.233 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_cp_calculated_fields_form_settings.table.gz (66/126/fopen): adding to final database dump
+0042.234 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_conditions.table.tmpr0.gz (67/126/fopen): adding to final database dump
+0042.235 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_conditions.table.gz (68/126/fopen): adding to final database dump
+0042.236 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_coupons.table.tmpr0.gz (69/126/fopen): adding to final database dump
+0042.237 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_coupons.table.gz (70/126/fopen): adding to final database dump
+0042.238 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_elementitems.table.tmpr0.gz (71/126/fopen): adding to final database dump
+0042.239 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_elementitems.table.gz (72/126/fopen): adding to final database dump
+0042.240 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_elements.table.tmpr79.gz (73/126/fopen): adding to final database dump
+0042.240 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_elements.table.gz (74/126/fopen): adding to final database dump
+0042.241 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_forms.table.tmpr3.gz (75/126/fopen): adding to final database dump
+0042.242 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_forms.table.gz (76/126/fopen): adding to final database dump
+0042.244 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_quote_submissions.table.tmpr0.gz (77/126/fopen): adding to final database dump
+0042.245 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_quote_submissions.table.gz (78/126/fopen): adding to final database dump
+0042.246 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_section_conditions.table.tmpr1.gz (79/126/fopen): adding to final database dump
+0042.247 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_section_conditions.table.gz (80/126/fopen): adding to final database dump
+0042.248 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_sections.table.tmpr14.gz (81/126/fopen): adding to final database dump
+0042.249 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_sections.table.gz (82/126/fopen): adding to final database dump
+0042.250 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_subsections.table.tmpr25.gz (83/126/fopen): adding to final database dump
+0042.251 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_df_scc_subsections.table.gz (84/126/fopen): adding to final database dump
+0042.252 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_e_events.table.tmpr0.gz (85/126/fopen): adding to final database dump
+0042.253 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_e_events.table.gz (86/126/fopen): adding to final database dump
+0042.253 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_e_submissions.table.tmpr0.gz (87/126/fopen): adding to final database dump
+0042.254 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_e_submissions.table.gz (88/126/fopen): adding to final database dump
+0042.256 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_e_submissions_actions_log.table.tmpr0.gz (89/126/fopen): adding to final database dump
+0042.257 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_e_submissions_actions_log.table.gz (90/126/fopen): adding to final database dump
+0042.258 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_e_submissions_values.table.tmpr0.gz (91/126/fopen): adding to final database dump
+0042.259 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_e_submissions_values.table.gz (92/126/fopen): adding to final database dump
+0042.260 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_export_page_to_html_logs.table.tmpr0.gz (93/126/fopen): adding to final database dump
+0042.261 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_export_page_to_html_logs.table.gz (94/126/fopen): adding to final database dump
+0042.262 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_export_urls_logs.table.tmpr0.gz (95/126/fopen): adding to final database dump
+0042.263 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_export_urls_logs.table.gz (96/126/fopen): adding to final database dump
+0042.264 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_ezfc_forms_views.table.tmpr0.gz (97/126/fopen): adding to final database dump
+0042.265 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_ezfc_forms_views.table.gz (98/126/fopen): adding to final database dump
+0042.266 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_ff_scheduled_actions.table.tmpr0.gz (99/126/fopen): adding to final database dump
+0042.268 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_ff_scheduled_actions.table.gz (100/126/fopen): adding to final database dump
+0042.269 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_entry_details.table.tmpr7.gz (101/126/fopen): adding to final database dump
+0042.270 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_entry_details.table.gz (102/126/fopen): adding to final database dump
+0042.271 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_form_analytics.table.tmpr0.gz (103/126/fopen): adding to final database dump
+0042.272 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_form_analytics.table.gz (104/126/fopen): adding to final database dump
+0042.273 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_form_meta.table.tmpr17.gz (105/126/fopen): adding to final database dump
+0042.274 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_form_meta.table.gz (106/126/fopen): adding to final database dump
+0042.275 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_forms.table.tmpr5.gz (107/126/fopen): adding to final database dump
+0042.276 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_forms.table.gz (108/126/fopen): adding to final database dump
+0042.277 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_logs.table.tmpr0.gz (109/126/fopen): adding to final database dump
+0042.278 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_logs.table.gz (110/126/fopen): adding to final database dump
+0042.279 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_submission_meta.table.tmpr5.gz (111/126/fopen): adding to final database dump
+0042.280 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_submission_meta.table.gz (112/126/fopen): adding to final database dump
+0042.281 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_submissions.table.tmpr3.gz (113/126/fopen): adding to final database dump
+0042.282 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_fluentform_submissions.table.gz (114/126/fopen): adding to final database dump
+0042.283 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frm_fields.table.tmpr95.gz (115/126/fopen): adding to final database dump
+0042.284 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frm_fields.table.gz (116/126/fopen): adding to final database dump
+0042.285 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frm_forms.table.tmpr9.gz (117/126/fopen): adding to final database dump
+0042.286 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frm_forms.table.gz (118/126/fopen): adding to final database dump
+0042.287 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frm_item_metas.table.tmpr751.gz (119/126/fopen): adding to final database dump
+0042.288 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frm_item_metas.table.gz (120/126/fopen): adding to final database dump
+0042.289 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frm_items.table.tmpr81.gz (121/126/fopen): adding to final database dump
+0042.290 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frm_items.table.gz (122/126/fopen): adding to final database dump
+0042.291 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frmt_form_entry.table.tmpr18.gz (123/126/fopen): adding to final database dump
+0042.292 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frmt_form_entry.table.gz (124/126/fopen): adding to final database dump
+0042.293 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frmt_form_entry_meta.table.tmpr67.gz (125/126/fopen): adding to final database dump
+0042.294 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frmt_form_entry_meta.table.gz (126/126/fopen): adding to final database dump
+0042.295 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frmt_form_views.table.tmpr0.gz (127/126/fopen): adding to final database dump
+0042.296 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_frmt_form_views.table.gz (128/126/fopen): adding to final database dump
+0042.297 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_action_meta.table.tmpr155.gz (129/126/fopen): adding to final database dump
+0042.298 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_action_meta.table.gz (130/126/fopen): adding to final database dump
+0042.299 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_actions.table.tmpr8.gz (131/126/fopen): adding to final database dump
+0042.300 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_actions.table.gz (132/126/fopen): adding to final database dump
+0042.301 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_chunks.table.tmpr0.gz (133/126/fopen): adding to final database dump
+0042.302 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_chunks.table.gz (134/126/fopen): adding to final database dump
+0042.303 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_field_meta.table.tmpr482.gz (135/126/fopen): adding to final database dump
+0042.304 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_field_meta.table.gz (136/126/fopen): adding to final database dump
+0042.305 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_fields.table.tmpr17.gz (137/126/fopen): adding to final database dump
+0042.306 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_fields.table.gz (138/126/fopen): adding to final database dump
+0042.307 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_form_meta.table.tmpr118.gz (139/126/fopen): adding to final database dump
+0042.308 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_form_meta.table.gz (140/126/fopen): adding to final database dump
+0042.309 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_forms.table.tmpr3.gz (141/126/fopen): adding to final database dump
+0042.310 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_forms.table.gz (142/126/fopen): adding to final database dump
+0042.311 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_object_meta.table.tmpr0.gz (143/126/fopen): adding to final database dump
+0042.312 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_object_meta.table.gz (144/126/fopen): adding to final database dump
+0042.313 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_objects.table.tmpr0.gz (145/126/fopen): adding to final database dump
+0042.314 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_objects.table.gz (146/126/fopen): adding to final database dump
+0042.315 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_relationships.table.tmpr0.gz (147/126/fopen): adding to final database dump
+0042.316 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_relationships.table.gz (148/126/fopen): adding to final database dump
+0042.317 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_upgrades.table.tmpr3.gz (149/126/fopen): adding to final database dump
+0042.319 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_nf3_upgrades.table.gz (150/126/fopen): adding to final database dump
+0042.320 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_presto_player_audio_presets.table.tmpr5.gz (151/126/fopen): adding to final database dump
+0042.321 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_presto_player_audio_presets.table.gz (152/126/fopen): adding to final database dump
+0042.322 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_presto_player_email_collection.table.tmpr0.gz (153/126/fopen): adding to final database dump
+0042.323 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_presto_player_email_collection.table.gz (154/126/fopen): adding to final database dump
+0042.323 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_presto_player_presets.table.tmpr6.gz (155/126/fopen): adding to final database dump
+0042.324 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_presto_player_presets.table.gz (156/126/fopen): adding to final database dump
+0042.325 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_presto_player_videos.table.tmpr0.gz (157/126/fopen): adding to final database dump
+0042.326 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_presto_player_videos.table.gz (158/126/fopen): adding to final database dump
+0042.327 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_presto_player_visits.table.tmpr0.gz (159/126/fopen): adding to final database dump
+0042.329 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_presto_player_visits.table.gz (160/126/fopen): adding to final database dump
+0042.330 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_admin_note_actions.table.tmpr87.gz (161/126/fopen): adding to final database dump
+0042.330 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_admin_note_actions.table.gz (162/126/fopen): adding to final database dump
+0042.332 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_admin_notes.table.tmpr40.gz (163/126/fopen): adding to final database dump
+0042.333 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_admin_notes.table.gz (164/126/fopen): adding to final database dump
+0042.334 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_category_lookup.table.tmpr1001.gz (165/126/fopen): adding to final database dump
+0042.335 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_category_lookup.table.gz (166/126/fopen): adding to final database dump
+0042.336 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_customer_lookup.table.tmpr0.gz (167/126/fopen): adding to final database dump
+0042.337 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_customer_lookup.table.gz (168/126/fopen): adding to final database dump
+0042.338 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_download_log.table.tmpr0.gz (169/126/fopen): adding to final database dump
+0042.339 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_download_log.table.gz (170/126/fopen): adding to final database dump
+0042.340 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_order_coupon_lookup.table.tmpr1.gz (171/126/fopen): adding to final database dump
+0042.341 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_order_coupon_lookup.table.gz (172/126/fopen): adding to final database dump
+0042.342 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_order_product_lookup.table.tmpr0.gz (173/126/fopen): adding to final database dump
+0042.343 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_order_product_lookup.table.gz (174/126/fopen): adding to final database dump
+0042.344 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_order_stats.table.tmpr0.gz (175/126/fopen): adding to final database dump
+0042.345 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_order_stats.table.gz (176/126/fopen): adding to final database dump
+0042.346 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_order_tax_lookup.table.tmpr1.gz (177/126/fopen): adding to final database dump
+0042.347 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_order_tax_lookup.table.gz (178/126/fopen): adding to final database dump
+0042.348 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_product_attributes_lookup.table.tmpr1.gz (179/126/fopen): adding to final database dump
+0042.349 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_product_attributes_lookup.table.gz (180/126/fopen): adding to final database dump
+0042.350 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_product_download_directories.table.tmpr3.gz (181/126/fopen): adding to final database dump
+0042.351 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_product_download_directories.table.gz (182/126/fopen): adding to final database dump
+0042.352 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_product_meta_lookup.table.tmpr0.gz (183/126/fopen): adding to final database dump
+0042.353 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_product_meta_lookup.table.gz (184/126/fopen): adding to final database dump
+0042.354 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_rate_limits.table.tmpr0.gz (185/126/fopen): adding to final database dump
+0042.355 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_rate_limits.table.gz (186/126/fopen): adding to final database dump
+0042.355 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_reserved_stock.table.tmpr1.gz (187/126/fopen): adding to final database dump
+0042.356 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_reserved_stock.table.gz (188/126/fopen): adding to final database dump
+0042.357 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_tax_rate_classes.table.tmpr3.gz (189/126/fopen): adding to final database dump
+0042.358 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_tax_rate_classes.table.gz (190/126/fopen): adding to final database dump
+0042.359 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_webhooks.table.tmpr0.gz (191/126/fopen): adding to final database dump
+0042.361 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wc_webhooks.table.gz (192/126/fopen): adding to final database dump
+0042.361 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_api_keys.table.tmpr0.gz (193/126/fopen): adding to final database dump
+0042.362 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_api_keys.table.gz (194/126/fopen): adding to final database dump
+0042.363 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_attribute_taxonomies.table.tmpr0.gz (195/126/fopen): adding to final database dump
+0042.365 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_attribute_taxonomies.table.gz (196/126/fopen): adding to final database dump
+0042.365 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_downloadable_product_permissions.table.tmpr0.gz (197/126/fopen): adding to final database dump
+0042.367 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_downloadable_product_permissions.table.gz (198/126/fopen): adding to final database dump
+0042.368 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_log.table.tmpr0.gz (199/126/fopen): adding to final database dump
+0042.370 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_log.table.gz (200/126/fopen): adding to final database dump
+0042.371 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_order_itemmeta.table.tmpr0.gz (201/126/fopen): adding to final database dump
+0042.372 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_order_itemmeta.table.gz (202/126/fopen): adding to final database dump
+0042.373 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_order_items.table.tmpr0.gz (203/126/fopen): adding to final database dump
+0042.374 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_order_items.table.gz (204/126/fopen): adding to final database dump
+0042.375 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_payment_tokenmeta.table.tmpr0.gz (205/126/fopen): adding to final database dump
+0042.376 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_payment_tokenmeta.table.gz (206/126/fopen): adding to final database dump
+0042.377 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_payment_tokens.table.tmpr0.gz (207/126/fopen): adding to final database dump
+0042.378 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_payment_tokens.table.gz (208/126/fopen): adding to final database dump
+0042.379 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_sessions.table.tmpr2.gz (209/126/fopen): adding to final database dump
+0042.380 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_sessions.table.gz (210/126/fopen): adding to final database dump
+0042.381 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_shipping_zone_locations.table.tmpr0.gz (211/126/fopen): adding to final database dump
+0042.382 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_shipping_zone_locations.table.gz (212/126/fopen): adding to final database dump
+0042.383 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_shipping_zone_methods.table.tmpr0.gz (213/126/fopen): adding to final database dump
+0042.384 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_shipping_zone_methods.table.gz (214/126/fopen): adding to final database dump
+0042.385 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_shipping_zones.table.tmpr0.gz (215/126/fopen): adding to final database dump
+0042.386 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_shipping_zones.table.gz (216/126/fopen): adding to final database dump
+0042.387 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_tax_rate_locations.table.tmpr0.gz (217/126/fopen): adding to final database dump
+0042.388 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_tax_rate_locations.table.gz (218/126/fopen): adding to final database dump
+0042.389 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_tax_rates.table.tmpr0.gz (219/126/fopen): adding to final database dump
+0042.390 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_woocommerce_tax_rates.table.gz (220/126/fopen): adding to final database dump
+0042.391 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wp_phpmyadmin_extension__errors_log.table.tmpr0.gz (221/126/fopen): adding to final database dump
+0042.392 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wp_phpmyadmin_extension__errors_log.table.gz (222/126/fopen): adding to final database dump
+0042.393 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_bar_charts.table.tmpr0.gz (223/126/fopen): adding to final database dump
+0042.394 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_bar_charts.table.gz (224/126/fopen): adding to final database dump
+0042.395 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_database_connections.table.tmpr0.gz (225/126/fopen): adding to final database dump
+0042.396 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_database_connections.table.gz (226/126/fopen): adding to final database dump
+0042.397 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_datatables.table.tmpr0.gz (227/126/fopen): adding to final database dump
+0042.398 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_datatables.table.gz (228/126/fopen): adding to final database dump
+0042.399 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_grouped_bar_charts.table.tmpr0.gz (229/126/fopen): adding to final database dump
+0042.401 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_grouped_bar_charts.table.gz (230/126/fopen): adding to final database dump
+0042.402 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_line_charts.table.tmpr0.gz (231/126/fopen): adding to final database dump
+0042.402 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_line_charts.table.gz (232/126/fopen): adding to final database dump
+0042.404 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_phinx_log.table.tmpr20210320071154.gz (233/126/fopen): adding to final database dump
+0042.404 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_phinx_log.table.gz (234/126/fopen): adding to final database dump
+0042.406 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_pie_charts.table.tmpr0.gz (235/126/fopen): adding to final database dump
+0042.407 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_pie_charts.table.gz (236/126/fopen): adding to final database dump
+0042.408 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_queries3.table.tmpr0.gz (237/126/fopen): adding to final database dump
+0042.409 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpbi_queries3.table.gz (238/126/fopen): adding to final database dump
+0042.410 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpforms_tasks_meta.table.tmpr80.gz (239/126/fopen): adding to final database dump
+0042.411 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wpforms_tasks_meta.table.gz (240/126/fopen): adding to final database dump
+0042.412 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wtbp_favorites.table.tmpr1001.gz (241/126/fopen): adding to final database dump
+0042.413 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wtbp_favorites.table.gz (242/126/fopen): adding to final database dump
+0042.414 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wtbp_tables.table.tmpr3.gz (243/126/fopen): adding to final database dump
+0042.415 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db-table-wp_wtbp_tables.table.gz (244/126/fopen): adding to final database dump
+0042.423 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db.gz: finished writing out complete database file (3590 KB)
+0042.474 (0) Total database tables backed up: 122 (backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db.gz, size: 3676306, sha1: 38eefe290d50d4ee86658854936eb090b1ee433b, sha256: 72aca1617ef9e2a060ca72b6554d934a11800dd07ae2da6d516b4072084a6b8e)
+0042.479 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0042.481 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0042.482 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0042.483 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-others.zip: others: This file has not yet been successfully uploaded: will queue
+0042.484 (0) backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db.gz: db: This file has not yet been successfully uploaded: will queue
+0042.485 (0) Saving backup history. Total backup size: 198.1 MB
+0042.488 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0042.492 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0042.493 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-bde9cc15ec4b39b864237801ad14b7b6)
+0045.412 (0) Google Drive: quota usage: used=935.4 MB, total=10486695.4 MB, available=10485760 MB
+0045.414 (0) Google Drive: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip: Attempting to upload to Google Drive (into folder id: 1lh8DLNdS7fksKoaqK1WXFWBbrXm1IdWf)
+0047.282 (0) Googledrive chunked upload: 1 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 15.8 / 80)
+0048.368 (0) Googledrive chunked upload: 3 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 15.8 / 80)
+0049.647 (0) Googledrive chunked upload: 7.1 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 15.8 / 80)
+0050.851 (0) Googledrive chunked upload: 15.2 % uploaded (15728640 - increasing chunk size to 16384 KB - memory usage: 15.8 / 80)
+0052.581 (0) Googledrive chunked upload: 31.5 % uploaded (32505856 - increasing chunk size to 32768 KB - memory usage: 15.8 / 80)
+0054.794 (0) Googledrive chunked upload: 63.9 % uploaded (66060288 - increasing chunk size to 65536 KB - memory usage: 15.8 / 80)
+0058.721 (0) Googledrive chunked upload: 100 % uploaded (66060288)
+0058.725 (0) Google Drive: OK: Archive backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip uploaded in 13.31 seconds
+0058.725 (0) Recording as successfully uploaded: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip
+0058.738 (0) Deleting local file: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip: OK
+0058.740 (0) Deleting zip manifest (backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-plugins.zip.list.tmp)
+0059.275 (0) Google Drive: quota usage: used=1034 MB, total=10486794 MB, available=10485760 MB
+0059.277 (0) Google Drive: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip: Attempting to upload to Google Drive (into folder id: 1lh8DLNdS7fksKoaqK1WXFWBbrXm1IdWf)
+0061.143 (0) Googledrive chunked upload: 4.9 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 15.8 / 80)
+0062.309 (0) Googledrive chunked upload: 14.8 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 15.8 / 80)
+0063.588 (0) Googledrive chunked upload: 34.5 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 15.8 / 80)
+0065.112 (0) Googledrive chunked upload: 73.9 % uploaded (15728640 - increasing chunk size to 16384 KB - memory usage: 15.8 / 80)
+0067.432 (0) Googledrive chunked upload: 100 % uploaded (15728640)
+0067.436 (0) Google Drive: OK: Archive backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip uploaded in 8.16 seconds
+0067.437 (0) Recording as successfully uploaded: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip
+0067.441 (0) Deleting local file: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip: OK
+0067.442 (0) Deleting zip manifest (backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-themes.zip.list.tmp)
+0067.923 (0) Google Drive: quota usage: used=1054.2 MB, total=10486814.2 MB, available=10485760 MB
+0067.925 (0) Google Drive: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip: Attempting to upload to Google Drive (into folder id: 1lh8DLNdS7fksKoaqK1WXFWBbrXm1IdWf)
+0069.595 (0) Googledrive chunked upload: 1.3 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 15.8 / 80)
+0071.199 (0) Googledrive chunked upload: 4 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 15.8 / 80)
+0072.185 (0) Googledrive chunked upload: 9.2 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 15.8 / 80)
+0073.739 (0) Googledrive chunked upload: 19.8 % uploaded (15728640 - increasing chunk size to 16384 KB - memory usage: 15.8 / 80)
+0075.512 (0) Googledrive chunked upload: 40.9 % uploaded (32505856 - increasing chunk size to 32768 KB - memory usage: 15.8 / 80)
+0077.565 (0) Googledrive chunked upload: 83.1 % uploaded (66060288 - increasing chunk size to 65536 KB - memory usage: 15.8 / 80)
+0080.175 (0) Googledrive chunked upload: 100 % uploaded (66060288)
+0080.179 (0) Google Drive: OK: Archive backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip uploaded in 12.25 seconds
+0080.180 (0) Recording as successfully uploaded: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip
+0080.191 (0) Deleting local file: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip: OK
+0080.192 (0) Deleting zip manifest (backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-uploads.zip.list.tmp)
+0080.654 (0) Google Drive: quota usage: used=1130.1 MB, total=10486890.1 MB, available=10485760 MB
+0080.655 (0) Google Drive: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-others.zip: Attempting to upload to Google Drive (into folder id: 1lh8DLNdS7fksKoaqK1WXFWBbrXm1IdWf)
+0083.231 (0) Googledrive chunked upload: 100 % uploaded
+0083.235 (0) Google Drive: OK: Archive backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-others.zip uploaded in 2.58 seconds
+0083.236 (0) Recording as successfully uploaded: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-others.zip
+0083.238 (0) Deleting local file: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-others.zip: OK
+0083.239 (0) Deleting zip manifest (backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-others.zip.list.tmp)
+0083.763 (0) Google Drive: quota usage: used=1130.1 MB, total=10486890.1 MB, available=10485760 MB
+0083.764 (0) Google Drive: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db.gz: Attempting to upload to Google Drive (into folder id: 1lh8DLNdS7fksKoaqK1WXFWBbrXm1IdWf)
+0085.687 (0) Googledrive chunked upload: 28.5 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 15.8 / 80)
+0086.811 (0) Googledrive chunked upload: 85.6 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 15.8 / 80)
+0088.564 (0) Googledrive chunked upload: 100 % uploaded (3145728)
+0088.568 (0) Google Drive: OK: Archive backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db.gz uploaded in 4.8 seconds
+0088.569 (0) Recording as successfully uploaded: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db.gz
+0088.572 (0) Deleting local file: backup_2022-10-06-1323_FunMelCity_62e8e9b8a142-db.gz: OK
+0088.577 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0088.578 (0) Number of backup sets in history: 2; groups (db): 1
+0088.580 (0) Examining (for databases) backup set with group_id=0, nonce=62e8e9b8a142, datestamp=1665062624 (Oct 06 2022 13:23:44)
+0088.581 (0) This backup set is the backup set just made, so will not be deleted.
+0088.581 (0) Examining (for databases) backup set with group_id=0, nonce=e75c3978cc37, datestamp=1662374900 (Sep 05 2022 10:48:20)
+0088.581 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0088.582 (0) Number of backup sets in history: 2; groups (files): 1
+0088.583 (0) Examining (for files) backup set with nonce=62e8e9b8a142, datestamp=1665062624 (Oct 06 2022 13:23:44)
+0088.583 (0) This backup set is the backup set just made, so will not be deleted.
+0088.584 (0) This backup set is the backup set just made, so will not be deleted.
+0088.584 (0) This backup set is the backup set just made, so will not be deleted.
+0088.584 (0) This backup set is the backup set just made, so will not be deleted.
+0088.584 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0088.585 (0) Examining (for files) backup set with nonce=e75c3978cc37, datestamp=1662374900 (Sep 05 2022 10:48:20)
+0088.585 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0088.585 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0088.588 (0) Resume backup (62e8e9b8a142, 0): finish run
+0088.591 (0) Decremented the semaphore (fd) by 1
+0088.593 (0) Semaphore (fd) unlocked
+0088.594 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0088.599 (0) Fetching RSS news feed
+0089.444 (0) Fetched RSS news feed; result is a: SimplePie
+0089.501 (0) Sending email ('Files and database (Full backup)') report (attachments: 0, size: 0 KB) to: user@...
+0089.506 (0) An error occurred when sending a backup report email and/or backup file(s) via email (wp_mail_failed): Could not instantiate mail function.
+0089.508 (0) The backup apparently succeeded and is now complete

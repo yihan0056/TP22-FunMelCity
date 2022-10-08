@@ -18,6 +18,7 @@
 				exclude:false,
 				readonly:false,
                 numberpad:false,
+				spinner:false,
 				size:"small",
 				currencySymbol:"$",
 				currencyText:"USD",
@@ -85,6 +86,7 @@
 							{s:"#sCentSeparator",e:"change keyup", l:"centSeparator", x:1},
 							{s:"#sFormatDynamically",e:"click", l:"formatDynamically",f:f},
 							{s:"#sTwoDecimals",e:"click", l:"twoDecimals",f:f},
+							{s:"#sSpinner",e:"click", l:"spinner",f:f},
 							{s:"#sNoCents",e:"click", l:"noCents",f:f},
 							{s:"#sMin",e:"change keyup", l:"min", x:1},
 							{s:"#sMax",e:"change keyup", l:"max", x:1}
@@ -107,6 +109,7 @@
 					},
                 showRangeIntance: function()
 					{
-						return '<div><div class="column width50"><label>Min</label><input type="text" name="sMin" id="sMin" value="'+cff_esc_attr(this.min)+'" class="large"></div><div class="column width50"><label>Max</label><input type="text" name="sMax" id="sMax" value="'+cff_esc_attr(this.max)+'" class="large"></div><div class="clearer"  style="margin-bottom:10px;">Enter the min/max values as numbers, and not as currencies.<br /><i>It is possible to associate other fields in the form to the attributes "min" and "max". Ex: fieldname1</i></div></div>';
+						return '<div><label><input type="checkbox" name="sSpinner" id="sSpinner" '+( (this.spinner) ? 'CHECKED' : '')+'> Display spinner buttons</label></div>'+
+						'<div><div class="column width50"><label>Min</label><input type="text" name="sMin" id="sMin" value="'+cff_esc_attr(this.min)+'" class="large"></div><div class="column width50"><label>Max</label><input type="text" name="sMax" id="sMax" value="'+cff_esc_attr(this.max)+'" class="large"></div><div class="clearer"  style="margin-bottom:10px;">Enter the min/max values as numbers, and not as currencies.<br /><i>It is possible to associate other fields in the form to the attributes "min" and "max". Ex: fieldname1</i></div></div>';
 					}
 		});

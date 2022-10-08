@@ -3,7 +3,7 @@
 * Plugin Name: Stylish Cost Calculator
 * Plugin URI:  https://stylishcostcalculator.com
 * Description: A Stylish Cost Calculator / Price Estimate Form for your site.
-* Version:     7.2.8
+* Version:     7.2.9
 * Author:      Designful
 * Author URI:  https://stylishcostcalculator.com
 * License:     GPL2
@@ -14,11 +14,12 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-define( 'STYLISH_COST_CALCULATOR_VERSION', '7.2.8' );
+define( 'STYLISH_COST_CALCULATOR_VERSION', '7.2.9' );
 define( 'SCC_URL', plugin_dir_url( __FILE__ ) );
 define( 'SCC_DIR', dirname( __FILE__ ) );
 define( 'SCC_ASSETS_URL', plugins_url( '/assets', __FILE__ ) );
 define( 'SCC_TOOLTIP_BASEURL', SCC_ASSETS_URL . '/images/tooltip-images' );
+define( 'SCC_TEMPLATE_PREVIEW_BASEURL', SCC_ASSETS_URL . '/images/template-previews' );
 require_once plugin_dir_path( __FILE__ ) . '/functions.php';
 require_once plugin_dir_path( __FILE__ ) . '/stylish-cost-sero.php';
 require plugin_dir_path(__FILE__) . '/cron/notifications.php';
@@ -277,17 +278,6 @@ class df_scc_plugin {
   )  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;"
 		);
 		$wpdb->query(
-			"CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}df_scc_section_conditions` (
-    `id` bigint(20) UNSIGNED NOT NULL,
-    `op` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-    `value` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-    `section_id` bigint(20) UNSIGNED NOT NULL,
-    `condition_element_id` bigint(20) UNSIGNED DEFAULT NULL,
-    `elementitem_id` bigint(20) UNSIGNED DEFAULT NULL,
-    `condition_set` bigint(20) UNSIGNED DEFAULT 1
-  )  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;"
-		);
-		$wpdb->query(
 			"CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}df_scc_quote_submissions` (
     `id` bigint(20) UNSIGNED NOT NULL,
     `status` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -354,14 +344,6 @@ class df_scc_plugin {
     ADD KEY `scc_conditions_elementitem_id_index` (`elementitem_id`)"
 		);
 		$wpdb->query(
-			"ALTER TABLE `{$wpdb->prefix}df_scc_section_conditions`
-    ADD PRIMARY KEY (`id`),
-    ADD KEY `scc_conditions_condition_element_id_foreign` (`condition_element_id`),
-    ADD KEY `scc_conditions_element_id_index` (`element_id`),
-    ADD KEY `scc_conditions_elementitem_id_index` (`elementitem_id`)"
-		);
-		// ALTER TABLE `userz_35627`.`wp_df_scc_section_conditions` ADD INDEX `scc_conditions_section_id_index` (`section_id`);
-		$wpdb->query(
 			"ALTER TABLE `{$wpdb->prefix}df_scc_quote_submissions`
     ADD PRIMARY KEY (`id`),
     ADD KEY `scc_quote_submissions_calc_id_foreign` (`calc_id`)"
@@ -421,12 +403,6 @@ class df_scc_plugin {
 			"ALTER TABLE `{$wpdb->prefix}df_scc_conditions`
     ADD CONSTRAINT `scc_conditions_condition_element_id_foreign` FOREIGN KEY (`condition_element_id`) REFERENCES `{$wpdb->prefix}df_scc_elements` (`id`) ON DELETE CASCADE,
     ADD CONSTRAINT `scc_conditions_element_id_foreign` FOREIGN KEY (`element_id`) REFERENCES `{$wpdb->prefix}df_scc_elements` (`id`) ON DELETE CASCADE,
-    ADD CONSTRAINT `scc_conditions_elementitem_id_foreign` FOREIGN KEY (`elementitem_id`) REFERENCES `{$wpdb->prefix}df_scc_elementitems` (`id`) ON DELETE CASCADE"
-		);
-		$wpdb->query(
-			"ALTER TABLE `{$wpdb->prefix}df_scc_section_conditions`
-    ADD CONSTRAINT `scc_conditions_condition_element_id_foreign` FOREIGN KEY (`condition_element_id`) REFERENCES `{$wpdb->prefix}df_scc_elements` (`id`) ON DELETE CASCADE,
-    ADD CONSTRAINT `scc_conditions_section_id_foreign` FOREIGN KEY (`section_id`) REFERENCES `{$wpdb->prefix}df_scc_sections` (`id`) ON DELETE CASCADE,
     ADD CONSTRAINT `scc_conditions_elementitem_id_foreign` FOREIGN KEY (`elementitem_id`) REFERENCES `{$wpdb->prefix}df_scc_elementitems` (`id`) ON DELETE CASCADE"
 		);
 		/**

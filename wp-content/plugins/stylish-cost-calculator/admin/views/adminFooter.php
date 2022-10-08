@@ -15,7 +15,7 @@ if ( get_current_screen()->base !== 'stylish-cost-calculator_page_scc-tabs' ) {
 }
 ?>
 <hr class="scc-separator">
-<div class="container" id="scc-footer">
+<div class="container-fluid" id="scc-footer">
 	<div class="row">
 		<div class="col-md-3">
 			<a href="https://stylishcostcalculator.com/" class="scc-footer logo">

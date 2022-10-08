@@ -420,7 +420,7 @@ class Updraft_Restorer {
 		restore_error_handler();
 		
 	}
-	
+
 	/**
 	 * Whether or not we must use the global $wpdb object for database queries.
 	 * That is to say: we *can* always use it. But we prefer to avoid the overhead since we are potentially doing very many queries.
@@ -3454,13 +3454,16 @@ class Updraft_Restorer {
 						$this->restoring_table = ''; // reset this variable so that the same table renaming procedure at the end of this method doesn't get executed
 					}
 				}
+			} elseif (preg_match('/^SET @@GLOBAL.GTID_PURGED/i', $sql_line)) {
+				// skip the SET @@GLOBAL.GTID_PURGED command
+				$sql_type = 17;
 			} else {
 				// Prevent the previous value of $sql_type being retained for an unknown type
 				$sql_type = 0;
 			}
 
-			// Do not execute "USE" or "CREATE|DROP DATABASE" commands
-			if (6 != $sql_type && 7 != $sql_type && (9 != $sql_type || false == $this->triggers_forbidden) && 10 != $sql_type) {
+			// Do not execute "USE" or "CREATE|DROP DATABASE" or "SET @@GLOBAL.GTID_PURGED" commands
+			if (6 != $sql_type && 7 != $sql_type && (9 != $sql_type || false == $this->triggers_forbidden) && 10 != $sql_type && 17 != $sql_type) {
 				$do_exec = $this->sql_exec($sql_line, $sql_type);
 				if (is_wp_error($do_exec)) return $do_exec;
 			} else {
@@ -3826,6 +3829,7 @@ class Updraft_Restorer {
 	 * 14 ALTER
 	 * 15 UNLOCK
 	 * 16 DROP VIEW
+	 * 17 SET GLOBAL.GTID_PURGED
 	 *
 	 * @param  String  $sql_line            sql line to execute
 	 * @param  Integer $sql_type            sql type
@@ -4161,6 +4165,23 @@ class Updraft_Restorer {
 						if (!is_dir($edir.'/'.$dbase)) @mkdir($edir.'/'.$dbase);// phpcs:ignore Generic.PHP.NoSilencedErrors.Discouraged
 						$updraftplus->log_e("Elegant themes theme builder plugin data detected: resetting temporary folder");
 						update_option('et_images_temp_folder', $edir.'/'.$dbase);
+					}
+
+					// check if current restoration is a migration
+					if (!empty($this->restore_options['updraft_restorer_replacesiteurl'])) {
+						$wp_rocket_settings = $wpdb->get_row($wpdb->prepare("SELECT option_value FROM $new_table_name WHERE option_name = %s LIMIT 1", 'wp_rocket_settings'));
+
+						if (!empty($wp_rocket_settings->option_value)) {
+							$wp_rocket_settings = maybe_unserialize($wp_rocket_settings->option_value);
+
+							// if WP Rocket settings is found and cdn is enabled
+							if (isset($wp_rocket_settings['cdn'])) {
+								unset($wp_rocket_settings['cdn']);
+								update_option('wp_rocket_settings', $wp_rocket_settings);
+
+								$updraftplus->log_e("WP Rocket CDN option detected: disabling the option");
+							}
+						}
 					}
 				}
 

@@ -78,9 +78,13 @@ padding:5px;
 
 .cp_cff_clean #fbuilder input[type=button],
 .cp_cff_clean #fbuilder input[type=reset],
+.cp_cff_clean .cff-spinner .cff-spinner-down,
+.cp_cff_clean .cff-spinner .cff-spinner-up,
 .cp_cff_clean #fbuilder .pbSubmit,
 .cp_cff_clean #fbuilder .pbPrevious,
 .cp_cff_clean #fbuilder .pbNext{color:#fff;font-size:14px;background: #0093DA;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;margin:0 10px 0 0; text-shadow:none;border:0;padding: 5px 20px;}
+.cp_cff_clean .cff-spinner .cff-spinner-down,
+.cp_cff_clean .cff-spinner .cff-spinner-up{margin-right:0;}
 .cp_cff_clean #fbuilder .r{color:rgb(255,0,0);}
 
 .cp_cff_clean #fbuilder .discount-container{margin-top:10px;font-weight:bold;}

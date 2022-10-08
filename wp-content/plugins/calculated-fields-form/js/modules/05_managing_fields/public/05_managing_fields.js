@@ -185,6 +185,28 @@
         } catch(err) { if(typeof console != 'undefined') console.log(err); }
     };
 
+    lib.gotofield = lib.GOTOFIELD = lib.goToField = function(e, f)
+    {
+        try
+        {
+            var o = $('#'+$.fbuilder['forms'][_getForm(f)].formId), p, c;
+			if(o.length)
+            {
+				e = o.find('[id*="'+(Number.isInteger(e) ? 'fieldname'+e : e)+'_"]');
+				if(e.length)
+				{
+					c = o.find('.pbreak:visible').attr('page');
+					p = e.closest('.pbreak').attr('page');
+					$(document).one('cff-gotopage', function(evt, arg){
+						if(e.is(':visible'))
+							$('html,body').animate({scrollTop:e.offset().top});
+					});
+					$.fbuilder.goToPage({'form':o,'from':c,'to':p, 'forcing' : true});
+				}
+            }
+        } catch(err) { if(typeof console != 'undefined') console.log(err); }
+    };
+
     if(window.PRINTFORM == undefined)
     {
         lib.printform = lib.PRINTFORM = function(show_pages)

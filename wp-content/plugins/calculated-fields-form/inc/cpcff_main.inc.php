@@ -919,20 +919,16 @@ if ( ! class_exists( 'CPCFF_MAIN' ) ) {
 						print '<script type="text/javascript" src="' . esc_attr( $includes_url ) . 'js/jquery/ui/' . esc_attr( $prefix_ui ) . 'slider.min.js"></script>'; // phpcs:ignore WordPress.WP.EnqueuedResources
 					}
 					?>
-					<script>if( typeof fbuilderjQuery == 'undefined') var fbuilderjQuery = jQuery.noConflict( );</script>
+					<script type='text/javascript'> if( typeof fbuilderjQuery == 'undefined' && typeof jQuery != 'undefined' ) fbuilderjQuery = jQuery.noConflict( );</script>
 					<script type='text/javascript' src='<?php echo esc_attr( plugins_url( 'vendors/jquery.validate.js', CP_CALCULATEDFIELDSF_MAIN_FILE_PATH ) ); // phpcs:ignore WordPress.WP.EnqueuedResources ?>'></script>
 					<script type='text/javascript' src='<?php echo esc_attr( plugins_url( 'vendors/jQuery.stringify.js', CP_CALCULATEDFIELDSF_MAIN_FILE_PATH ) ); // phpcs:ignore WordPress.WP.EnqueuedResources ?>'></script>
 					<script type='text/javascript' src='<?php echo esc_attr( $public_js_path . ( ( strpos( $public_js_path, '?' ) == false ) ? '?' : '&' ) . 'ver=' . CP_CALCULATEDFIELDSF_VERSION ); // phpcs:ignore WordPress.WP.EnqueuedResources ?>'></script>
 					<?php
 				}
 				?>
-				<pre style="display:none !important;"><script type='text/javascript'>
-					/* <![CDATA[ */
-				<?php
-					print 'var cp_calculatedfieldsf_fbuilder_config_' . esc_js( self::$form_counter ) . '={"obj":' . $config_json . '};'; // phpcs:ignore WordPress.Security.EscapeOutput
-				?>
-					/* ]]> */
-				</script></pre>
+				<pre style="display:none !important;"><script type='text/javascript'><?php
+					print 'cp_calculatedfieldsf_fbuilder_config_' . esc_js( self::$form_counter ) . '={"obj":' . $config_json . '};'; // phpcs:ignore WordPress.Security.EscapeOutput
+				?></script></pre>
 				<?php
 			}
 		} // End _public_resources
@@ -1044,18 +1040,21 @@ if ( ! class_exists( 'CPCFF_MAIN' ) ) {
 		} // End rocket_exclude_js
 
 		public static function rocket_exclude_inline_js( $excluded_js = array() ) {
-			 $excluded_js[] = 'form_structure_';
-			$excluded_js[]  = 'doValidate_';
-			$excluded_js[]  = 'cpcff_default';
-			$excluded_js[]  = 'cp_calculatedfieldsf_fbuilder_config_';
-			$excluded_js[]  = 'form_structure(.*)';
-			$excluded_js[]  = 'doValidate(.*)';
-			$excluded_js[]  = 'cp_calculatedfieldsf_fbuilder_config(.*)';
+			$excluded_js[] = 'form_structure_';
+			$excluded_js[] = 'fbuilderjQuery';
+			$excluded_js[] = 'fbuilderjQuery(.*)';
+			$excluded_js[] = '(.*)fbuilderjQuery(.*)';
+			$excluded_js[] = 'doValidate_';
+			$excluded_js[] = 'cpcff_default';
+			$excluded_js[] = 'cp_calculatedfieldsf_fbuilder_config_';
+			$excluded_js[] = 'form_structure(.*)';
+			$excluded_js[] = 'doValidate(.*)';
+			$excluded_js[] = 'cp_calculatedfieldsf_fbuilder_config(.*)';
 			return $excluded_js;
 		} // End rocket_exclude_inline_js
 
 		public static function breeze_check_content( $content ) {
-			if ( strpos( $content, 'form_structure_' ) !== false ) {
+			if ( strpos( $content, 'form_structure_' ) !== false || strpos( $content, 'cp_calculatedfieldsf_fbuilder_config_' ) !== false ) {
 				global $cff_breeze_content_bk;
 				$cff_breeze_content_bk = $content;
 			}

@@ -16,6 +16,8 @@
 
 .cp_cff_12 #fbuilder  .fields:not(.cff-container-field){padding: 10px;}
 
+.cp_cff_12 .cff-spinner .cff-spinner-down,
+.cp_cff_12 .cff-spinner .cff-spinner-up,
 .cp_cff_12 #fbuilder  input[type="text"],
 .cp_cff_12 #fbuilder  input[type="file"],
 .cp_cff_12 #fbuilder  input[type="password"],

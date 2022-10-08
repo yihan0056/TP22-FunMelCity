@@ -4,7 +4,7 @@ Donate link: http://cff.dwbooster.com
 Tags: form,quote form,contact form,form builder,calculator,calculated,quote calculator,forms,form editor,advanced forms,payment calculator,payment,recurring payment,quote,fields,calculated field,price calculator,email,form design,paypal,equation editor,formula,equation,quote calculator,post,posts,plugin,widget,admin,sidebar,images,image,page,shortcode,products form,woocommerce,addons,layout,session,post,cookie,get,webhook,Dropbox,pdf,language
 Requires at least: 3.0.5
 Tested up to: 6.0
-Stable tag: 1.1.113
+Stable tag: 1.1.118
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -965,6 +965,32 @@ A: Please, follow the steps below:
 
 == Changelog ==
 
+= 1.1.118 =
+
+* Modifies the loading scripts to solve issues caused by optimizer plugins.
+
+= 1.1.117 =
+
+* Modifies the SUM operation.
+* Implements the SIGMA operation.
+* Implements the CURRENTLATLNG operation in the Distance operations module (Developer and Platinum plugin versions).
+
+= 1.1.116 =
+
+* Modifies the calculated fields to reduce the number of endless loops.
+* Modifies the Google Places add-on to fix a conflict with the Yoast sitemap (Platinum plugin version).
+* Fixes a notice in the WebMerge add-on (Platinum plugin version).
+* Minor modifications in the interface of other add-ons (Platinum plugin version).
+
+= 1.1.115 =
+
+* Modifies the number and currency controls to allow including buttons to increase and decrease their values.
+* Implements the GOTOFIELD operation for scrolling to the field location, even if it is in another page of multipage form.
+
+= 1.1.114 =
+
+* Fixes a parser error when opening the public form right after importing it from the forms library.
+
 = 1.1.113 =
 
 * Modifies the setChoices method in radio buttons, checkbox, and dropdown fields.
@@ -991,27 +1017,3 @@ A: Please, follow the steps below:
 * Fixes a minor issue in the button control.
 * Makes the form name a required attribute.
 * Modifies the currentdate and submissiondate tags in the notification emails and thank you pages to accept a separator symbol between date components (Professional, Developer, and Platinum versions).
-
-= 1.1.108 =
-
-* Implements the create form from the templates library module.
-
-= 1.1.107 =
-
-* Allows the associate audio tutorials to the form fields.
-* Modifies the WooCommerce add-on to support third-party plugins like 'Ajax add to cart for WooCommerce'.
-
-= 1.1.106 =
-
-* Implements the logarithmic slider.
-* Implements a new attribute in the plugin settings page to disable form revisions.
-* Fixes an issue with pending equations.
-
-= 1.1.105 =
-
-* Implement an experimental control that allows users to record audio and video while filling out the form.
-
-= 1.1.104 =
-
-* Fixes a conflict with Breeze WordPress Cache plugin.
-* Modifies the results list shortcode to allow displaying submissions of multiple forms in the same shortcode (Professional, Developer, and Platinum versions).

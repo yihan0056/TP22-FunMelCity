@@ -1,3 +1,8 @@
+= 7.2.9 - 2022-09-24
+* Fixes: Bugfixes and improvements
+* Fixes: Fixed database error warnings
+* Added: New 'Add new calculator' page
+
 = 7.2.8 - 2022-08-27
 * Fixes: Bugfixes and improvements
 * Added: Mongolian currency

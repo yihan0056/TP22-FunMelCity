@@ -52,6 +52,8 @@
 .cp_cff_box #fbuilder .section_breaks>label{text-align:center;}
 .cp_cff_box #fbuilder .section_breaks span.uh{margin:0;}
 .cp_cff_box #fbuilder span.uh:empty{ display:none; }
+.cp_cff_box .cff-spinner .cff-spinner-down,
+.cp_cff_box .cff-spinner .cff-spinner-up,
 .cp_cff_box #fbuilder .pbSubmit,
 .cp_cff_box #fbuilder .pbreak .pbPrevious,
 .cp_cff_box #fbuilder .pbreak .pbNext,
